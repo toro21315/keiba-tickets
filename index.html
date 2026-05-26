@@ -1,412 +1,1636 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>馬券ビューア</title>
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --accent:#7EC8E3;
-  --accent-dark:#5BA3C9;
-  --bg-cream:#F5F0E8;
-  --bg-page:#D5D0C8;
-  --text-dark:#1A1A1A;
-  --text-mid:#4A4A4A;
-  --text-light:#888;
-  --badge-bg:#1A1A1A;
-  --badge-text:#FFF;
-  --divider:#D0C8B8;
-}
-html,body{
-  height:100%;
-  overflow:hidden;
-  font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP","Helvetica Neue",sans-serif;
-  -webkit-font-smoothing:antialiased;
-  background:var(--bg-page);
-  color:var(--text-dark);
-}
-body{
-  display:flex;
-  flex-direction:column;
-  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-  height:100dvh;
-}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>馬券ビューア</title>
+    <style>
+        :root {
+            --paper: #FAF6EC;
+            --paper-edge: #EFE8D6;
+            --ink: #1A1A1A;
+            --ink-soft: #3a3a3a;
+            --ink-faint: #888;
+            --aqua: #7EC8E3;
+            --aqua-deep: #5fb6d6;
+            --aqua-soft: #b6dfee;
+            --wm: rgba(94, 170, 196, 0.22);
+            --bg: #0c0d10;
+            --bg-soft: #15171c;
+            --ticket-ratio: 1.65;
+            /* w / h — landscape JRA ratio */
+        }
 
-/* ---- Header bar ---- */
-.header-bar{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:8px 16px;
-  font-size:13px;
-  color:var(--text-mid);
-  flex-shrink:0;
-}
-.header-bar .date{font-weight:700;font-size:14px;color:var(--text-dark)}
-.header-bar .total{font-size:12px}
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
 
-/* ---- Ticket container ---- */
-#ticket-area{
-  flex:1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  position:relative;
-}
-#ticket-wrapper{
-  width:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transition:opacity .25s ease, transform .25s ease;
-}
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-/* ---- Ticket card ---- */
-.ticket{
-  position:relative;
-  width:calc(100vw - 32px);
-  max-width:358px;
-  background:var(--bg-cream);
-  border-radius:5px;
-  box-shadow:0 2px 12px rgba(0,0,0,.12),0 1px 3px rgba(0,0,0,.08);
-  overflow:hidden;
-  background-image:
-    repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.006) 3px,rgba(0,0,0,.006) 4px);
-  background-color:var(--bg-cream);
-}
-.ticket::after{
-  content:"JRA";
-  position:absolute;
-  right:12px;
-  top:50%;
-  transform:translateY(-50%);
-  font-size:72px;
-  font-weight:900;
-  color:rgba(0,0,0,.022);
-  pointer-events:none;
-  letter-spacing:6px;
-}
-.ticket-accent{
-  position:absolute;
-  left:0;top:0;bottom:0;
-  width:7px;
-  background:linear-gradient(180deg,var(--accent) 0%,var(--accent-dark) 100%);
-  z-index:1;
-}
+        html,
+        body {
+            width: 100%;
+            height: 100dvh;
+            overflow: hidden;
+            background: var(--bg);
+            color: #fff;
+            font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Helvetica Neue", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: geometricPrecision;
+            user-select: none;
+            -webkit-user-select: none;
+        }
 
-.ticket-inner{
-  position:relative;
-  padding:16px 16px 14px 22px;
-  z-index:1;
-}
+        /* ====== APP SHELL ====== */
+        .app {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+        }
 
-/* ---- Ticket header ---- */
-.t-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px}
-.t-venue{font-size:28px;font-weight:900;letter-spacing:3px;line-height:1.1}
-.t-race{display:flex;align-items:center;gap:3px;margin-top:4px}
-.t-race-num{
-  display:inline-flex;align-items:center;justify-content:center;
-  background:var(--badge-bg);color:var(--badge-text);
-  font-size:20px;font-weight:900;
-  min-width:32px;height:32px;border-radius:4px;padding:0 5px;
-}
-.t-race-label{font-size:18px;font-weight:700}
-.t-meta{text-align:right}
-.t-posttime{font-size:20px;font-weight:800;color:var(--text-dark)}
-.t-posttime-label{font-size:11px;color:var(--text-mid);margin-top:1px}
-.t-track{font-size:13px;color:var(--text-mid);margin-top:2px}
+        /* ====== HEADER ====== */
+        .hdr {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            padding: 10px 16px 6px;
+            color: #cdd2dc;
+        }
 
-/* ---- Divider ---- */
-.t-divider{border:none;border-top:1px solid var(--divider);margin:10px 0}
+        .hdr-date {
+            font-size: 13px;
+            letter-spacing: 0.04em;
+            font-feature-settings: "palt";
+        }
 
-/* ---- Section ---- */
-.t-section{margin-bottom:10px}
-.t-section:last-of-type{margin-bottom:6px}
-.t-section-header{
-  display:flex;align-items:baseline;gap:8px;margin-bottom:6px;
-}
-.t-type{font-size:20px;font-weight:900;letter-spacing:4px}
-.t-type-sub{font-size:13px;font-weight:700;color:var(--text-mid)}
-.t-type-en{font-size:11px;color:var(--text-light);letter-spacing:1px;margin-left:auto}
+        .hdr-total {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            font-feature-settings: "tnum";
+        }
 
-/* ---- Tansho entry ---- */
-.t-entry{
-  display:flex;align-items:center;gap:8px;
-  padding:5px 0;
-}
-.umaban{
-  display:inline-flex;align-items:center;justify-content:center;
-  background:var(--badge-bg);color:var(--badge-text);
-  font-size:18px;font-weight:700;
-  min-width:30px;height:30px;border-radius:3px;padding:0 4px;
-  flex-shrink:0;
-}
-.horse-name{font-size:15px;font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.entry-amount{font-size:16px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+        .hdr-total .lbl {
+            font-size: 10px;
+            color: #7f8696;
+            letter-spacing: 0.12em;
+        }
 
-/* ---- BOX entries ---- */
-.t-box-members{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px}
-.t-box-detail{
-  display:flex;align-items:baseline;justify-content:space-between;
-  font-size:13px;color:var(--text-mid);
-}
-.t-box-amount{font-size:16px;font-weight:700;color:var(--text-dark)}
+        .hdr-total .yen {
+            font-size: 15px;
+            font-weight: 600;
+            color: #e9ecf2;
+            font-variant-numeric: tabular-nums;
+        }
 
-/* ---- Footer ---- */
-.t-footer{
-  display:flex;align-items:baseline;justify-content:flex-end;gap:10px;
-  border-top:2px solid var(--text-dark);
-  padding-top:10px;margin-top:6px;
-}
-.t-total-label{font-size:14px;font-weight:700;color:var(--text-mid)}
-.t-total-amount{font-size:24px;font-weight:900}
+        .hdr-total .yen .unit {
+            font-size: 11px;
+            margin-left: 1px;
+            color: #9aa1b0;
+        }
 
-/* ---- Navigation ---- */
-.nav-area{
-  flex-shrink:0;
-  padding:12px 0 8px;
-  text-align:center;
-}
-.nav-dots{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:0 20px}
-.dot{
-  width:8px;height:8px;border-radius:50%;
-  background:rgba(0,0,0,.18);
-  transition:all .2s;
-  cursor:pointer;
-  -webkit-tap-highlight-color:transparent;
-}
-.dot.active{background:var(--accent-dark);transform:scale(1.4)}
-.nav-info{font-size:11px;color:var(--text-light);margin-top:6px}
+        /* ====== STAGE ====== */
+        .stage {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
 
-/* ---- Empty state ---- */
-.empty-state{
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  height:100%;color:var(--text-mid);
-}
-.empty-icon{font-size:48px;margin-bottom:12px}
-.empty-text{font-size:16px}
+        .track {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            transition: transform 250ms ease;
+            will-change: transform;
+        }
 
-/* ---- Scroll for many entries ---- */
-.t-sections{max-height:calc(100dvh - 210px);overflow-y:auto;-webkit-overflow-scrolling:touch}
+        /* race slide — vertical column of landscape tickets */
+        .slide {
+            flex: 0 0 100%;
+            height: 100%;
+            padding: 6px 12px 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            gap: 8px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
 
-/* ---- Transition classes ---- */
-.slide-out-left{transform:translateX(-30px);opacity:0}
-.slide-out-right{transform:translateX(30px);opacity:0}
-</style>
+        .slide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slide.tight {
+            justify-content: flex-start;
+            padding-top: 10px;
+        }
+
+        /* race-level meta strip above tickets */
+        .race-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #9aa1b0;
+            font-size: 11px;
+            padding: 0 2px 4px;
+            font-feature-settings: "tnum";
+            flex: 0 0 auto;
+        }
+
+        .race-meta .left {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .race-meta .right {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .race-meta .race-tag {
+            color: #cdd2dc;
+            font-weight: 700;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+        }
+
+        .race-meta .post {
+            color: #cdd2dc;
+            font-weight: 600;
+        }
+
+        .race-meta .course {
+            color: #7f8696;
+        }
+
+        /* ====== TICKET ====== */
+        .ticket {
+            position: relative;
+            width: 100%;
+            aspect-ratio: var(--ticket-ratio) / 1;
+            flex: 0 0 auto;
+            background: var(--paper);
+            color: var(--ink);
+            border-radius: 3px;
+            box-shadow:
+                0 1px 0 rgba(255, 255, 255, 0.04),
+                0 8px 16px -6px rgba(0, 0, 0, 0.55),
+                0 18px 36px -12px rgba(0, 0, 0, 0.55);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 108px 60px 1fr;
+            grid-template-rows: 1fr;
+            font-feature-settings: "palt";
+        }
+
+        /* paper grain — horizontal stripes (like thermal-printed JRA ticket) */
+        .ticket::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(800px 400px at 30% -10%, rgba(0, 0, 0, 0.035), transparent 60%),
+                repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.022) 0 1px, transparent 1px 2px),
+                repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.008) 0 1px, transparent 1px 5px);
+            mix-blend-mode: multiply;
+            opacity: var(--grain, 1);
+            z-index: 1;
+        }
+
+        /* outer paper edge */
+        .ticket::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+            border-radius: 3px;
+            z-index: 3;
+        }
+
+        /* watermark layer */
+        .wm {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+            opacity: var(--wm-opacity, 1);
+            z-index: 1;
+        }
+
+        .wm svg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* ====== LEFT COLUMN ====== */
+        .t-col-left {
+            position: relative;
+            z-index: 2;
+            padding: 8px 6px 8px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 0;
+        }
+
+        .t-yymd {
+            font-size: 10px;
+            color: #000;
+            letter-spacing: 0.02em;
+            font-feature-settings: "tnum";
+            line-height: 1.1;
+        }
+
+        .t-venue-block {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .t-venue {
+            font-size: 26px;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 0;
+            color: #000;
+            display: inline-flex;
+            align-items: baseline;
+            gap: 2px;
+            font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+        }
+
+        .t-venue-dow {
+            font-size: 11px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .t-race {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .t-race-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 32px;
+            height: 26px;
+            padding: 0 6px;
+            background: #000;
+            color: #fff;
+            border-radius: 1px;
+            font-size: 18px;
+            font-weight: 900;
+            font-feature-settings: "tnum";
+            line-height: 1;
+        }
+
+        .t-race-suffix {
+            font-size: 12px;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.02em;
+        }
+
+        .t-left-bottom {
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            color: #000;
+            font-size: 10px;
+            line-height: 1.25;
+        }
+
+        .t-left-bottom .post-time {
+            font-weight: 800;
+            font-size: 11px;
+            font-feature-settings: "tnum";
+        }
+
+        .t-left-bottom .course {
+            color: #3a3a3a;
+        }
+
+        .t-left-bottom .status {
+            margin-top: 2px;
+        }
+
+        /* ====== BAND (center vertical) ====== */
+        .band {
+            position: relative;
+            z-index: 2;
+            align-self: stretch;
+            margin: 8px 0 8px;
+            background: var(--aqua);
+            background-image:
+                repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0 1px, transparent 1px 5px),
+                linear-gradient(180deg, var(--aqua-soft) 0%, var(--aqua) 14%, var(--aqua) 86%, var(--aqua-soft) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 0;
+            box-shadow: inset 0 0 0 1.4px #000;
+        }
+
+        .band-en {
+            font-family: "Helvetica Neue", "Arial Narrow", sans-serif;
+            font-size: 8px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #000;
+            text-align: center;
+            line-height: 1;
+            background: #fff;
+            padding: 3px 4px 2px;
+        }
+
+        .band-kanji-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            color: #000;
+            padding: 6px 0;
+            width: 100%;
+        }
+
+        .band-kanji {
+            font-weight: 900;
+            line-height: 1;
+            color: #000;
+            font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            font-size: 28px;
+        }
+
+        .band-kanji span {
+            display: block;
+            line-height: 1;
+        }
+
+        .band-kanji.stack-3 {
+            font-size: 19px;
+        }
+
+        /* ====== RIGHT COLUMN ====== */
+        .t-col-right {
+            position: relative;
+            z-index: 2;
+            padding: 8px 10px 6px 10px;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        /* BOX tag at top-right area */
+        .box-banner {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 6px;
+            margin-bottom: 2px;
+        }
+
+        .box-tag-big {
+            display: inline-flex;
+            align-items: center;
+            border: 1.6px solid #000;
+            padding: 2px 10px 3px 8px;
+            font-size: 14px;
+            font-weight: 900;
+            color: #000;
+            letter-spacing: 0.04em;
+            border-radius: 2px;
+            background: transparent;
+        }
+
+        .box-tag-small {
+            font-family: "Helvetica Neue", "Arial Narrow", sans-serif;
+            font-size: 10px;
+            font-weight: 800;
+            color: #000;
+            letter-spacing: 0.1em;
+        }
+
+        /* entries area (flex grows; footer at bottom) */
+        .entries {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+            min-width: 0;
+        }
+
+        /* TANSHO entry: umaban + horse name + amount */
+        .entry {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .entry-name-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 0;
+        }
+
+        .entry-amount-row {
+            display: flex;
+            justify-content: flex-end;
+            align-items: baseline;
+        }
+
+        .umaban {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 26px;
+            border: 1.6px solid #000;
+            background: transparent;
+            font-size: 18px;
+            font-weight: 900;
+            font-feature-settings: "tnum";
+            line-height: 1;
+            border-radius: 1px;
+            flex: 0 0 auto;
+        }
+
+        .horse-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.005em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: 0;
+            font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+        }
+
+        .amount {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 3px;
+            font-family: "Hiragino Kaku Gothic ProN", "Helvetica Neue", sans-serif;
+            color: #000;
+            font-feature-settings: "tnum";
+            white-space: nowrap;
+        }
+
+        .amount .stars {
+            color: #000;
+            font-size: 11px;
+            letter-spacing: 0.02em;
+            opacity: 0.85;
+        }
+
+        .amount .num {
+            font-size: 19px;
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+            font-weight: 600;
+        }
+
+        .amount .yen-mark {
+            display: inline-block;
+            font-size: 9px;
+            border: 1.4px solid #000;
+            padding: 1px 3px 1px;
+            margin-left: 3px;
+            border-radius: 1px;
+            font-weight: 700;
+        }
+
+        /* BOX entries — numbers row + stars row */
+        .combo-numbers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 6px;
+            align-items: center;
+            margin-bottom: 2px;
+        }
+
+        .combo-numbers .umaban {
+            width: 28px;
+            height: 24px;
+            font-size: 16px;
+        }
+
+        .combo-numbers .stargap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 24px;
+            font-size: 14px;
+            color: #000;
+            opacity: 0.7;
+        }
+
+        .combo-horses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px 8px;
+            font-size: 9.5px;
+            color: #3a3a3a;
+            margin-bottom: 4px;
+        }
+
+        .combo-horses .it {
+            display: inline-flex;
+            gap: 2px;
+            align-items: baseline;
+            white-space: nowrap;
+        }
+
+        .combo-horses .it b {
+            color: #000;
+            font-weight: 800;
+            font-feature-settings: "tnum";
+        }
+
+        .combo-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            font-size: 10px;
+            color: #000;
+        }
+
+        .combo-meta .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .combo-meta .k {
+            color: #3a3a3a;
+            letter-spacing: 0.04em;
+        }
+
+        .combo-meta .v {
+            color: #000;
+            font-weight: 800;
+            font-feature-settings: "tnum";
+        }
+
+        .combo-meta .v .stars {
+            font-size: 10px;
+            opacity: 0.7;
+            margin-right: 2px;
+        }
+
+        .combo-meta .v .num {
+            font-size: 14px;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .combo-meta .v .yen-mark {
+            display: inline-block;
+            font-size: 8px;
+            border: 1.2px solid #000;
+            padding: 0px 2px;
+            margin-left: 2px;
+            border-radius: 1px;
+            font-weight: 700;
+        }
+
+        /* ====== TICKET FOOTER (per-ticket totals) ====== */
+        .t-foot {
+            margin-top: 6px;
+            padding-top: 5px;
+            border-top: 1px dashed rgba(0, 0, 0, 0.22);
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 6px;
+            color: #000;
+            font-size: 10px;
+        }
+
+        .t-foot .lbl {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+        }
+
+        .t-foot .total {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 3px;
+        }
+
+        .t-foot .total .stars {
+            font-size: 11px;
+            color: #000;
+            opacity: 0.65;
+            letter-spacing: 0.04em;
+        }
+
+        .t-foot .total .num {
+            font-size: 15px;
+            font-weight: 800;
+            font-feature-settings: "tnum";
+        }
+
+        .t-foot .total .unit {
+            font-size: 9px;
+            margin-left: 1px;
+            font-weight: 700;
+        }
+
+        /* status chip */
+        .chip-upcoming {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 1px 4px;
+            border-radius: 1px;
+            background: #000;
+            color: var(--aqua);
+            font-size: 8px;
+            letter-spacing: 0.12em;
+            font-weight: 800;
+        }
+
+        .chip-finished {
+            background: #777;
+            color: #fff;
+        }
+
+        .chip-live {
+            background: #000;
+            color: #fff;
+        }
+
+        .chip-live::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--aqua);
+            margin-right: 3px;
+            box-shadow: 0 0 4px var(--aqua);
+        }
+
+        /* ====== NAV DOTS ====== */
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px 12px;
+            flex: 0 0 auto;
+        }
+
+        .nav .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #3a3f4a;
+            transition: transform 200ms ease, background 200ms ease, width 200ms ease;
+            cursor: pointer;
+        }
+
+        .nav .dot.on {
+            background: var(--aqua);
+            width: 22px;
+            border-radius: 4px;
+        }
+
+        .nav .dot.past {
+            background: #2a2d34;
+            opacity: 0.55;
+        }
+
+        /* ====== EMPTY ====== */
+        .empty {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #9aa1b0;
+            gap: 14px;
+            text-align: center;
+            padding: 0 30px;
+        }
+
+        .empty .ic {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 1.5px dashed #3a3f4a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5a6172;
+            font-size: 24px;
+        }
+
+        .empty .ti {
+            font-size: 16px;
+            color: #cdd2dc;
+        }
+
+        .empty .sub {
+            font-size: 12px;
+            color: #7f8696;
+            letter-spacing: 0.04em;
+        }
+
+        /* ====== TIME PILL ====== */
+        .clock {
+            position: absolute;
+            left: 50%;
+            bottom: calc(env(safe-area-inset-bottom) + 44px);
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 10px;
+            border-radius: 999px;
+            background: rgba(20, 22, 28, 0.78);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            color: #cdd2dc;
+            font-size: 11px;
+            font-feature-settings: "tnum";
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 200ms ease;
+        }
+
+        .clock.show {
+            opacity: 1;
+        }
+
+        .clock .dotlive {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #7EC8E3;
+            box-shadow: 0 0 8px #7EC8E3;
+            animation: pulse 1.6s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.4;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* ===== TWEAKS PANEL ===== */
+        .tw-fab {
+            position: fixed;
+            right: 14px;
+            bottom: calc(env(safe-area-inset-bottom) + 14px);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #1c1f26;
+            border: 1px solid #2a2e38;
+            color: #cdd2dc;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .tw-fab.on {
+            display: flex;
+        }
+
+        .tw-fab svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .tw {
+            position: fixed;
+            right: 10px;
+            bottom: calc(env(safe-area-inset-bottom) + 60px);
+            width: 260px;
+            background: #15171c;
+            border: 1px solid #262932;
+            border-radius: 12px;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+            color: #cdd2dc;
+            font-size: 12px;
+            padding: 12px;
+            z-index: 60;
+            display: none;
+        }
+
+        .tw.show {
+            display: block;
+        }
+
+        .tw h3 {
+            margin: 0 0 8px;
+            font-size: 11px;
+            letter-spacing: 0.18em;
+            color: #8d94a3;
+            font-weight: 700;
+        }
+
+        .tw .grp {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .tw .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .tw label {
+            color: #aab0bc;
+            font-size: 11px;
+        }
+
+        .tw .seg {
+            display: flex;
+            background: #0e1014;
+            border: 1px solid #262932;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .tw .seg button {
+            flex: 1;
+            appearance: none;
+            border: none;
+            background: transparent;
+            color: #9aa1b0;
+            padding: 6px 8px;
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        .tw .seg button.on {
+            background: #22262f;
+            color: #fff;
+        }
+
+        .tw input[type=range] {
+            width: 100%;
+            accent-color: var(--aqua);
+        }
+
+        .tw .close {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            background: transparent;
+            border: none;
+            color: #7f8696;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .tw select {
+            background: #0e1014;
+            color: #cdd2dc;
+            border: 1px solid #262932;
+            border-radius: 6px;
+            padding: 4px 6px;
+            font-size: 11px;
+        }
+
+        .tw .ttl-app {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #22262f;
+            padding-top: 8px;
+            margin-top: 4px;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="header-bar">
-  <span class="date" id="hdr-date"></span>
-  <span class="total" id="hdr-total"></span>
-</div>
+    <div class="app" id="app">
+        <header class="hdr">
+            <div class="hdr-date" id="hdrDate">— 年 — 月 — 日</div>
+            <div class="hdr-total">
+                <span class="lbl">TOTAL</span>
+                <span class="yen" id="hdrTotal">¥0<span class="unit">円</span></span>
+            </div>
+        </header>
 
-<div id="ticket-area">
-  <div id="ticket-wrapper"></div>
-</div>
+        <main class="stage" id="stage">
+            <div class="track" id="track"></div>
+            <div class="empty" id="empty" style="display:none;">
+                <div class="ic">—</div>
+                <div class="ti">本日の馬券はありません</div>
+                <div class="sub">No tickets for today</div>
+            </div>
+            <div class="clock" id="clock"><span class="dotlive"></span><span id="clockText">--:--:--</span><span
+                    style="color:#7f8696">JST</span></div>
+        </main>
 
-<div class="nav-area">
-  <div class="nav-dots" id="nav-dots"></div>
-  <div class="nav-info" id="nav-info"></div>
-</div>
+        <nav class="nav" id="nav"></nav>
+    </div>
 
-<script>
-const App = {
-  data: null,
-  races: [],
-  idx: 0,
-  timer: null,
-  touchSX: 0,
-  touchSY: 0,
+    <!-- Tweaks FAB -->
+    <button class="tw-fab" id="twFab" aria-label="Tweaks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3" />
+            <path
+                d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3h0a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8v0a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" />
+        </svg>
+    </button>
 
-  async init() {
-    const today = this.todayStr();
-    document.getElementById('hdr-date').textContent = this.formatDateJP(today);
+    <div class="tw" id="tw" role="dialog" aria-label="Tweaks">
+        <button class="close" id="twClose" aria-label="閉じる">×</button>
+        <h3>TWEAKS</h3>
 
-    try {
-      const r = await fetch('data/tickets_' + today + '.json?t=' + Date.now());
-      if (!r.ok) throw new Error(r.status);
-      this.data = await r.json();
-      this.races = this.data.races || [];
-    } catch {
-      this.races = [];
-    }
+        <div class="grp">
+            <div class="row"><label>デモデータ</label>
+                <div class="seg" id="segDataset">
+                    <button data-v="full" class="on">フル</button>
+                    <button data-v="single">単勝1点</button>
+                    <button data-v="empty">空</button>
+                </div>
+            </div>
 
-    if (!this.races.length) { this.showEmpty(); return; }
+            <div class="row"><label>時刻シミュレーション</label>
+                <select id="simTime">
+                    <option value="real">実時刻</option>
+                    <option value="pre">発走前 (13:50)</option>
+                    <option value="mid">途中 (14:30)</option>
+                    <option value="end">全終了 (16:30)</option>
+                </select>
+            </div>
 
-    document.getElementById('hdr-total').textContent =
-      '本日合計 ' + this.yen(this.data.grand_total);
-    this.idx = this.findCurrent();
-    this.render();
-    this.setupTouch();
-    this.timer = setInterval(() => {
-      const t = this.findCurrent();
-      if (t !== this.idx) { this.idx = t; this.render(); }
-    }, 30000);
-  },
+            <div class="row"><label>水色の濃さ</label>
+                <input type="range" id="aquaRange" min="0" max="100" value="60" />
+            </div>
 
-  todayStr() {
-    return new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Tokyo'}).replace(/-/g,'');
-  },
+            <div class="row"><label>紙の質感</label>
+                <input type="range" id="grainRange" min="0" max="100" value="80" />
+            </div>
 
-  formatDateJP(s) {
-    return s.slice(0,4)+'年'+parseInt(s.slice(4,6))+'月'+parseInt(s.slice(6,8))+'日';
-  },
+            <div class="row"><label>ウォーターマーク</label>
+                <input type="range" id="wmRange" min="0" max="100" value="40" />
+            </div>
 
-  nowMin() {
-    const s = new Date().toLocaleTimeString('en-GB',{timeZone:'Asia/Tokyo',hour12:false});
-    const [h,m] = s.split(':').map(Number);
-    return h*60+m;
-  },
+            <div class="row"><label>自動切替 (30s)</label>
+                <div class="seg" id="segAuto">
+                    <button data-v="on" class="on">ON</button>
+                    <button data-v="off">OFF</button>
+                </div>
+            </div>
+        </div>
 
-  findCurrent() {
-    const nm = this.nowMin();
-    for (let i = 0; i < this.races.length; i++) {
-      const [h,m] = this.races[i].post_time.split(':').map(Number);
-      if (h*60+m > nm) return i;
-    }
-    return this.races.length - 1;
-  },
+        <div class="ttl-app">
+            <label style="color:#6f7585; font-size:10px; letter-spacing:0.14em;">KEIBA VIEWER · v1.1</label>
+        </div>
+    </div>
 
-  setupTouch() {
-    const el = document.getElementById('ticket-area');
-    el.addEventListener('touchstart', e => {
-      this.touchSX = e.changedTouches[0].screenX;
-      this.touchSY = e.changedTouches[0].screenY;
-    }, {passive:true});
-    el.addEventListener('touchend', e => {
-      const dx = this.touchSX - e.changedTouches[0].screenX;
-      const dy = this.touchSY - e.changedTouches[0].screenY;
-      if (Math.abs(dx) < 40 || Math.abs(dy) > Math.abs(dx)) return;
-      if (dx > 0 && this.idx < this.races.length-1) { this.slide('left', 1); }
-      else if (dx < 0 && this.idx > 0) { this.slide('right', -1); }
-    }, {passive:true});
-  },
+    <!-- ===== WATERMARK SVG TEMPLATE ===== -->
+    <template id="tplWatermark">
+        <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+                <symbol id="wmMark" viewBox="0 0 100 100">
+                    <g fill="none" stroke="var(--wm)" stroke-width="6">
+                        <path d="M22 78 A 36 36 0 1 1 78 78" />
+                        <path d="M34 78 A 24 24 0 1 1 66 78" stroke-width="4" />
+                    </g>
+                    <text x="50" y="62" text-anchor="middle"
+                        font-family="Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif" font-size="38"
+                        font-weight="900" fill="var(--wm)">競</text>
+                    <g fill="var(--wm)">
+                        <circle cx="26" cy="62" r="2.2" />
+                        <circle cx="74" cy="62" r="2.2" />
+                        <circle cx="30" cy="44" r="2.2" />
+                        <circle cx="70" cy="44" r="2.2" />
+                        <circle cx="40" cy="30" r="2.2" />
+                        <circle cx="60" cy="30" r="2.2" />
+                    </g>
+                </symbol>
+                <pattern id="wmp" width="140" height="120" patternUnits="userSpaceOnUse" patternTransform="rotate(-6)">
+                    <use href="#wmMark" x="0" y="0" width="90" height="90" />
+                    <use href="#wmMark" x="70" y="60" width="90" height="90" />
+                </pattern>
+            </defs>
+            <rect width="400" height="240" fill="url(#wmp)" />
+        </svg>
+    </template>
 
-  slide(dir, delta) {
-    const w = document.getElementById('ticket-wrapper');
-    w.classList.add('slide-out-' + dir);
-    setTimeout(() => {
-      this.idx += delta;
-      this.render();
-      w.classList.remove('slide-out-' + dir);
-    }, 250);
-  },
+    <script>
+        /* ============================================================
+         *  KEIBA TICKET VIEWER — iPhone 13, JST, paper ticket aesthetic
+         *  v1.1 — one ticket per bet type, landscape aspect ratio
+         * ============================================================ */
 
-  render() {
-    const race = this.races[this.idx];
-    document.getElementById('ticket-wrapper').innerHTML = this.ticketHTML(race);
-    this.renderDots();
-    document.getElementById('nav-info').textContent =
-      (this.idx+1) + ' / ' + this.races.length;
-  },
+        const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+            "dataset": "full",
+            "simTime": "real",
+            "aqua": 100,
+            "grain": 80,
+            "watermark": 40,
+            "autoSkip": "on"
+        }/*EDITMODE-END*/;
 
-  ticketHTML(r) {
-    let sections = '';
+        let tweaks = Object.assign({}, TWEAK_DEFAULTS);
 
-    if (r.tansho && r.tansho.length) {
-      let rows = '';
-      for (const t of r.tansho) {
-        rows += '<div class="t-entry">'
-          + '<span class="umaban">' + t.umaban + '</span>'
-          + '<span class="horse-name">' + this.esc(t.horse_name) + '</span>'
-          + '<span class="entry-amount">' + this.yen(t.amount) + '</span>'
-          + '</div>';
-      }
-      sections += '<div class="t-section">'
-        + '<div class="t-section-header">'
-        + '<span class="t-type">単勝</span>'
-        + '<span class="t-type-en">WIN</span></div>'
-        + rows + '</div>';
-    }
+        /* ---------- JST helpers ---------- */
+        function jstDateStr(d = new Date()) {
+            return d.toLocaleDateString('en-CA', { timeZone: 'Asia/Tokyo' });
+        }
+        function jstTimeStr(d = new Date()) {
+            return d.toLocaleTimeString('en-GB', { timeZone: 'Asia/Tokyo', hour12: false });
+        }
+        function simulatedNow() {
+            if (tweaks.simTime === 'real') return new Date();
+            const today = jstDateStr();
+            const map = { pre: '13:50:00', mid: '14:30:00', end: '16:30:00' };
+            const t = map[tweaks.simTime] || '13:50:00';
+            return new Date(today + 'T' + t + '+09:00');
+        }
+        function nowHHMM() {
+            return simulatedNow().toLocaleTimeString('en-GB', { timeZone: 'Asia/Tokyo', hour12: false }).slice(0, 5);
+        }
+        function compareHHMM(a, b) { return a.localeCompare(b); }
 
-    if (r.umaren_box) {
-      sections += this.boxSectionHTML('馬連', 'BOX', 'QUINELLA', r.umaren_box);
-    }
-    if (r.wide_box) {
-      sections += this.boxSectionHTML('ワイド', 'BOX', 'QUINELLA PLACE', r.wide_box);
-    }
+        /* ---------- formatting ---------- */
+        const yen = n => '¥' + (n || 0).toLocaleString('en-US');
+        function starsForYen(n) {
+            const digits = String(n || 0).length;
+            const slots = Math.max(0, 6 - digits);
+            return '☆'.repeat(slots);
+        }
+        function starsForCount(n) {
+            const digits = String(n || 0).length;
+            const slots = Math.max(0, 4 - digits);
+            return '★'.repeat(slots);
+        }
+        function fmtJPDate(yyyy_mm_dd) {
+            const [y, m, d] = yyyy_mm_dd.split('-').map(Number);
+            return `${y}年${m}月${d}日`;
+        }
+        function jpWeekday(yyyy_mm_dd) {
+            const [y, m, d] = yyyy_mm_dd.split('-').map(Number);
+            const dt = new Date(Date.UTC(y, m - 1, d));
+            return ['日', '月', '火', '水', '木', '金', '土'][dt.getUTCDay()];
+        }
 
-    return '<div class="ticket">'
-      + '<div class="ticket-accent"></div>'
-      + '<div class="ticket-inner">'
-      + '<div class="t-header">'
-        + '<div>'
-          + '<div class="t-venue">' + this.esc(r.venue) + '</div>'
-          + '<div class="t-race"><span class="t-race-num">' + r.race_number
-          + '</span><span class="t-race-label">レース</span></div>'
-        + '</div>'
-        + '<div class="t-meta">'
-          + '<div class="t-posttime">' + r.post_time + '</div>'
-          + '<div class="t-posttime-label">発走</div>'
-          + '<div class="t-track">' + this.esc(r.track) + ' '
-          + (r.distance ? r.distance + 'm' : '') + '</div>'
-        + '</div>'
-      + '</div>'
-      + '<hr class="t-divider">'
-      + '<div class="t-sections">' + sections + '</div>'
-      + '<div class="t-footer">'
-        + '<span class="t-total-label">合計</span>'
-        + '<span class="t-total-amount">' + this.yen(r.total_amount) + '</span>'
-      + '</div>'
-      + '</div></div>';
-  },
+        /* ---------- dummy data ---------- */
+        const DUMMY = {
+            date: jstDateStr(),
+            generated_at: new Date().toISOString(),
+            races: [
+                {
+                    venue: "中山", race_number: 9, post_time: "14:10",
+                    track: "芝", distance: 1600,
+                    tansho: [
+                        { umaban: 6, horse_name: "ナカヤマブレイブ", amount: 1500, sources: ["L1"] }
+                    ],
+                    umaren_box: null,
+                    wide_box: {
+                        members: [6, 11],
+                        horse_names: ["ナカヤマブレイブ", "リバーサイド"],
+                        combos: 1, amount_per_combo: 800, subtotal: 800
+                    },
+                    total_amount: 2300
+                },
+                {
+                    venue: "東京", race_number: 11, post_time: "15:40",
+                    track: "芝", distance: 2400,
+                    tansho: [
+                        { umaban: 3, horse_name: "ステイホーム", amount: 2800, sources: ["L1", "L2"] },
+                        { umaban: 7, horse_name: "サンプルホース", amount: 900, sources: ["L1"] }
+                    ],
+                    umaren_box: {
+                        members: [3, 7, 12],
+                        horse_names: ["ステイホーム", "サンプルホース", "テストウマ"],
+                        combos: 3, amount_per_combo: 900, subtotal: 2700
+                    },
+                    wide_box: {
+                        members: [3, 7, 12],
+                        horse_names: ["ステイホーム", "サンプルホース", "テストウマ"],
+                        combos: 3, amount_per_combo: 1100, subtotal: 3300
+                    },
+                    total_amount: 9700
+                },
+                {
+                    venue: "阪神", race_number: 12, post_time: "16:25",
+                    track: "ダ", distance: 1200,
+                    tansho: [
+                        { umaban: 14, horse_name: "ハンシンサンダー", amount: 1200, sources: ["L2"] }
+                    ],
+                    umaren_box: null, wide_box: null,
+                    total_amount: 1200
+                }
+            ],
+            grand_total: 13200
+        };
+        const DUMMY_SINGLE = {
+            date: jstDateStr(),
+            races: [{
+                venue: "東京", race_number: 11, post_time: "15:40",
+                track: "芝", distance: 2400,
+                tansho: [{ umaban: 3, horse_name: "ステイホーム", amount: 1000, sources: ["L1"] }],
+                umaren_box: null, wide_box: null,
+                total_amount: 1000
+            }],
+            grand_total: 1000
+        };
+        const DUMMY_EMPTY = { date: jstDateStr(), races: [], grand_total: 0 };
 
-  boxSectionHTML(kanji, sub, en, box) {
-    let members = '';
-    for (const m of box.members) {
-      members += '<span class="umaban">' + m + '</span>';
-    }
-    return '<div class="t-section">'
-      + '<div class="t-section-header">'
-      + '<span class="t-type">' + kanji + '</span>'
-      + '<span class="t-type-sub">' + sub + '</span>'
-      + '<span class="t-type-en">' + en + '</span></div>'
-      + '<div class="t-box-members">' + members + '</div>'
-      + '<div class="t-box-detail">'
-        + '<span>' + box.combos + '組 &times; ' + this.yen(box.amount_per_combo) + '</span>'
-        + '<span class="t-box-amount">' + this.yen(box.subtotal) + '</span>'
-      + '</div></div>';
-  },
+        function getDataset() {
+            if (tweaks.dataset === 'single') return DUMMY_SINGLE;
+            if (tweaks.dataset === 'empty') return DUMMY_EMPTY;
+            return DUMMY;
+        }
 
-  renderDots() {
-    const c = document.getElementById('nav-dots');
-    c.innerHTML = this.races.map((_,i) =>
-      '<span class="dot' + (i===this.idx?' active':'') + '" onclick="App.goTo('+i+')"></span>'
-    ).join('');
-  },
+        /* ---------- state ---------- */
+        let state = {
+            data: null,
+            index: 0,
+            autoTimer: null,
+        };
 
-  goTo(i) {
-    const dir = i > this.idx ? 'left' : 'right';
-    const delta = i - this.idx;
-    const w = document.getElementById('ticket-wrapper');
-    w.classList.add('slide-out-' + dir);
-    setTimeout(() => {
-      this.idx = i;
-      this.render();
-      w.classList.remove('slide-out-' + dir);
-    }, 250);
-  },
+        const $ = sel => document.querySelector(sel);
+        const $$ = sel => Array.from(document.querySelectorAll(sel));
 
-  showEmpty() {
-    document.getElementById('ticket-wrapper').innerHTML =
-      '<div class="empty-state"><div class="empty-icon">🏇</div>'
-      + '<div class="empty-text">本日の馬券はありません</div></div>';
-    document.getElementById('nav-dots').innerHTML = '';
-    document.getElementById('nav-info').textContent = '';
-    document.getElementById('hdr-total').textContent = '';
-  },
+        function renderHeader(data) {
+            $('#hdrDate').textContent = fmtJPDate(data.date);
+            $('#hdrTotal').innerHTML = `${yen(data.grand_total)}<span class="unit">円</span>`;
+        }
 
-  yen(n) { return '¥' + Number(n).toLocaleString(); },
-  esc(s) { const d=document.createElement('div');d.textContent=s;return d.innerHTML; }
-};
+        function raceStatus(race) {
+            const now = nowHHMM();
+            const cmp = compareHHMM(now, race.post_time);
+            if (cmp < 0) return 'upcoming';
+            if (cmp > 0) return 'finished';
+            return 'now';
+        }
 
-document.addEventListener('DOMContentLoaded', () => App.init());
-</script>
+        /* Build tickets list for a race */
+        function ticketsForRace(race) {
+            const tickets = [];
+            if (race.tansho && race.tansho.length) {
+                tickets.push({
+                    kind: 'tansho',
+                    kanji: '単勝',
+                    en_top: 'WIN', en_bot: 'WIN',
+                    isBox: false,
+                    entries: race.tansho.map(t => ({ umaban: t.umaban, horse_name: t.horse_name, amount: t.amount })),
+                    count: race.tansho.length,
+                    subtotal: race.tansho.reduce((s, t) => s + (t.amount || 0), 0),
+                });
+            }
+            if (race.umaren_box) {
+                const b = race.umaren_box;
+                tickets.push({
+                    kind: 'umaren',
+                    kanji: '馬連',
+                    en_top: 'QUINELLA', en_bot: 'QUINELLA',
+                    isBox: true,
+                    members: b.members, horse_names: b.horse_names,
+                    combos: b.combos, per: b.amount_per_combo,
+                    subtotal: b.subtotal,
+                    count: b.combos,
+                });
+            }
+            if (race.wide_box) {
+                const b = race.wide_box;
+                tickets.push({
+                    kind: 'wide',
+                    kanji: 'ワイド',
+                    en_top: 'QUINELLA', en_bot: 'PLACE',
+                    isBox: true,
+                    members: b.members, horse_names: b.horse_names,
+                    combos: b.combos, per: b.amount_per_combo,
+                    subtotal: b.subtotal,
+                    count: b.combos,
+                });
+            }
+            return tickets;
+        }
+
+        /* render one ticket card (landscape) */
+        function renderTicketCard(race, ticket, idx, raceIdx) {
+            const dateStr = state.data.date;
+            const dow = jpWeekday(dateStr);
+            const status = raceStatus(race);
+            const statusChip =
+                status === 'now' ? `<span class="chip-upcoming chip-live">LIVE</span>`
+                    : status === 'finished' ? `<span class="chip-upcoming chip-finished">FINISHED</span>`
+                        : `<span class="chip-upcoming">UPCOMING</span>`;
+
+            const kanjiChars = ticket.kanji.split('');
+            const kanjiCls = kanjiChars.length >= 3 ? 'band-kanji stack-3' : 'band-kanji';
+            const kanjiHtml = `<div class="${kanjiCls}">${kanjiChars.map(c => `<span>${c}</span>`).join('')}</div>`;
+
+            // right column content
+            let rightContent = '';
+            if (!ticket.isBox) {
+                rightContent = `
+      <div class="entries">
+        ${ticket.entries.map(e => `
+          <div class="entry">
+            <div class="entry-name-row">
+              <div class="umaban">${e.umaban}</div>
+              <div class="horse-name">${e.horse_name}</div>
+            </div>
+            <div class="entry-amount-row">
+              <div class="amount">
+                <span class="stars">${starsForYen(e.amount)}</span>
+                <span class="num">${(e.amount || 0).toLocaleString('en-US')}</span>
+                <span class="yen-mark">円</span>
+              </div>
+            </div>
+          </div>
+        `).join('')}
+      </div>`;
+            } else {
+                // BOX layout: BOX banner, umaban row with ☆ placeholders to 5 slots, horse names list, then 組合せ/各組/合計
+                const slots = 5;
+                const filled = ticket.members.length;
+                const memberCells = ticket.members.map(m => `<span class="umaban">${m}</span>`).join('');
+                const starCells = Array.from({ length: Math.max(0, slots - filled) }).map(() => `<span class="stargap">☆</span>`).join('');
+                rightContent = `
+      <div class="box-banner">
+        <div class="box-tag-big">ボックス</div>
+        <div class="box-tag-small">BOX</div>
+      </div>
+      <div class="entries">
+        <div class="combo-numbers">
+          ${memberCells}${starCells}
+        </div>
+        <div class="combo-horses">
+          ${ticket.members.map((m, i) => `<span class="it"><b>${m}</b>${ticket.horse_names[i] || ''}</span>`).join('')}
+        </div>
+        <div class="combo-meta">
+          <div class="row">
+            <span class="k">組合せ数</span>
+            <span class="v"><span class="num">${ticket.combos}</span>通り</span>
+          </div>
+          <div class="row">
+            <span class="k">各組</span>
+            <span class="v">
+              <span class="stars">${starsForYen(ticket.per)}</span>
+              <span class="num">${(ticket.per || 0).toLocaleString('en-US')}</span>
+              <span class="yen-mark">円</span>
+            </span>
+          </div>
+        </div>
+      </div>`;
+            }
+
+            // footer per ticket
+            const ticketFoot = `
+    <div class="t-foot">
+      <span class="lbl">合計</span>
+      <div class="total">
+        <span class="stars">${starsForCount(ticket.count)}</span>
+        <span class="num">${ticket.count}</span><span class="unit">枚</span>
+      </div>
+      <div class="total">
+        <span class="stars">${starsForYen(ticket.subtotal)}</span>
+        <span class="num">${(ticket.subtotal || 0).toLocaleString('en-US')}</span><span class="unit">円</span>
+      </div>
+    </div>`;
+
+            const cardId = `wm-${raceIdx}-${idx}`;
+            return `
+    <article class="ticket" data-kind="${ticket.kind}">
+      <div class="wm" id="${cardId}"></div>
+
+      <div class="t-col-left">
+        <div class="t-yymd">${fmtJPDate(dateStr)}</div>
+        <div class="t-venue-block">
+          <div class="t-venue">${race.venue}<span class="t-venue-dow">(${dow})</span></div>
+          <div class="t-race">
+            <span class="t-race-badge">${race.race_number}</span>
+            <span class="t-race-suffix">レース</span>
+          </div>
+        </div>
+        <div class="t-left-bottom">
+          <div class="post-time">${race.post_time} 発走</div>
+          <div class="course">${race.track}${race.distance}m</div>
+          <div class="status">${statusChip}</div>
+        </div>
+      </div>
+
+      <div class="band">
+        <div class="band-en">${ticket.en_top}</div>
+        <div class="band-kanji-wrap">
+          ${kanjiHtml}
+        </div>
+        <div class="band-en">${ticket.en_bot}</div>
+      </div>
+
+      <div class="t-col-right">
+        ${rightContent}
+        ${ticketFoot}
+      </div>
+    </article>
+  `;
+        }
+
+        /* build a slide for one race (multiple tickets stacked vertically) */
+        function buildSlide(race, idx) {
+            const tk = document.createElement('div');
+            tk.className = 'slide';
+            const tickets = ticketsForRace(race);
+            if (tickets.length >= 3) tk.classList.add('tight');
+
+            tk.innerHTML = tickets.map((t, i) => renderTicketCard(race, t, i, idx)).join('');
+
+            // inject watermark SVG into each .wm
+            setTimeout(() => {
+                const tpl = document.getElementById('tplWatermark');
+                tk.querySelectorAll('.wm').forEach(host => {
+                    host.appendChild(tpl.content.cloneNode(true));
+                });
+            }, 0);
+
+            return tk;
+        }
+
+        /* ---------- render full ---------- */
+        function render() {
+            const data = state.data;
+            renderHeader(data);
+
+            const track = $('#track');
+            track.innerHTML = '';
+
+            if (!data.races || !data.races.length) {
+                $('#empty').style.display = 'flex';
+                $('#nav').innerHTML = '';
+                return;
+            } else {
+                $('#empty').style.display = 'none';
+            }
+
+            data.races.forEach((race, i) => {
+                track.appendChild(buildSlide(race, i));
+            });
+
+            renderNav();
+            applyTransform(false);
+        }
+
+        function renderNav() {
+            const nav = $('#nav');
+            nav.innerHTML = '';
+            state.data.races.forEach((r, i) => {
+                const d = document.createElement('span');
+                d.className = 'dot';
+                if (i === state.index) d.classList.add('on');
+                if (raceStatus(r) === 'finished' && i !== state.index) d.classList.add('past');
+                d.addEventListener('click', () => goTo(i));
+                nav.appendChild(d);
+            });
+        }
+
+        function applyTransform(animate = true) {
+            const track = $('#track');
+            track.style.transition = animate ? 'transform 250ms ease' : 'none';
+            track.style.transform = `translateX(${-state.index * 100}%)`;
+            $$('.dot').forEach((d, i) => d.classList.toggle('on', i === state.index));
+        }
+
+        function goTo(i, animate = true) {
+            if (!state.data.races.length) return;
+            state.index = Math.max(0, Math.min(state.data.races.length - 1, i));
+            applyTransform(animate);
+            renderNav();
+        }
+
+        /* ---------- swipe ---------- */
+        (function attachSwipe() {
+            const stage = $('#stage');
+            let sx = 0, sy = 0, dx = 0, dy = 0, t0 = 0, active = false, locked = false;
+            stage.addEventListener('touchstart', e => {
+                const t = e.touches[0]; sx = t.clientX; sy = t.clientY; dx = 0; dy = 0; t0 = Date.now(); active = true; locked = false;
+                $('#track').style.transition = 'none';
+            }, { passive: true });
+            stage.addEventListener('touchmove', e => {
+                if (!active) return;
+                const t = e.touches[0]; dx = t.clientX - sx; dy = t.clientY - sy;
+                if (!locked) {
+                    if (Math.abs(dx) > 8 || Math.abs(dy) > 8) {
+                        locked = Math.abs(dy) > Math.abs(dx); // lock vertical → allow native scroll
+                    }
+                }
+                if (!locked) {
+                    const w = stage.clientWidth;
+                    $('#track').style.transform = `translateX(${(-state.index * 100) + (dx / w * 100)}%)`;
+                }
+            }, { passive: true });
+            stage.addEventListener('touchend', () => {
+                if (!active) return; active = false;
+                if (locked) { applyTransform(true); return; }
+                const w = stage.clientWidth;
+                const elapsed = Date.now() - t0;
+                if (Math.abs(dx) > 40 || (Math.abs(dx) > 20 && elapsed < 250)) {
+                    if (dx < 0) goTo(state.index + 1);
+                    else goTo(state.index - 1);
+                } else {
+                    applyTransform(true);
+                }
+            });
+            // mouse for desktop dev
+            let md = false;
+            stage.addEventListener('mousedown', e => { md = true; sx = e.clientX; sy = e.clientY; dx = 0; t0 = Date.now(); $('#track').style.transition = 'none'; });
+            window.addEventListener('mousemove', e => {
+                if (!md) return; dx = e.clientX - sx;
+                const w = stage.clientWidth;
+                $('#track').style.transform = `translateX(${(-state.index * 100) + (dx / w * 100)}%)`;
+            });
+            window.addEventListener('mouseup', () => {
+                if (!md) return; md = false;
+                if (Math.abs(dx) > 40) { if (dx < 0) goTo(state.index + 1); else goTo(state.index - 1); }
+                else applyTransform(true);
+            });
+        })();
+
+        /* ---------- auto-skip ---------- */
+        function autoSkipCheck() {
+            if (!state.data || !state.data.races.length) return;
+            if (tweaks.autoSkip !== 'on') return;
+            const cur = state.data.races[state.index];
+            if (!cur) return;
+            if (raceStatus(cur) === 'finished') {
+                let nxt = state.data.races.findIndex((r, i) => i > state.index && raceStatus(r) !== 'finished');
+                if (nxt === -1) {
+                    goTo(state.data.races.length - 1);
+                } else {
+                    goTo(nxt);
+                }
+            }
+        }
+
+        /* ---------- clock ---------- */
+        function updateClock() {
+            const d = simulatedNow();
+            $('#clockText').textContent = d.toLocaleTimeString('en-GB', { timeZone: 'Asia/Tokyo', hour12: false });
+        }
+        function flashClock() {
+            const c = $('#clock');
+            c.classList.add('show');
+            clearTimeout(flashClock._t);
+            flashClock._t = setTimeout(() => c.classList.remove('show'), 1400);
+        }
+
+        /* ---------- load ---------- */
+        async function load() {
+            const today = jstDateStr();
+            let data = null;
+            try {
+                const r = await fetch('data/tickets_' + today.replace(/-/g, '') + '.json?t=' + Date.now(), { cache: 'no-store' });
+                if (r.ok) data = await r.json();
+            } catch (e) { /* ignore */ }
+            state.data = data || { date: today, races: [], grand_total: 0 };
+            let first = state.data.races.findIndex(r => raceStatus(r) !== 'finished');
+            if (first === -1) first = Math.max(0, state.data.races.length - 1);
+            state.index = first;
+            render();
+            applyTweakStyles();
+        }
+
+        /* ---------- tweaks ---------- */
+        function applyTweakStyles() {
+            const root = document.documentElement;
+            const t = (tweaks.aqua || 0) / 100;
+            const lerp = (a, b, t) => Math.round(a + (b - a) * t);
+            const r = lerp(207, 95, t), g = lerp(233, 182, t), b = lerp(243, 214, t);
+            root.style.setProperty('--aqua', `rgb(${r},${g},${b})`);
+            const r2 = lerp(220, 182, t), g2 = lerp(240, 223, t), b2 = lerp(248, 238, t);
+            root.style.setProperty('--aqua-soft', `rgb(${r2},${g2},${b2})`);
+            document.documentElement.style.setProperty('--grain', String(tweaks.grain / 100));
+            document.documentElement.style.setProperty('--wm-opacity', String(tweaks.watermark / 100));
+        }
+
+        function setTweak(key, value) {
+            tweaks[key] = value;
+            try {
+                window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { [key]: value } }, '*');
+            } catch (e) { }
+        }
+
+        function bindTweaks() {
+            const tw = $('#tw');
+            window.addEventListener('message', e => {
+                const d = e.data;
+                if (!d || !d.type) return;
+                if (d.type === '__activate_edit_mode') {
+                    tw.classList.add('show');
+                } else if (d.type === '__deactivate_edit_mode') {
+                    tw.classList.remove('show');
+                }
+            });
+            try { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); } catch (e) { }
+
+            $('#twClose').addEventListener('click', () => {
+                tw.classList.remove('show');
+                try { window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*'); } catch (e) { }
+            });
+
+            $('#segDataset').querySelectorAll('button').forEach(b => {
+                b.addEventListener('click', () => {
+                    $('#segDataset').querySelectorAll('button').forEach(x => x.classList.remove('on'));
+                    b.classList.add('on');
+                    setTweak('dataset', b.dataset.v);
+                    state.data = getDataset();
+                    let first = state.data.races.findIndex(r => raceStatus(r) !== 'finished');
+                    if (first === -1) first = Math.max(0, state.data.races.length - 1);
+                    state.index = first;
+                    render();
+                });
+            });
+            $('#simTime').addEventListener('change', (e) => {
+                setTweak('simTime', e.target.value);
+                renderNav();
+                autoSkipCheck();
+                updateClock();
+            });
+            $('#aquaRange').addEventListener('input', e => { setTweak('aqua', +e.target.value); applyTweakStyles(); });
+            $('#grainRange').addEventListener('input', e => { setTweak('grain', +e.target.value); applyTweakStyles(); });
+            $('#wmRange').addEventListener('input', e => { setTweak('watermark', +e.target.value); applyTweakStyles(); });
+            $('#segAuto').querySelectorAll('button').forEach(b => {
+                b.addEventListener('click', () => {
+                    $('#segAuto').querySelectorAll('button').forEach(x => x.classList.remove('on'));
+                    b.classList.add('on');
+                    setTweak('autoSkip', b.dataset.v);
+                });
+            });
+
+            // sync controls to tweak values
+            $('#segDataset').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.v === tweaks.dataset));
+            $('#segAuto').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.v === tweaks.autoSkip));
+            $('#simTime').value = tweaks.simTime;
+            $('#aquaRange').value = tweaks.aqua;
+            $('#grainRange').value = tweaks.grain;
+            $('#wmRange').value = tweaks.watermark;
+        }
+
+        /* ---------- init ---------- */
+        window.addEventListener('load', async () => {
+            bindTweaks();
+            await load();
+            updateClock();
+            setInterval(() => { updateClock(); autoSkipCheck(); renderNav(); }, 30000);
+            setInterval(() => { updateClock(); }, 1000);
+            flashClock();
+        });
+    </script>
 </body>
+
 </html>
