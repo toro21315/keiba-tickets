@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>馬券ビューア</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --accent:#7EC8E3;
+  --accent-dark:#5BA3C9;
+  --bg-cream:#F5F0E8;
+  --bg-page:#D5D0C8;
+  --text-dark:#1A1A1A;
+  --text-mid:#4A4A4A;
+  --text-light:#888;
+  --badge-bg:#1A1A1A;
+  --badge-text:#FFF;
+  --divider:#D0C8B8;
+}
+html,body{
+  height:100%;
+  overflow:hidden;
+  font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP","Helvetica Neue",sans-serif;
+  -webkit-font-smoothing:antialiased;
+  background:var(--bg-page);
+  color:var(--text-dark);
+}
+body{
+  display:flex;
+  flex-direction:column;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  height:100dvh;
+}
+
+/* ---- Header bar ---- */
+.header-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:8px 16px;
+  font-size:13px;
+  color:var(--text-mid);
+  flex-shrink:0;
+}
+.header-bar .date{font-weight:700;font-size:14px;color:var(--text-dark)}
+.header-bar .total{font-size:12px}
+
+/* ---- Ticket container ---- */
+#ticket-area{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  position:relative;
+}
+#ticket-wrapper{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:opacity .25s ease, transform .25s ease;
+}
+
+/* ---- Ticket card ---- */
+.ticket{
+  position:relative;
+  width:calc(100vw - 32px);
+  max-width:358px;
+  background:var(--bg-cream);
+  border-radius:5px;
+  box-shadow:0 2px 12px rgba(0,0,0,.12),0 1px 3px rgba(0,0,0,.08);
+  overflow:hidden;
+  background-image:
+    repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.006) 3px,rgba(0,0,0,.006) 4px);
+  background-color:var(--bg-cream);
+}
+.ticket::after{
+  content:"JRA";
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:72px;
+  font-weight:900;
+  color:rgba(0,0,0,.022);
+  pointer-events:none;
+  letter-spacing:6px;
+}
+.ticket-accent{
+  position:absolute;
+  left:0;top:0;bottom:0;
+  width:7px;
+  background:linear-gradient(180deg,var(--accent) 0%,var(--accent-dark) 100%);
+  z-index:1;
+}
+
+.ticket-inner{
+  position:relative;
+  padding:16px 16px 14px 22px;
+  z-index:1;
+}
+
+/* ---- Ticket header ---- */
+.t-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px}
+.t-venue{font-size:28px;font-weight:900;letter-spacing:3px;line-height:1.1}
+.t-race{display:flex;align-items:center;gap:3px;margin-top:4px}
+.t-race-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--badge-bg);color:var(--badge-text);
+  font-size:20px;font-weight:900;
+  min-width:32px;height:32px;border-radius:4px;padding:0 5px;
+}
+.t-race-label{font-size:18px;font-weight:700}
+.t-meta{text-align:right}
+.t-posttime{font-size:20px;font-weight:800;color:var(--text-dark)}
+.t-posttime-label{font-size:11px;color:var(--text-mid);margin-top:1px}
+.t-track{font-size:13px;color:var(--text-mid);margin-top:2px}
+
+/* ---- Divider ---- */
+.t-divider{border:none;border-top:1px solid var(--divider);margin:10px 0}
+
+/* ---- Section ---- */
+.t-section{margin-bottom:10px}
+.t-section:last-of-type{margin-bottom:6px}
+.t-section-header{
+  display:flex;align-items:baseline;gap:8px;margin-bottom:6px;
+}
+.t-type{font-size:20px;font-weight:900;letter-spacing:4px}
+.t-type-sub{font-size:13px;font-weight:700;color:var(--text-mid)}
+.t-type-en{font-size:11px;color:var(--text-light);letter-spacing:1px;margin-left:auto}
+
+/* ---- Tansho entry ---- */
+.t-entry{
+  display:flex;align-items:center;gap:8px;
+  padding:5px 0;
+}
+.umaban{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--badge-bg);color:var(--badge-text);
+  font-size:18px;font-weight:700;
+  min-width:30px;height:30px;border-radius:3px;padding:0 4px;
+  flex-shrink:0;
+}
+.horse-name{font-size:15px;font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.entry-amount{font-size:16px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+
+/* ---- BOX entries ---- */
+.t-box-members{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px}
+.t-box-detail{
+  display:flex;align-items:baseline;justify-content:space-between;
+  font-size:13px;color:var(--text-mid);
+}
+.t-box-amount{font-size:16px;font-weight:700;color:var(--text-dark)}
+
+/* ---- Footer ---- */
+.t-footer{
+  display:flex;align-items:baseline;justify-content:flex-end;gap:10px;
+  border-top:2px solid var(--text-dark);
+  padding-top:10px;margin-top:6px;
+}
+.t-total-label{font-size:14px;font-weight:700;color:var(--text-mid)}
+.t-total-amount{font-size:24px;font-weight:900}
+
+/* ---- Navigation ---- */
+.nav-area{
+  flex-shrink:0;
+  padding:12px 0 8px;
+  text-align:center;
+}
+.nav-dots{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:0 20px}
+.dot{
+  width:8px;height:8px;border-radius:50%;
+  background:rgba(0,0,0,.18);
+  transition:all .2s;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+.dot.active{background:var(--accent-dark);transform:scale(1.4)}
+.nav-info{font-size:11px;color:var(--text-light);margin-top:6px}
+
+/* ---- Empty state ---- */
+.empty-state{
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  height:100%;color:var(--text-mid);
+}
+.empty-icon{font-size:48px;margin-bottom:12px}
+.empty-text{font-size:16px}
+
+/* ---- Scroll for many entries ---- */
+.t-sections{max-height:calc(100dvh - 210px);overflow-y:auto;-webkit-overflow-scrolling:touch}
+
+/* ---- Transition classes ---- */
+.slide-out-left{transform:translateX(-30px);opacity:0}
+.slide-out-right{transform:translateX(30px);opacity:0}
+</style>
+</head>
+<body>
+
+<div class="header-bar">
+  <span class="date" id="hdr-date"></span>
+  <span class="total" id="hdr-total"></span>
+</div>
+
+<div id="ticket-area">
+  <div id="ticket-wrapper"></div>
+</div>
+
+<div class="nav-area">
+  <div class="nav-dots" id="nav-dots"></div>
+  <div class="nav-info" id="nav-info"></div>
+</div>
+
+<script>
+const App = {
+  data: null,
+  races: [],
+  idx: 0,
+  timer: null,
+  touchSX: 0,
+  touchSY: 0,
+
+  async init() {
+    const today = this.todayStr();
+    document.getElementById('hdr-date').textContent = this.formatDateJP(today);
+
+    try {
+      const r = await fetch('data/tickets_' + today + '.json?t=' + Date.now());
+      if (!r.ok) throw new Error(r.status);
+      this.data = await r.json();
+      this.races = this.data.races || [];
+    } catch {
+      this.races = [];
+    }
+
+    if (!this.races.length) { this.showEmpty(); return; }
+
+    document.getElementById('hdr-total').textContent =
+      '本日合計 ' + this.yen(this.data.grand_total);
+    this.idx = this.findCurrent();
+    this.render();
+    this.setupTouch();
+    this.timer = setInterval(() => {
+      const t = this.findCurrent();
+      if (t !== this.idx) { this.idx = t; this.render(); }
+    }, 30000);
+  },
+
+  todayStr() {
+    return new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Tokyo'}).replace(/-/g,'');
+  },
+
+  formatDateJP(s) {
+    return s.slice(0,4)+'年'+parseInt(s.slice(4,6))+'月'+parseInt(s.slice(6,8))+'日';
+  },
+
+  nowMin() {
+    const s = new Date().toLocaleTimeString('en-GB',{timeZone:'Asia/Tokyo',hour12:false});
+    const [h,m] = s.split(':').map(Number);
+    return h*60+m;
+  },
+
+  findCurrent() {
+    const nm = this.nowMin();
+    for (let i = 0; i < this.races.length; i++) {
+      const [h,m] = this.races[i].post_time.split(':').map(Number);
+      if (h*60+m > nm) return i;
+    }
+    return this.races.length - 1;
+  },
+
+  setupTouch() {
+    const el = document.getElementById('ticket-area');
+    el.addEventListener('touchstart', e => {
+      this.touchSX = e.changedTouches[0].screenX;
+      this.touchSY = e.changedTouches[0].screenY;
+    }, {passive:true});
+    el.addEventListener('touchend', e => {
+      const dx = this.touchSX - e.changedTouches[0].screenX;
+      const dy = this.touchSY - e.changedTouches[0].screenY;
+      if (Math.abs(dx) < 40 || Math.abs(dy) > Math.abs(dx)) return;
+      if (dx > 0 && this.idx < this.races.length-1) { this.slide('left', 1); }
+      else if (dx < 0 && this.idx > 0) { this.slide('right', -1); }
+    }, {passive:true});
+  },
+
+  slide(dir, delta) {
+    const w = document.getElementById('ticket-wrapper');
+    w.classList.add('slide-out-' + dir);
+    setTimeout(() => {
+      this.idx += delta;
+      this.render();
+      w.classList.remove('slide-out-' + dir);
+    }, 250);
+  },
+
+  render() {
+    const race = this.races[this.idx];
+    document.getElementById('ticket-wrapper').innerHTML = this.ticketHTML(race);
+    this.renderDots();
+    document.getElementById('nav-info').textContent =
+      (this.idx+1) + ' / ' + this.races.length;
+  },
+
+  ticketHTML(r) {
+    let sections = '';
+
+    if (r.tansho && r.tansho.length) {
+      let rows = '';
+      for (const t of r.tansho) {
+        rows += '<div class="t-entry">'
+          + '<span class="umaban">' + t.umaban + '</span>'
+          + '<span class="horse-name">' + this.esc(t.horse_name) + '</span>'
+          + '<span class="entry-amount">' + this.yen(t.amount) + '</span>'
+          + '</div>';
+      }
+      sections += '<div class="t-section">'
+        + '<div class="t-section-header">'
+        + '<span class="t-type">単勝</span>'
+        + '<span class="t-type-en">WIN</span></div>'
+        + rows + '</div>';
+    }
+
+    if (r.umaren_box) {
+      sections += this.boxSectionHTML('馬連', 'BOX', 'QUINELLA', r.umaren_box);
+    }
+    if (r.wide_box) {
+      sections += this.boxSectionHTML('ワイド', 'BOX', 'QUINELLA PLACE', r.wide_box);
+    }
+
+    return '<div class="ticket">'
+      + '<div class="ticket-accent"></div>'
+      + '<div class="ticket-inner">'
+      + '<div class="t-header">'
+        + '<div>'
+          + '<div class="t-venue">' + this.esc(r.venue) + '</div>'
+          + '<div class="t-race"><span class="t-race-num">' + r.race_number
+          + '</span><span class="t-race-label">レース</span></div>'
+        + '</div>'
+        + '<div class="t-meta">'
+          + '<div class="t-posttime">' + r.post_time + '</div>'
+          + '<div class="t-posttime-label">発走</div>'
+          + '<div class="t-track">' + this.esc(r.track) + ' '
+          + (r.distance ? r.distance + 'm' : '') + '</div>'
+        + '</div>'
+      + '</div>'
+      + '<hr class="t-divider">'
+      + '<div class="t-sections">' + sections + '</div>'
+      + '<div class="t-footer">'
+        + '<span class="t-total-label">合計</span>'
+        + '<span class="t-total-amount">' + this.yen(r.total_amount) + '</span>'
+      + '</div>'
+      + '</div></div>';
+  },
+
+  boxSectionHTML(kanji, sub, en, box) {
+    let members = '';
+    for (const m of box.members) {
+      members += '<span class="umaban">' + m + '</span>';
+    }
+    return '<div class="t-section">'
+      + '<div class="t-section-header">'
+      + '<span class="t-type">' + kanji + '</span>'
+      + '<span class="t-type-sub">' + sub + '</span>'
+      + '<span class="t-type-en">' + en + '</span></div>'
+      + '<div class="t-box-members">' + members + '</div>'
+      + '<div class="t-box-detail">'
+        + '<span>' + box.combos + '組 &times; ' + this.yen(box.amount_per_combo) + '</span>'
+        + '<span class="t-box-amount">' + this.yen(box.subtotal) + '</span>'
+      + '</div></div>';
+  },
+
+  renderDots() {
+    const c = document.getElementById('nav-dots');
+    c.innerHTML = this.races.map((_,i) =>
+      '<span class="dot' + (i===this.idx?' active':'') + '" onclick="App.goTo('+i+')"></span>'
+    ).join('');
+  },
+
+  goTo(i) {
+    const dir = i > this.idx ? 'left' : 'right';
+    const delta = i - this.idx;
+    const w = document.getElementById('ticket-wrapper');
+    w.classList.add('slide-out-' + dir);
+    setTimeout(() => {
+      this.idx = i;
+      this.render();
+      w.classList.remove('slide-out-' + dir);
+    }, 250);
+  },
+
+  showEmpty() {
+    document.getElementById('ticket-wrapper').innerHTML =
+      '<div class="empty-state"><div class="empty-icon">🏇</div>'
+      + '<div class="empty-text">本日の馬券はありません</div></div>';
+    document.getElementById('nav-dots').innerHTML = '';
+    document.getElementById('nav-info').textContent = '';
+    document.getElementById('hdr-total').textContent = '';
+  },
+
+  yen(n) { return '¥' + Number(n).toLocaleString(); },
+  esc(s) { const d=document.createElement('div');d.textContent=s;return d.innerHTML; }
+};
+
+document.addEventListener('DOMContentLoaded', () => App.init());
+</script>
+</body>
+</html>
