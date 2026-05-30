@@ -1502,19 +1502,21 @@
         })();
 
         /* ---------- auto-skip ---------- */
+        /* 「最も新しく発走時刻に到達したレース」を返す。未到達なら先頭レース。 */
+        function pickCurrentIndex() {
+            if (!state.data || !state.data.races.length) return 0;
+            const now = nowHHMM();
+            let idx = 0;
+            for (let i = 0; i < state.data.races.length; i++) {
+                if (compareHHMM(now, state.data.races[i].post_time) >= 0) idx = i;
+            }
+            return idx;
+        }
         function autoSkipCheck() {
             if (!state.data || !state.data.races.length) return;
             if (tweaks.autoSkip !== 'on') return;
-            const cur = state.data.races[state.index];
-            if (!cur) return;
-            if (raceStatus(cur) === 'finished') {
-                let nxt = state.data.races.findIndex((r, i) => i > state.index && raceStatus(r) !== 'finished');
-                if (nxt === -1) {
-                    goTo(state.data.races.length - 1);
-                } else {
-                    goTo(nxt);
-                }
-            }
+            const target = pickCurrentIndex();
+            if (target !== state.index) goTo(target);
         }
 
         /* ---------- clock ---------- */
@@ -1538,9 +1540,7 @@
                 if (r.ok) data = await r.json();
             } catch (e) { /* ignore */ }
             state.data = data || { date: today, races: [], grand_total: 0 };
-            let first = state.data.races.findIndex(r => raceStatus(r) !== 'finished');
-            if (first === -1) first = Math.max(0, state.data.races.length - 1);
-            state.index = first;
+            state.index = pickCurrentIndex();
             render();
             applyTweakStyles();
         }
@@ -1589,9 +1589,7 @@
                     b.classList.add('on');
                     setTweak('dataset', b.dataset.v);
                     state.data = getDataset();
-                    let first = state.data.races.findIndex(r => raceStatus(r) !== 'finished');
-                    if (first === -1) first = Math.max(0, state.data.races.length - 1);
-                    state.index = first;
+                    state.index = pickCurrentIndex();
                     render();
                 });
             });
