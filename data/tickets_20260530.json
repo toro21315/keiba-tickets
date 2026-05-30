@@ -1,0 +1,250 @@
+{
+  "date": "2026-05-30",
+  "generated_at": "2026-05-30T09:05:02.013670+09:00",
+  "races": [
+    {
+      "venue": "京都",
+      "race_number": 1,
+      "post_time": "10:05",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 5,
+          "horse_name": "ファツアップ",
+          "amount": 2800,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          3,
+          5
+        ],
+        "horse_names": [
+          "タガノプディング",
+          "ファツアップ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 900,
+        "subtotal": 900
+      },
+      "wide_box": {
+        "members": [
+          3,
+          5
+        ],
+        "horse_names": [
+          "タガノプディング",
+          "ファツアップ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 1100,
+        "subtotal": 1100
+      },
+      "total_amount": 4800
+    },
+    {
+      "venue": "京都",
+      "race_number": 6,
+      "post_time": "12:55",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "インディゴ",
+          "amount": 2800,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2800
+    },
+    {
+      "venue": "東京",
+      "race_number": 7,
+      "post_time": "13:10",
+      "track": "芝",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 7,
+          "horse_name": "エルハーベン",
+          "amount": 2800,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 12,
+          "horse_name": "ラプランセス",
+          "amount": 2800,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 5600
+    },
+    {
+      "venue": "京都",
+      "race_number": 7,
+      "post_time": "13:25",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 13,
+          "horse_name": "リガーレ",
+          "amount": 2800,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2800
+    },
+    {
+      "venue": "東京",
+      "race_number": 8,
+      "post_time": "13:40",
+      "track": "ダ",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "サトノビーツ",
+          "amount": 2800,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2800
+    },
+    {
+      "venue": "京都",
+      "race_number": 8,
+      "post_time": "13:55",
+      "track": "芝",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 10,
+          "horse_name": "エーデルヴェーグ",
+          "amount": 1900,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1900
+    },
+    {
+      "venue": "京都",
+      "race_number": 9,
+      "post_time": "14:30",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "イッテラッシャイ",
+          "amount": 2800,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2800
+    },
+    {
+      "venue": "京都",
+      "race_number": 10,
+      "post_time": "15:05",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "マテンロウブレイブ",
+          "amount": 1900,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          8,
+          12
+        ],
+        "horse_names": [
+          "マテンロウブレイブ",
+          "ペンナヴェローチェ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 900,
+        "subtotal": 900
+      },
+      "wide_box": {
+        "members": [
+          8,
+          12
+        ],
+        "horse_names": [
+          "マテンロウブレイブ",
+          "ペンナヴェローチェ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 1100,
+        "subtotal": 1100
+      },
+      "total_amount": 3900
+    },
+    {
+      "venue": "東京",
+      "race_number": 12,
+      "post_time": "16:10",
+      "track": "ダ",
+      "distance": 2100,
+      "tansho": [
+        {
+          "umaban": 13,
+          "horse_name": "タイセイカイザー",
+          "amount": 1900,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1900
+    }
+  ],
+  "grand_total": 29300
+}
