@@ -1,0 +1,344 @@
+{
+  "date": "2026-06-07",
+  "generated_at": "2026-06-07T09:05:05.820629+09:00",
+  "races": [
+    {
+      "venue": "東京",
+      "race_number": 1,
+      "post_time": "10:05",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "キタノローズ",
+          "amount": 1500,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1500
+    },
+    {
+      "venue": "東京",
+      "race_number": 2,
+      "post_time": "10:35",
+      "track": "ダ",
+      "distance": 2100,
+      "tansho": [
+        {
+          "umaban": 15,
+          "horse_name": "ブラックパロット",
+          "amount": 2200,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2200
+    },
+    {
+      "venue": "阪神",
+      "race_number": 3,
+      "post_time": "10:50",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 12,
+          "horse_name": "ウェイヴムーン",
+          "amount": 1500,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1500
+    },
+    {
+      "venue": "東京",
+      "race_number": 3,
+      "post_time": "11:05",
+      "track": "ダ",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "クワッドマリニン",
+          "amount": 1500,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1500
+    },
+    {
+      "venue": "阪神",
+      "race_number": 4,
+      "post_time": "11:20",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 2,
+          "horse_name": "メイショウタダツグ",
+          "amount": 700,
+          "sources": [
+            "L1"
+          ]
+        },
+        {
+          "umaban": 7,
+          "horse_name": "モズジェネラル",
+          "amount": 2200,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2900
+    },
+    {
+      "venue": "東京",
+      "race_number": 4,
+      "post_time": "11:35",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "カレリアフレイバー",
+          "amount": 2200,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2200
+    },
+    {
+      "venue": "阪神",
+      "race_number": 6,
+      "post_time": "12:40",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "エースフライト",
+          "amount": 2200,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 10,
+          "horse_name": "レイワノキセキ",
+          "amount": 700,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2900
+    },
+    {
+      "venue": "阪神",
+      "race_number": 7,
+      "post_time": "13:10",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "ケイツーリーブル",
+          "amount": 2200,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 9,
+          "horse_name": "クイーンズドリーム",
+          "amount": 700,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2900
+    },
+    {
+      "venue": "東京",
+      "race_number": 7,
+      "post_time": "13:25",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 12,
+          "horse_name": "モティスフォント",
+          "amount": 1500,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1500
+    },
+    {
+      "venue": "阪神",
+      "race_number": 8,
+      "post_time": "13:40",
+      "track": "芝",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 17,
+          "horse_name": "アスクヴォルテージ",
+          "amount": 2200,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2200
+    },
+    {
+      "venue": "阪神",
+      "race_number": 10,
+      "post_time": "14:45",
+      "track": "芝",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "ウインリベラシオン",
+          "amount": 1500,
+          "sources": [
+            "L2"
+          ]
+        },
+        {
+          "umaban": 4,
+          "horse_name": "ハイディージェン",
+          "amount": 700,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2200
+    },
+    {
+      "venue": "東京",
+      "race_number": 10,
+      "post_time": "15:00",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "エムティエスターテ",
+          "amount": 2200,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 16,
+          "horse_name": "ライジンマル",
+          "amount": 2200,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 4400
+    },
+    {
+      "venue": "東京",
+      "race_number": 11,
+      "post_time": "15:40",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "オフトレイル",
+          "amount": 700,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "東京",
+      "race_number": 12,
+      "post_time": "16:30",
+      "track": "ダ",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "テンカムテキ",
+          "amount": 2200,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 13,
+          "horse_name": "ベラジオワールド",
+          "amount": 1500,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 3700
+    }
+  ],
+  "grand_total": 32300
+}
