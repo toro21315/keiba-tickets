@@ -1,6 +1,6 @@
 {
   "date": "2026-06-20",
-  "generated_at": "2026-06-20T09:05:11.051675+09:00",
+  "generated_at": "2026-06-20T09:22:59.650244+09:00",
   "races": [
     {
       "venue": "函館",
@@ -154,15 +154,16 @@
         {
           "umaban": 13,
           "horse_name": "スパルタンエックス",
-          "amount": 1600,
+          "amount": 4100,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 3200
+      "total_amount": 5700
     },
     {
       "venue": "阪神",
@@ -174,16 +175,17 @@
         {
           "umaban": 16,
           "horse_name": "レッドパラジウム",
-          "amount": 2400,
+          "amount": 4900,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 2400
+      "total_amount": 4900
     },
     {
       "venue": "東京",
@@ -395,16 +397,17 @@
         {
           "umaban": 8,
           "horse_name": "ナムラフッカー",
-          "amount": 2400,
+          "amount": 4900,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 4800
+      "total_amount": 7300
     },
     {
       "venue": "東京",
@@ -446,16 +449,17 @@
         {
           "umaban": 3,
           "horse_name": "ベルジュロネット",
-          "amount": 2400,
+          "amount": 4900,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 2400
+      "total_amount": 4900
     },
     {
       "venue": "東京",
@@ -467,16 +471,17 @@
         {
           "umaban": 13,
           "horse_name": "ルヴァンユニベール",
-          "amount": 2400,
+          "amount": 4900,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 2400
+      "total_amount": 4900
     },
     {
       "venue": "函館",
@@ -488,15 +493,16 @@
         {
           "umaban": 7,
           "horse_name": "ゴールドブレイズ",
-          "amount": 1600,
+          "amount": 4100,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1600
+      "total_amount": 4100
     },
     {
       "venue": "阪神",
@@ -519,5 +525,5 @@
       "total_amount": 1600
     }
   ],
-  "grand_total": 58000
+  "grand_total": 73000
 }
