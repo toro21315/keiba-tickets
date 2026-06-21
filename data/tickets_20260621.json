@@ -1,0 +1,305 @@
+{
+  "date": "2026-06-21",
+  "generated_at": "2026-06-21T09:05:04.533717+09:00",
+  "races": [
+    {
+      "venue": "函館",
+      "race_number": 1,
+      "post_time": "09:50",
+      "track": "芝",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 9,
+          "horse_name": "エコロアビス",
+          "amount": 1600,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1600
+    },
+    {
+      "venue": "阪神",
+      "race_number": 1,
+      "post_time": "09:55",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 11,
+          "horse_name": "サンライズフリード",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2400
+    },
+    {
+      "venue": "函館",
+      "race_number": 2,
+      "post_time": "10:20",
+      "track": "ダ",
+      "distance": 2400,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "キヨタリート",
+          "amount": 1600,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1600
+    },
+    {
+      "venue": "阪神",
+      "race_number": 2,
+      "post_time": "10:30",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "セルヴァジオ",
+          "amount": 1600,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1600
+    },
+    {
+      "venue": "東京",
+      "race_number": 2,
+      "post_time": "10:40",
+      "track": "ダ",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 16,
+          "horse_name": "ファイアリービート",
+          "amount": 1600,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1600
+    },
+    {
+      "venue": "阪神",
+      "race_number": 3,
+      "post_time": "11:00",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "タイキジュビリー",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 15,
+          "horse_name": "ボーントゥウォリア",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 4800
+    },
+    {
+      "venue": "阪神",
+      "race_number": 4,
+      "post_time": "11:30",
+      "track": "芝",
+      "distance": 2400,
+      "tansho": [
+        {
+          "umaban": 12,
+          "horse_name": "ラピス",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2400
+    },
+    {
+      "venue": "東京",
+      "race_number": 4,
+      "post_time": "11:40",
+      "track": "芝",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "シュートザワークス",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2400
+    },
+    {
+      "venue": "函館",
+      "race_number": 7,
+      "post_time": "13:10",
+      "track": "芝",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 11,
+          "horse_name": "ヴェガリア",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2400
+    },
+    {
+      "venue": "東京",
+      "race_number": 7,
+      "post_time": "13:30",
+      "track": "ダ",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 7,
+          "horse_name": "テルケンユミクイン",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2400
+    },
+    {
+      "venue": "東京",
+      "race_number": 8,
+      "post_time": "14:00",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "ライネリーベ",
+          "amount": 800,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 800
+    },
+    {
+      "venue": "阪神",
+      "race_number": 9,
+      "post_time": "14:20",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "ダノンカゼルタ",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2400
+    },
+    {
+      "venue": "函館",
+      "race_number": 11,
+      "post_time": "15:20",
+      "track": "芝",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 2,
+          "horse_name": "メルトユアハート",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2400
+    },
+    {
+      "venue": "阪神",
+      "race_number": 11,
+      "post_time": "15:30",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "スマートワイス",
+          "amount": 2400,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2400
+    }
+  ],
+  "grand_total": 31200
+}
