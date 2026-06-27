@@ -1,0 +1,184 @@
+{
+  "date": "2026-06-27",
+  "generated_at": "2026-06-27T09:05:08.508306+09:00",
+  "races": [
+    {
+      "venue": "福島",
+      "race_number": 2,
+      "post_time": "10:40",
+      "track": "ダ",
+      "distance": 1700,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "スクイーズアウト",
+          "amount": 1300,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1300
+    },
+    {
+      "venue": "小倉",
+      "race_number": 4,
+      "post_time": "11:30",
+      "track": "ダ",
+      "distance": 1700,
+      "tansho": [
+        {
+          "umaban": 13,
+          "horse_name": "ラッキーヴォーグ",
+          "amount": 1300,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1300
+    },
+    {
+      "venue": "福島",
+      "race_number": 6,
+      "post_time": "13:00",
+      "track": "ダ",
+      "distance": 1150,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "ラヴァブルロマン",
+          "amount": 400,
+          "sources": [
+            "L1"
+          ]
+        },
+        {
+          "umaban": 7,
+          "horse_name": "セイウンガジュマル",
+          "amount": 1300,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          7,
+          9
+        ],
+        "horse_names": [
+          "セイウンガジュマル",
+          "ムーンベリル"
+        ],
+        "combos": 1,
+        "amount_per_combo": 1000,
+        "subtotal": 1000
+      },
+      "wide_box": {
+        "members": [
+          7,
+          9
+        ],
+        "horse_names": [
+          "セイウンガジュマル",
+          "ムーンベリル"
+        ],
+        "combos": 1,
+        "amount_per_combo": 3000,
+        "subtotal": 3000
+      },
+      "total_amount": 5700
+    },
+    {
+      "venue": "小倉",
+      "race_number": 7,
+      "post_time": "13:20",
+      "track": "ダ",
+      "distance": 1700,
+      "tansho": [
+        {
+          "umaban": 11,
+          "horse_name": "ザラタン",
+          "amount": 900,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 900
+    },
+    {
+      "venue": "小倉",
+      "race_number": 8,
+      "post_time": "13:50",
+      "track": "芝",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "ベネメレンティ",
+          "amount": 1300,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1300
+    },
+    {
+      "venue": "函館",
+      "race_number": 10,
+      "post_time": "14:45",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [
+        {
+          "umaban": 7,
+          "horse_name": "レイヤードレッド",
+          "amount": 1300,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1300
+    },
+    {
+      "venue": "函館",
+      "race_number": 12,
+      "post_time": "16:05",
+      "track": "ダ",
+      "distance": 1700,
+      "tansho": [
+        {
+          "umaban": 2,
+          "horse_name": "テイエムゴッホ",
+          "amount": 900,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 900
+    }
+  ],
+  "grand_total": 12700
+}
