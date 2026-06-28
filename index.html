@@ -1056,6 +1056,43 @@
             border-bottom: 1px solid #1b1e25;
         }
 
+        .pred-venue-row {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #1b1e25;
+        }
+
+        .pred-venue-row .pred-venues {
+            flex: 1 1 auto;
+            min-width: 0;
+            border-bottom: 0;
+        }
+
+        .race-nav {
+            flex: 0 0 auto;
+            display: flex;
+            gap: 6px;
+            padding: 0 10px 0 6px;
+        }
+
+        .rnav-btn {
+            appearance: none;
+            -webkit-appearance: none;
+            font-family: inherit;
+            white-space: nowrap;
+            background: var(--pred-panel2);
+            color: var(--pred-text);
+            border: 1px solid var(--pred-line);
+            border-radius: 6px;
+            padding: 5px 9px;
+            font-size: 11.5px;
+            font-weight: 600;
+        }
+
+        .rnav-btn:disabled {
+            opacity: 0.4;
+        }
+
         .pred-races {
             padding: 6px 10px;
         }
@@ -1459,7 +1496,13 @@
     <!-- ===== 予測データ画面 ===== -->
     <section class="is-hidden" id="screenPredictions">
         <div class="pred-head">
-            <div class="chip-row pred-venues" id="predVenues"></div>
+            <div class="pred-venue-row">
+                <div class="chip-row pred-venues" id="predVenues"></div>
+                <div class="race-nav">
+                    <button class="rnav-btn" id="prevRaceBtn" aria-label="前のレース（発走時刻順）">◀ 前レース</button>
+                    <button class="rnav-btn" id="nextRaceBtn" aria-label="次のレース（発走時刻順）">次レース ▶</button>
+                </div>
+            </div>
             <div class="chip-row pred-races" id="predRaces"></div>
             <div class="pred-meta-row">
                 <div class="pred-meta" id="predMeta"></div>
@@ -2151,10 +2194,10 @@
             return (n >= 1 && n <= 20) ? String.fromCharCode(0x2460 + n - 1) : `(${n})`;
         }
 
-        /* 横棒は metricMax を 100% として正規化（横幅は維持）。rank=順位(1位=最大値)。 */
-        function barHtml(v, metricMax, cls, rank) {
+        /* 横棒は 0–100% の絶対スケール（正規化しない）。値20% → 幅の1/5。rank=順位(1位=最大値)。 */
+        function barHtml(v, cls, rank) {
             if (v == null) return '<span class="bar-na">—</span>';
-            const w = metricMax > 0 ? Math.min(100, (v / metricMax) * 100) : 0;
+            const w = Math.min(100, Math.max(0, v * 100));
             const rk = rank
                 ? `<span class="bar-rank ${rank <= 3 ? 'r' + rank : 'rx'}">${circledNum(rank)}</span>`
                 : '';
@@ -2181,6 +2224,38 @@
                 if (races[i].post_time && compareHHMM(now, races[i].post_time) >= 0) idx = i;
             }
             return idx;
+        }
+
+        /* 全競馬場のレースを「発走時刻順」に並べた配列（{vi,ri,...}）。前/次レース移動に使用。 */
+        function globalRaceOrder() {
+            const list = [];
+            ((predState.data && predState.data.venues) || []).forEach((v, vi) => {
+                v.races.forEach((r, ri) => {
+                    list.push({ vi, ri, post: r.post_time || '99:99', venue: v.venue, rno: r.race_number });
+                });
+            });
+            list.sort((a, b) => a.post.localeCompare(b.post) || a.venue.localeCompare(b.venue) || a.rno - b.rno);
+            return list;
+        }
+        function currentGlobalIdx(order) {
+            return order.findIndex(o => o.vi === predState.venueIdx && o.ri === predState.raceIdx);
+        }
+        /* 発走時刻順で delta だけ移動（競馬場をまたいで遷移）。 */
+        function gotoRaceDelta(delta) {
+            const order = globalRaceOrder();
+            if (!order.length) return;
+            let idx = currentGlobalIdx(order);
+            if (idx < 0) idx = 0;
+            idx = Math.max(0, Math.min(order.length - 1, idx + delta));
+            predState.venueIdx = order[idx].vi;
+            predState.raceIdx = order[idx].ri;
+            renderPredictions();
+        }
+        function renderRaceNav() {
+            const order = globalRaceOrder();
+            const idx = currentGlobalIdx(order);
+            $('#prevRaceBtn').disabled = (idx <= 0);
+            $('#nextRaceBtn').disabled = (idx < 0 || idx >= order.length - 1);
         }
 
         async function loadPredictions() {
@@ -2282,16 +2357,16 @@
             const host = $('#predBody');
             const r = currentRace();
             if (!r) { host.innerHTML = ''; return; }
-            // 指標ごとに「最大値」と「順位(1位=最大)」を算出
+            // 指標ごとに「順位(1位=最大値)」を算出
             const rankMap = (key) => {
                 const ranked = r.horses.filter(h => h[key] != null)
                     .slice().sort((a, b) => b[key] - a[key]);
                 const m = new Map();
                 ranked.forEach((h, i) => m.set(h.umaban, i + 1));
-                return { max: ranked.length ? ranked[0][key] : 0, rank: m };
+                return m;
             };
-            const ph = rankMap('pharaoh_winrate');
-            const yo = rankMap('yoshi_winrate');
+            const phRank = rankMap('pharaoh_winrate');
+            const yoRank = rankMap('yoshi_winrate');
             const evCell = v => (v == null) ? '<span class="bar-na">—</span>'
                 : `<span class="${v >= 1 ? 'ev-good' : ''}">${v.toFixed(2)}</span>`;
             const rows = sortHorses(r.horses).map(h => `
@@ -2300,8 +2375,8 @@
           <td class="col-name"><span class="hname">${h.horse_name || ''}</span></td>
           <td class="jockey">${h.jockey || ''}</td>
           <td>${h.iruka ? '<span class="iruka-star">★</span>' : '<span class="mk-none">·</span>'}</td>
-          <td class="bar-cell">${barHtml(h.pharaoh_winrate, ph.max, 'ph', ph.rank.get(h.umaban))}</td>
-          <td class="bar-cell">${barHtml(h.yoshi_winrate, yo.max, 'yo', yo.rank.get(h.umaban))}</td>
+          <td class="bar-cell">${barHtml(h.pharaoh_winrate, 'ph', phRank.get(h.umaban))}</td>
+          <td class="bar-cell">${barHtml(h.yoshi_winrate, 'yo', yoRank.get(h.umaban))}</td>
           <td>${h.tan_odds == null ? '—' : h.tan_odds.toFixed(1)}</td>
           <td>${evCell(h.tan_ev)}</td>
           <td>${evCell(h.fuku_ev)}</td>
@@ -2348,6 +2423,7 @@
             }
             emptyEl.style.display = 'none';
             renderVenueChips();
+            renderRaceNav();
             renderRaceChips();
             renderSortRow();
             renderPredMeta();
@@ -2370,6 +2446,8 @@
             $('#tabPredictions').addEventListener('click', () => switchTab('predictions'));
             $('#predFsBtn').addEventListener('click', () => document.body.classList.add('pred-fs'));
             $('#predFsExit').addEventListener('click', () => document.body.classList.remove('pred-fs'));
+            $('#prevRaceBtn').addEventListener('click', () => gotoRaceDelta(-1));
+            $('#nextRaceBtn').addEventListener('click', () => gotoRaceDelta(+1));
         }
 
         /* ---------- init ---------- */
