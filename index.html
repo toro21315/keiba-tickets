@@ -52,10 +52,12 @@
         /* ====== APP SHELL ====== */
         .app {
             position: fixed;
-            inset: 0;
+            top: var(--topoff);
+            left: 0;
+            right: 0;
+            bottom: 0;
             display: flex;
             flex-direction: column;
-            padding-top: env(safe-area-inset-top);
             padding-bottom: env(safe-area-inset-bottom);
         }
 
@@ -954,10 +956,393 @@
             padding-top: 8px;
             margin-top: 4px;
         }
+        /* ===================== 上位タブ & 画面切替 ===================== */
+        :root {
+            --tabbar-h: 46px;
+            --topoff: calc(var(--tabbar-h) + env(safe-area-inset-top));
+            --pred-panel: #15171c;
+            --pred-panel2: #1b1e25;
+            --pred-line: #262a33;
+            --pred-text: #e7e9ee;
+            --pred-dim: #9aa1b0;
+            --pharaoh: #7EC8E3;
+            --yoshi: #E7B264;
+            --uw: 40px;
+            /* 馬番列の幅（馬名列の left もこの値に合わせる） */
+        }
+
+        .tabbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 40;
+            height: var(--topoff);
+            padding-top: env(safe-area-inset-top);
+            display: flex;
+            background: #0f1116;
+            border-bottom: 1px solid var(--pred-line);
+        }
+
+        .tabbar button {
+            flex: 1;
+            appearance: none;
+            -webkit-appearance: none;
+            background: transparent;
+            border: 0;
+            height: 100%;
+            color: var(--pred-dim);
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            position: relative;
+        }
+
+        .tabbar button.on {
+            color: #fff;
+        }
+
+        .tabbar button.on::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 56%;
+            height: 3px;
+            border-radius: 3px 3px 0 0;
+            background: var(--aqua);
+        }
+
+        .is-hidden {
+            display: none !important;
+        }
+
+        /* ===================== 予測データ画面 ===================== */
+        #screenPredictions {
+            position: fixed;
+            top: var(--topoff);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: env(safe-area-inset-bottom);
+            background: var(--bg);
+            color: var(--pred-text);
+        }
+
+        .pred-head {
+            flex: 0 0 auto;
+            background: #0f1116;
+            border-bottom: 1px solid var(--pred-line);
+        }
+
+        .chip-row {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            padding: 7px 10px;
+        }
+
+        .chip-row::-webkit-scrollbar {
+            display: none;
+        }
+
+        .pred-venues {
+            border-bottom: 1px solid #1b1e25;
+        }
+
+        .pred-races {
+            padding: 6px 10px;
+        }
+
+        .chip {
+            flex: 0 0 auto;
+            appearance: none;
+            -webkit-appearance: none;
+            font-family: inherit;
+            white-space: nowrap;
+            background: var(--pred-panel);
+            color: var(--pred-dim);
+            border: 1px solid var(--pred-line);
+            border-radius: 999px;
+            padding: 5px 12px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .pred-races .chip {
+            padding: 4px 11px;
+            font-size: 12px;
+        }
+
+        .chip.on {
+            background: var(--aqua);
+            color: #06222e;
+            border-color: var(--aqua);
+        }
+
+        .pred-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 5px 12px 3px;
+            font-size: 11.5px;
+            color: var(--pred-dim);
+        }
+
+        .pred-meta .rno {
+            color: #fff;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .pred-meta .iruka-na {
+            color: #caa05f;
+        }
+
+        .pred-sorts {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            padding: 4px 10px 8px;
+        }
+
+        .pred-sorts::-webkit-scrollbar {
+            display: none;
+        }
+
+        .sortbtn {
+            flex: 0 0 auto;
+            appearance: none;
+            -webkit-appearance: none;
+            font-family: inherit;
+            white-space: nowrap;
+            background: var(--pred-panel2);
+            color: var(--pred-dim);
+            border: 1px solid var(--pred-line);
+            border-radius: 6px;
+            padding: 4px 9px;
+            font-size: 11.5px;
+            font-weight: 600;
+        }
+
+        .sortbtn.on {
+            color: #fff;
+            border-color: var(--aqua);
+            background: #163240;
+        }
+
+        .sortbtn .ar {
+            font-size: 9px;
+            margin-left: 2px;
+        }
+
+        .pred-body {
+            flex: 1 1 auto;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+            position: relative;
+        }
+
+        table.pred-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: max-content;
+            min-width: 100%;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .pred-table th,
+        .pred-table td {
+            border-bottom: 1px solid var(--pred-line);
+            padding: 0 6px;
+            height: 38px;
+            font-size: 12px;
+            white-space: nowrap;
+            text-align: center;
+            background: var(--bg);
+        }
+
+        .pred-table thead th {
+            position: sticky;
+            top: 0;
+            z-index: 3;
+            height: 30px;
+            background: #12141a;
+            color: var(--pred-dim);
+            font-size: 10.5px;
+            font-weight: 600;
+        }
+
+        .pred-table .col-uma {
+            position: sticky;
+            left: 0;
+            z-index: 2;
+            width: var(--uw);
+            min-width: var(--uw);
+            padding: 0 4px;
+        }
+
+        .pred-table .col-name {
+            position: sticky;
+            left: var(--uw);
+            z-index: 2;
+            width: 104px;
+            min-width: 104px;
+            max-width: 104px;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .pred-table thead .col-uma,
+        .pred-table thead .col-name {
+            z-index: 5;
+        }
+
+        .pred-table tbody .col-uma,
+        .pred-table tbody .col-name {
+            background: #0f1116;
+        }
+
+        .pred-table tbody tr:nth-child(even) td {
+            background: #101218;
+        }
+
+        .pred-table tbody tr:nth-child(even) .col-uma,
+        .pred-table tbody tr:nth-child(even) .col-name {
+            background: #131620;
+        }
+
+        .col-name::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 7px;
+            box-shadow: inset -7px 0 7px -7px rgba(0, 0, 0, 0.75);
+            pointer-events: none;
+        }
+
+        .uma-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 22px;
+            height: 20px;
+            padding: 0 4px;
+            border-radius: 4px;
+            background: #2a2e38;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .hname {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 11.5px;
+            color: #fff;
+        }
+
+        .jockey {
+            color: var(--pred-dim);
+            font-size: 11.5px;
+        }
+
+        .bar-cell {
+            width: 90px;
+            min-width: 90px;
+        }
+
+        .bar-wrap {
+            position: relative;
+            height: 16px;
+            background: #20242c;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 3px;
+        }
+
+        .bar-fill.ph {
+            background: linear-gradient(90deg, #3f7f99, var(--pharaoh));
+        }
+
+        .bar-fill.yo {
+            background: linear-gradient(90deg, #9c6f34, var(--yoshi));
+        }
+
+        .bar-val {
+            position: absolute;
+            right: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 10px;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.85);
+        }
+
+        .bar-na {
+            color: #555;
+            font-size: 11px;
+        }
+
+        .ev-good {
+            color: #66d39a;
+            font-weight: 700;
+        }
+
+        .mk {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .mk-none {
+            color: #44474f;
+        }
+
+        .iruka-star {
+            color: #FFCF4D;
+            font-size: 13px;
+        }
+
+        .pred-empty {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pred-dim);
+            font-size: 13px;
+        }
     </style>
 </head>
 
 <body>
+
+    <!-- ===== 上位タブ ===== -->
+    <nav class="tabbar" id="tabbar">
+        <button id="tabTickets" class="on">購入馬券</button>
+        <button id="tabPredictions">予測データ</button>
+    </nav>
 
     <div class="app" id="app">
         <header class="hdr">
@@ -981,6 +1366,18 @@
 
         <nav class="nav" id="nav"></nav>
     </div>
+
+    <!-- ===== 予測データ画面 ===== -->
+    <section class="is-hidden" id="screenPredictions">
+        <div class="pred-head">
+            <div class="chip-row pred-venues" id="predVenues"></div>
+            <div class="chip-row pred-races" id="predRaces"></div>
+            <div class="pred-meta" id="predMeta"></div>
+            <div class="pred-sorts" id="predSorts"></div>
+        </div>
+        <div class="pred-body" id="predBody"></div>
+        <div class="pred-empty" id="predEmpty" style="display:none;">本日の予測データはありません</div>
+    </section>
 
     <!-- Tweaks FAB -->
     <button class="tw-fab" id="twFab" aria-label="Tweaks">
@@ -1619,9 +2016,252 @@
             $('#wmRange').value = tweaks.watermark;
         }
 
+        /* ============================================================
+         *  予測データ (Predictions) — 競馬場/レース選択・ソート・横スクロール表
+         * ============================================================ */
+        const predState = {
+            data: undefined,   // undefined=未取得, null=失敗, object=取得済
+            loading: false,
+            venueIdx: 0,
+            raceIdx: 0,
+            sortKey: 'umaban',
+            sortDir: 'asc',
+        };
+
+        const PRED_SORTS = [
+            { key: 'umaban', label: '馬番', dir: 'asc' },
+            { key: 'pharaoh_winrate', label: '勝馬率', dir: 'desc' },
+            { key: 'yoshi_winrate', label: '単勝率', dir: 'desc' },
+            { key: 'tan_odds', label: '単オ', dir: 'asc' },
+            { key: 'tan_ev', label: '単EV', dir: 'desc' },
+            { key: 'fuku_ev', label: '複EV', dir: 'desc' },
+        ];
+
+        function markHtml(sym) {
+            const s = (sym || '').trim();
+            if (!s) return '<span class="mk mk-none">·</span>';
+            const c = s.startsWith('◎') ? '#ff5a5f'
+                : (s.startsWith('◯') || s.startsWith('○')) ? '#ffa94d'
+                    : s.startsWith('▲') ? '#4da8ff'
+                        : s.startsWith('△') ? '#9aa1b0'
+                            : '#6b6f78';
+            return `<span class="mk" style="color:${c}">${s}</span>`;
+        }
+
+        const predPct = v => (v == null) ? null : Math.round(v * 100);
+
+        function barHtml(v, raceMax, cls) {
+            if (v == null) return '<span class="bar-na">—</span>';
+            const w = raceMax > 0 ? Math.min(100, (v / raceMax) * 100) : 0;
+            return `<div class="bar-wrap"><div class="bar-fill ${cls}" style="width:${w.toFixed(1)}%"></div><span class="bar-val">${predPct(v)}%</span></div>`;
+        }
+
+        function currentVenue() {
+            const vs = predState.data && predState.data.venues;
+            if (!vs || !vs.length) return null;
+            return vs[Math.min(predState.venueIdx, vs.length - 1)];
+        }
+        function currentRace() {
+            const v = currentVenue();
+            if (!v || !v.races.length) return null;
+            return v.races[Math.min(predState.raceIdx, v.races.length - 1)];
+        }
+
+        /* 「現在/次レース」= 発走済の最後のレース。未発走なら先頭。 */
+        function predPickRaceIdx(races) {
+            if (!races || !races.length) return 0;
+            const now = nowHHMM();
+            let idx = 0;
+            for (let i = 0; i < races.length; i++) {
+                if (races[i].post_time && compareHHMM(now, races[i].post_time) >= 0) idx = i;
+            }
+            return idx;
+        }
+
+        async function loadPredictions() {
+            if (predState.loading) return;
+            predState.loading = true;
+            renderPredictions();
+            const today = jstDateStr();
+            let data = null;
+            try {
+                const r = await fetch('data/predictions_' + today.replace(/-/g, '') + '.json?t=' + Date.now(), { cache: 'no-store' });
+                if (r.ok) data = await r.json();
+            } catch (e) { /* ignore */ }
+            predState.data = data;
+            predState.loading = false;
+            predState.venueIdx = 0;
+            const v = currentVenue();
+            predState.raceIdx = v ? predPickRaceIdx(v.races) : 0;
+            renderPredictions();
+        }
+
+        function renderVenueChips() {
+            const host = $('#predVenues');
+            const vs = (predState.data && predState.data.venues) || [];
+            host.innerHTML = vs.map((v, i) =>
+                `<button class="chip${i === predState.venueIdx ? ' on' : ''}" data-i="${i}">${v.venue}</button>`
+            ).join('');
+            host.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+                predState.venueIdx = +b.dataset.i;
+                const v = currentVenue();
+                if (!v.races[predState.raceIdx]) predState.raceIdx = predPickRaceIdx(v.races);
+                renderPredictions();
+            }));
+        }
+
+        function renderRaceChips() {
+            const host = $('#predRaces');
+            const v = currentVenue();
+            const races = v ? v.races : [];
+            host.innerHTML = races.map((r, i) =>
+                `<button class="chip${i === predState.raceIdx ? ' on' : ''}" data-i="${i}">${r.race_number}R</button>`
+            ).join('');
+            host.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+                predState.raceIdx = +b.dataset.i;
+                renderPredictions();
+            }));
+            const on = host.querySelector('.chip.on');
+            if (on) on.scrollIntoView({ inline: 'center', block: 'nearest' });
+        }
+
+        function renderSortRow() {
+            const host = $('#predSorts');
+            host.innerHTML = PRED_SORTS.map(s => {
+                const on = s.key === predState.sortKey;
+                const ar = on ? `<span class="ar">${predState.sortDir === 'asc' ? '▲' : '▼'}</span>` : '';
+                return `<button class="sortbtn${on ? ' on' : ''}" data-k="${s.key}" data-d="${s.dir}">${s.label}${ar}</button>`;
+            }).join('');
+            host.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+                const k = b.dataset.k;
+                if (predState.sortKey === k) {
+                    predState.sortDir = predState.sortDir === 'asc' ? 'desc' : 'asc';
+                } else {
+                    predState.sortKey = k;
+                    predState.sortDir = b.dataset.d;
+                }
+                renderPredictions();
+            }));
+        }
+
+        function renderPredMeta() {
+            const host = $('#predMeta');
+            const v = currentVenue();
+            const r = currentRace();
+            if (!r) { host.innerHTML = ''; return; }
+            const irukaNa = (predState.data && predState.data.iruka_available === false)
+                ? '<span class="iruka-na">★イルカ未取得</span>' : '';
+            const dist = r.distance ? (r.track + r.distance + 'm') : (r.track || '');
+            host.innerHTML =
+                `<span class="rno">${v.venue} ${r.race_number}R</span>` +
+                `<span>${r.post_time || '--:--'} 発走</span>` +
+                `<span>${dist}</span>` +
+                `<span>${r.horses.length}頭</span>` + irukaNa;
+        }
+
+        function sortHorses(horses) {
+            const k = predState.sortKey;
+            const sign = predState.sortDir === 'asc' ? 1 : -1;
+            return horses.slice().sort((a, b) => {
+                const av = a[k], bv = b[k];
+                const an = (av == null), bn = (bv == null);
+                if (an && bn) return a.umaban - b.umaban;
+                if (an) return 1;   // 欠損は常に末尾
+                if (bn) return -1;
+                if (av === bv) return a.umaban - b.umaban;
+                return (av < bv ? -1 : 1) * sign;
+            });
+        }
+
+        function renderPredTable() {
+            const host = $('#predBody');
+            const r = currentRace();
+            if (!r) { host.innerHTML = ''; return; }
+            let raceMax = 0;
+            r.horses.forEach(h => {
+                if (h.pharaoh_winrate != null) raceMax = Math.max(raceMax, h.pharaoh_winrate);
+                if (h.yoshi_winrate != null) raceMax = Math.max(raceMax, h.yoshi_winrate);
+            });
+            const evCell = v => (v == null) ? '<span class="bar-na">—</span>'
+                : `<span class="${v >= 1 ? 'ev-good' : ''}">${v.toFixed(2)}</span>`;
+            const rows = sortHorses(r.horses).map(h => `
+        <tr>
+          <td class="col-uma"><span class="uma-badge">${h.umaban}</span></td>
+          <td class="col-name"><span class="hname">${h.horse_name || ''}</span></td>
+          <td class="jockey">${h.jockey || ''}</td>
+          <td class="bar-cell">${barHtml(h.pharaoh_winrate, raceMax, 'ph')}</td>
+          <td class="bar-cell">${barHtml(h.yoshi_winrate, raceMax, 'yo')}</td>
+          <td>${h.tan_odds == null ? '—' : h.tan_odds.toFixed(1)}</td>
+          <td>${evCell(h.tan_ev)}</td>
+          <td>${evCell(h.fuku_ev)}</td>
+          <td>${h.iruka ? '<span class="iruka-star">★</span>' : '<span class="mk-none">·</span>'}</td>
+          <td>${markHtml(h.mark_sou)}</td>
+          <td>${markHtml(h.mark_teki)}</td>
+          <td>${markHtml(h.mark_kai)}</td>
+          <td>${markHtml(h.mark_soku)}</td>
+        </tr>`).join('');
+            host.innerHTML = `
+      <table class="pred-table">
+        <thead><tr>
+          <th class="col-uma">馬番</th>
+          <th class="col-name">馬名</th>
+          <th>騎手</th>
+          <th class="bar-cell" style="color:var(--pharaoh)">勝馬率</th>
+          <th class="bar-cell" style="color:var(--yoshi)">単勝率</th>
+          <th>単オ</th><th>単EV</th><th>複EV</th>
+          <th>★</th><th>総</th><th>的</th><th>回</th><th>速</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+        }
+
+        function renderPredictions() {
+            const emptyEl = $('#predEmpty');
+            const clear = () => {
+                $('#predVenues').innerHTML = ''; $('#predRaces').innerHTML = '';
+                $('#predMeta').innerHTML = ''; $('#predSorts').innerHTML = '';
+                $('#predBody').innerHTML = '';
+            };
+            if (predState.loading && predState.data === undefined) {
+                clear();
+                emptyEl.textContent = '読み込み中…';
+                emptyEl.style.display = 'flex';
+                return;
+            }
+            const vs = (predState.data && predState.data.venues) || [];
+            if (!vs.length) {
+                clear();
+                emptyEl.textContent = '本日の予測データはありません';
+                emptyEl.style.display = 'flex';
+                return;
+            }
+            emptyEl.style.display = 'none';
+            renderVenueChips();
+            renderRaceChips();
+            renderSortRow();
+            renderPredMeta();
+            renderPredTable();
+        }
+
+        /* ---------- 上位タブ切替 ---------- */
+        function switchTab(name) {
+            const isPred = (name === 'predictions');
+            $('#app').classList.toggle('is-hidden', isPred);
+            $('#screenPredictions').classList.toggle('is-hidden', !isPred);
+            $('#twFab').classList.toggle('is-hidden', isPred);
+            $('#tabTickets').classList.toggle('on', !isPred);
+            $('#tabPredictions').classList.toggle('on', isPred);
+            if (isPred && predState.data === undefined && !predState.loading) loadPredictions();
+        }
+        function bindTabs() {
+            $('#tabTickets').addEventListener('click', () => switchTab('tickets'));
+            $('#tabPredictions').addEventListener('click', () => switchTab('predictions'));
+        }
+
         /* ---------- init ---------- */
         window.addEventListener('load', async () => {
             bindTweaks();
+            bindTabs();
             await load();
             updateClock();
             setInterval(() => { updateClock(); autoSkipCheck(); renderNav(); }, 30000);
