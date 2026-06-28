@@ -1324,6 +1324,95 @@
             font-size: 13px;
         }
 
+        .bar-rank {
+            position: absolute;
+            left: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            font-size: 11px;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.95);
+        }
+
+        .bar-rank.r1 {
+            color: #FFD24D;
+        }
+
+        .bar-rank.r2 {
+            color: #D6DEE8;
+        }
+
+        .bar-rank.r3 {
+            color: #E0A878;
+        }
+
+        .pred-meta-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pred-meta-row .pred-meta {
+            flex: 1 1 auto;
+        }
+
+        .fs-btn {
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            appearance: none;
+            -webkit-appearance: none;
+            font-family: inherit;
+            white-space: nowrap;
+            background: var(--pred-panel2);
+            color: var(--pred-text);
+            border: 1px solid var(--pred-line);
+            border-radius: 6px;
+            padding: 4px 10px;
+            margin-right: 10px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .fs-exit {
+            position: fixed;
+            bottom: calc(env(safe-area-inset-bottom) + 16px);
+            right: 14px;
+            z-index: 80;
+            display: none;
+            appearance: none;
+            -webkit-appearance: none;
+            font-family: inherit;
+            background: rgba(18, 20, 26, 0.95);
+            color: #fff;
+            border: 1px solid var(--pred-line);
+            border-radius: 22px;
+            padding: 9px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+        }
+
+        body.pred-fs .tabbar {
+            display: none;
+        }
+
+        body.pred-fs #screenPredictions {
+            top: 0;
+            padding-top: env(safe-area-inset-top);
+        }
+
+        body.pred-fs .pred-head {
+            display: none;
+        }
+
+        body.pred-fs .fs-exit {
+            display: block;
+        }
+
         .pred-empty {
             position: absolute;
             inset: 0;
@@ -1372,11 +1461,19 @@
         <div class="pred-head">
             <div class="chip-row pred-venues" id="predVenues"></div>
             <div class="chip-row pred-races" id="predRaces"></div>
-            <div class="pred-meta" id="predMeta"></div>
+            <div class="pred-meta-row">
+                <div class="pred-meta" id="predMeta"></div>
+                <button class="fs-btn" id="predFsBtn" aria-label="表を全画面表示">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
+                    </svg>全画面
+                </button>
+            </div>
             <div class="pred-sorts" id="predSorts"></div>
         </div>
         <div class="pred-body" id="predBody"></div>
         <div class="pred-empty" id="predEmpty" style="display:none;">本日の予測データはありません</div>
+        <button class="fs-exit" id="predFsExit" aria-label="全画面解除">✕ 全画面解除</button>
     </section>
 
     <!-- Tweaks FAB -->
@@ -2050,10 +2147,18 @@
 
         const predPct = v => (v == null) ? null : Math.round(v * 100);
 
-        function barHtml(v, raceMax, cls) {
+        function circledNum(n) {
+            return (n >= 1 && n <= 20) ? String.fromCharCode(0x2460 + n - 1) : `(${n})`;
+        }
+
+        /* 横棒は metricMax を 100% として正規化（横幅は維持）。rank=順位(1位=最大値)。 */
+        function barHtml(v, metricMax, cls, rank) {
             if (v == null) return '<span class="bar-na">—</span>';
-            const w = raceMax > 0 ? Math.min(100, (v / raceMax) * 100) : 0;
-            return `<div class="bar-wrap"><div class="bar-fill ${cls}" style="width:${w.toFixed(1)}%"></div><span class="bar-val">${predPct(v)}%</span></div>`;
+            const w = metricMax > 0 ? Math.min(100, (v / metricMax) * 100) : 0;
+            const rk = rank
+                ? `<span class="bar-rank ${rank <= 3 ? 'r' + rank : 'rx'}">${circledNum(rank)}</span>`
+                : '';
+            return `<div class="bar-wrap"><div class="bar-fill ${cls}" style="width:${w.toFixed(1)}%"></div>${rk}<span class="bar-val">${predPct(v)}%</span></div>`;
         }
 
         function currentVenue() {
@@ -2177,11 +2282,16 @@
             const host = $('#predBody');
             const r = currentRace();
             if (!r) { host.innerHTML = ''; return; }
-            let raceMax = 0;
-            r.horses.forEach(h => {
-                if (h.pharaoh_winrate != null) raceMax = Math.max(raceMax, h.pharaoh_winrate);
-                if (h.yoshi_winrate != null) raceMax = Math.max(raceMax, h.yoshi_winrate);
-            });
+            // 指標ごとに「最大値」と「順位(1位=最大)」を算出
+            const rankMap = (key) => {
+                const ranked = r.horses.filter(h => h[key] != null)
+                    .slice().sort((a, b) => b[key] - a[key]);
+                const m = new Map();
+                ranked.forEach((h, i) => m.set(h.umaban, i + 1));
+                return { max: ranked.length ? ranked[0][key] : 0, rank: m };
+            };
+            const ph = rankMap('pharaoh_winrate');
+            const yo = rankMap('yoshi_winrate');
             const evCell = v => (v == null) ? '<span class="bar-na">—</span>'
                 : `<span class="${v >= 1 ? 'ev-good' : ''}">${v.toFixed(2)}</span>`;
             const rows = sortHorses(r.horses).map(h => `
@@ -2189,12 +2299,12 @@
           <td class="col-uma"><span class="uma-badge">${h.umaban}</span></td>
           <td class="col-name"><span class="hname">${h.horse_name || ''}</span></td>
           <td class="jockey">${h.jockey || ''}</td>
-          <td class="bar-cell">${barHtml(h.pharaoh_winrate, raceMax, 'ph')}</td>
-          <td class="bar-cell">${barHtml(h.yoshi_winrate, raceMax, 'yo')}</td>
+          <td>${h.iruka ? '<span class="iruka-star">★</span>' : '<span class="mk-none">·</span>'}</td>
+          <td class="bar-cell">${barHtml(h.pharaoh_winrate, ph.max, 'ph', ph.rank.get(h.umaban))}</td>
+          <td class="bar-cell">${barHtml(h.yoshi_winrate, yo.max, 'yo', yo.rank.get(h.umaban))}</td>
           <td>${h.tan_odds == null ? '—' : h.tan_odds.toFixed(1)}</td>
           <td>${evCell(h.tan_ev)}</td>
           <td>${evCell(h.fuku_ev)}</td>
-          <td>${h.iruka ? '<span class="iruka-star">★</span>' : '<span class="mk-none">·</span>'}</td>
           <td>${markHtml(h.mark_sou)}</td>
           <td>${markHtml(h.mark_teki)}</td>
           <td>${markHtml(h.mark_kai)}</td>
@@ -2206,10 +2316,11 @@
           <th class="col-uma">馬番</th>
           <th class="col-name">馬名</th>
           <th>騎手</th>
+          <th>★</th>
           <th class="bar-cell" style="color:var(--pharaoh)">勝馬率</th>
           <th class="bar-cell" style="color:var(--yoshi)">単勝率</th>
           <th>単オ</th><th>単EV</th><th>複EV</th>
-          <th>★</th><th>総</th><th>的</th><th>回</th><th>速</th>
+          <th>総</th><th>的</th><th>回</th><th>速</th>
         </tr></thead>
         <tbody>${rows}</tbody>
       </table>`;
@@ -2246,6 +2357,7 @@
         /* ---------- 上位タブ切替 ---------- */
         function switchTab(name) {
             const isPred = (name === 'predictions');
+            if (!isPred) document.body.classList.remove('pred-fs');
             $('#app').classList.toggle('is-hidden', isPred);
             $('#screenPredictions').classList.toggle('is-hidden', !isPred);
             $('#twFab').classList.toggle('is-hidden', isPred);
@@ -2256,6 +2368,8 @@
         function bindTabs() {
             $('#tabTickets').addEventListener('click', () => switchTab('tickets'));
             $('#tabPredictions').addEventListener('click', () => switchTab('predictions'));
+            $('#predFsBtn').addEventListener('click', () => document.body.classList.add('pred-fs'));
+            $('#predFsExit').addEventListener('click', () => document.body.classList.remove('pred-fs'));
         }
 
         /* ---------- init ---------- */
