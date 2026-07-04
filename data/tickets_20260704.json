@@ -1,6 +1,6 @@
 {
   "date": "2026-07-04",
-  "generated_at": "2026-07-04T09:05:00.849461+09:00",
+  "generated_at": "2026-07-04T09:21:15.288186+09:00",
   "races": [
     {
       "venue": "函館",
@@ -96,16 +96,17 @@
         {
           "umaban": 2,
           "horse_name": "ルージュフィーリア",
-          "amount": 1200,
+          "amount": 3500,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1200
+      "total_amount": 3500
     },
     {
       "venue": "福島",
@@ -285,5 +286,5 @@
       "total_amount": 2400
     }
   ],
-  "grand_total": 17900
+  "grand_total": 20200
 }
