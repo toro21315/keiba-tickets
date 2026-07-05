@@ -1,6 +1,6 @@
 {
   "date": "2026-07-05",
-  "generated_at": "2026-07-05T09:05:01.075330+09:00",
+  "generated_at": "2026-07-05T09:21:22.129878+09:00",
   "races": [
     {
       "venue": "函館",
@@ -156,16 +156,17 @@
         {
           "umaban": 6,
           "horse_name": "ヴンダーバール",
-          "amount": 1200,
+          "amount": 3500,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1200
+      "total_amount": 3500
     },
     {
       "venue": "小倉",
@@ -320,5 +321,5 @@
       "total_amount": 400
     }
   ],
-  "grand_total": 19100
+  "grand_total": 21400
 }
