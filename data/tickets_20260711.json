@@ -1,6 +1,6 @@
 {
   "date": "2026-07-11",
-  "generated_at": "2026-07-11T09:05:02.363232+09:00",
+  "generated_at": "2026-07-11T09:21:35.936880+09:00",
   "races": [
     {
       "venue": "函館",
@@ -134,16 +134,17 @@
         {
           "umaban": 6,
           "horse_name": "アルサック",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "小倉",
@@ -328,16 +329,17 @@
         {
           "umaban": 8,
           "horse_name": "フレイコン",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "小倉",
@@ -825,5 +827,5 @@
       "total_amount": 700
     }
   ],
-  "grand_total": 65300
+  "grand_total": 69500
 }
