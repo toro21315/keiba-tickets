@@ -1,6 +1,6 @@
 {
   "date": "2026-07-12",
-  "generated_at": "2026-07-12T09:05:02.283091+09:00",
+  "generated_at": "2026-07-12T09:23:13.565499+09:00",
   "races": [
     {
       "venue": "函館",
@@ -207,16 +207,17 @@
         {
           "umaban": 7,
           "horse_name": "エルドボルグ",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "福島",
@@ -228,16 +229,17 @@
         {
           "umaban": 12,
           "horse_name": "リサナウト",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "函館",
@@ -249,16 +251,17 @@
         {
           "umaban": 14,
           "horse_name": "ルージュフィーリア",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "小倉",
@@ -270,16 +273,17 @@
         {
           "umaban": 6,
           "horse_name": "アームズラムレイ",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "福島",
@@ -291,9 +295,10 @@
         {
           "umaban": 11,
           "horse_name": "ツクバヴァンガード",
-          "amount": 700,
+          "amount": 2800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
@@ -323,7 +328,7 @@
         "amount_per_combo": 2300,
         "subtotal": 2300
       },
-      "total_amount": 3800
+      "total_amount": 5900
     },
     {
       "venue": "小倉",
@@ -335,15 +340,16 @@
         {
           "umaban": 4,
           "horse_name": "オオツカ",
-          "amount": 700,
+          "amount": 2800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 2800
     },
     {
       "venue": "福島",
@@ -477,16 +483,17 @@
         {
           "umaban": 8,
           "horse_name": "サンマルノヴェル",
-          "amount": 700,
+          "amount": 2800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 2800
     }
   ],
-  "grand_total": 47800
+  "grand_total": 62500
 }
