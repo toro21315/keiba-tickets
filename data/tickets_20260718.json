@@ -1,6 +1,6 @@
 {
   "date": "2026-07-18",
-  "generated_at": "2026-07-18T09:05:02.231315+09:00",
+  "generated_at": "2026-07-18T09:21:30.988478+09:00",
   "races": [
     {
       "venue": "函館",
@@ -12,16 +12,17 @@
         {
           "umaban": 7,
           "horse_name": "ドリームガッサン",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "小倉",
@@ -218,16 +219,17 @@
         {
           "umaban": 1,
           "horse_name": "コスモストーム",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "福島",
@@ -274,5 +276,5 @@
       "total_amount": 3400
     }
   ],
-  "grand_total": 18700
+  "grand_total": 22900
 }
