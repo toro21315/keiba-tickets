@@ -1,0 +1,278 @@
+{
+  "date": "2026-07-18",
+  "generated_at": "2026-07-18T09:05:02.231315+09:00",
+  "races": [
+    {
+      "venue": "函館",
+      "race_number": 2,
+      "post_time": "10:20",
+      "track": "ダ",
+      "distance": 1000,
+      "tansho": [
+        {
+          "umaban": 7,
+          "horse_name": "ドリームガッサン",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "小倉",
+      "race_number": 3,
+      "post_time": "11:00",
+      "track": "ダ",
+      "distance": 1000,
+      "tansho": [
+        {
+          "umaban": 5,
+          "horse_name": "モズオサキニ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          7,
+          11
+        ],
+        "horse_names": [
+          "メイショウマドンナ",
+          "アルムアポジェ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          7,
+          11
+        ],
+        "horse_names": [
+          "メイショウマドンナ",
+          "アルムアポジェ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 4100
+    },
+    {
+      "venue": "福島",
+      "race_number": 3,
+      "post_time": "11:10",
+      "track": "ダ",
+      "distance": 1150,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          9,
+          13
+        ],
+        "horse_names": [
+          "ハングローズ",
+          "ゲンテン"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          9,
+          13
+        ],
+        "horse_names": [
+          "ハングローズ",
+          "ゲンテン"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "函館",
+      "race_number": 5,
+      "post_time": "12:10",
+      "track": "ダ",
+      "distance": 1700,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "イトシサ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 10,
+          "horse_name": "ダノンアクション",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2000
+    },
+    {
+      "venue": "福島",
+      "race_number": 5,
+      "post_time": "12:30",
+      "track": "芝",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 2,
+          "horse_name": "シルクドマルス",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "函館",
+      "race_number": 7,
+      "post_time": "13:10",
+      "track": "ダ",
+      "distance": 1700,
+      "tansho": [
+        {
+          "umaban": 12,
+          "horse_name": "カーマンライン",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "函館",
+      "race_number": 9,
+      "post_time": "14:10",
+      "track": "芝",
+      "distance": 1800,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          5,
+          7
+        ],
+        "horse_names": [
+          "ドッグウッド",
+          "マイネルシンベリン"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          5,
+          7
+        ],
+        "horse_names": [
+          "ドッグウッド",
+          "マイネルシンベリン"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "小倉",
+      "race_number": 10,
+      "post_time": "14:55",
+      "track": "ダ",
+      "distance": 1700,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "コスモストーム",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "福島",
+      "race_number": 11,
+      "post_time": "15:45",
+      "track": "芝",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 9,
+          "horse_name": "コンドゥイア",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          5,
+          16
+        ],
+        "horse_names": [
+          "コスモアンソロジー",
+          "フォルラニーニ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          5,
+          16
+        ],
+        "horse_names": [
+          "コスモアンソロジー",
+          "フォルラニーニ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3400
+    }
+  ],
+  "grand_total": 18700
+}
