@@ -1,6 +1,6 @@
 {
   "date": "2026-07-19",
-  "generated_at": "2026-07-19T09:05:00.802432+09:00",
+  "generated_at": "2026-07-19T09:21:17.641500+09:00",
   "races": [
     {
       "venue": "福島",
@@ -153,16 +153,17 @@
         {
           "umaban": 4,
           "horse_name": "グランオギュール",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "小倉",
@@ -589,5 +590,5 @@
       "total_amount": 3100
     }
   ],
-  "grand_total": 41200
+  "grand_total": 43300
 }
