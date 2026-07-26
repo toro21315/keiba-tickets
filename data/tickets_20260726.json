@@ -1,6 +1,6 @@
 {
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T09:05:02.304360+09:00",
+  "generated_at": "2026-07-26T09:21:50.569158+09:00",
   "races": [
     {
       "venue": "新潟",
@@ -82,16 +82,17 @@
         {
           "umaban": 6,
           "horse_name": "ダノンミッドナイト",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "新潟",
@@ -214,16 +215,17 @@
         {
           "umaban": 5,
           "horse_name": "マーゴットサンズ",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "新潟",
@@ -299,16 +301,17 @@
         {
           "umaban": 2,
           "horse_name": "ラブインアクション",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "新潟",
@@ -391,5 +394,5 @@
       "total_amount": 3100
     }
   ],
-  "grand_total": 28300
+  "grand_total": 34600
 }
