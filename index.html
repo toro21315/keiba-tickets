@@ -967,6 +967,8 @@
             --pred-dim: #9aa1b0;
             --pharaoh: #7EC8E3;
             --yoshi: #E7B264;
+            --shiraberu: #B79BFF;
+            --shiraberu-line: #3a3060;
             --uw: 40px;
             /* 馬番列の幅（馬名列の left もこの値に合わせる） */
         }
@@ -1141,6 +1143,10 @@
 
         .pred-meta .iruka-na {
             color: #caa05f;
+        }
+
+        .pred-meta .sb-na {
+            color: var(--shiraberu);
         }
 
         .pred-sorts {
@@ -1356,9 +1362,192 @@
             color: #44474f;
         }
 
+        /* シラベタは ○(U+25CB) / ×(U+00D7)、馬柱は ◯(U+25EF) / ✕(U+2715) を使う。
+           字形が小さい前者を拡大して、列をまたいでも印の重みが揃って見えるようにする。 */
+        .mk.mk-sm {
+            font-size: 18px;
+            line-height: 1;
+        }
+
         .iruka-star {
             color: #FFCF4D;
             font-size: 13px;
+        }
+
+        /* ===== シラベタ: 注目馬 / 勝偏 / 各印 列 ===== */
+        .chumoku-mark {
+            color: var(--shiraberu);
+            font-size: 12px;
+            text-shadow: 0 0 6px rgba(183, 155, 255, 0.45);
+        }
+
+        /* シラベタ由来の列は左に区切り線＋ヘッダを紫系に */
+        .pred-table .sb-sep {
+            border-left: 2px solid var(--shiraberu-line);
+        }
+
+        .pred-table thead .sb-head {
+            color: var(--shiraberu);
+        }
+
+        .sb-hen {
+            font-size: 12px;
+            font-weight: 700;
+            color: #6b6f78;
+        }
+
+        .sb-hen.h3 {
+            color: #9aa1b0;
+        }
+
+        .sb-hen.h2 {
+            color: #e7e9ee;
+        }
+
+        .sb-hen.h1 {
+            color: var(--shiraberu);
+        }
+
+        .sb-col {
+            width: 34px;
+            min-width: 34px;
+        }
+
+        /* ===== シラベタ: 推奨買い目パネル（表の直下・横スクロールしても左端に固定） ===== */
+        .pred-scroll-inner {
+            width: max-content;
+            min-width: 100%;
+        }
+
+        /* 表は max-content 幅で横スクロールするため、買い目パネルだけ左端に貼り付ける。
+           幅は #predBody の可視幅を JS (syncBetsWidth) がインラインで与える。 */
+        .sb-bets-anchor {
+            position: sticky;
+            left: 0;
+        }
+
+        .sb-bets {
+            margin: 10px 10px calc(env(safe-area-inset-bottom) + 14px);
+            border: 1px solid var(--shiraberu-line);
+            border-radius: 9px;
+            background: linear-gradient(180deg, #1a1726, #15171c 60%);
+            padding: 9px 10px 10px;
+        }
+
+        .sb-bets-hd {
+            display: flex;
+            align-items: baseline;
+            gap: 7px;
+            margin-bottom: 8px;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: var(--shiraberu);
+        }
+
+        .sb-bets-hd .sub {
+            color: var(--pred-dim);
+            font-weight: 600;
+            font-size: 10.5px;
+            letter-spacing: 0;
+        }
+
+        .sb-bet-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 5px 0;
+            border-top: 1px solid #23202f;
+        }
+
+        .sb-bet-row:first-of-type {
+            border-top: 0;
+        }
+
+        .sb-kenshu {
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 42px;
+            height: 21px;
+            margin-top: 1px;
+            padding: 0 6px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #0f1116;
+            background: #9aa1b0;
+        }
+
+        .sb-kenshu.k-tan {
+            background: #FF8F6B;
+        }
+
+        .sb-kenshu.k-fuku {
+            background: #66d39a;
+        }
+
+        .sb-kenshu.k-umaren {
+            background: var(--pharaoh);
+        }
+
+        .sb-kenshu.k-wide {
+            background: var(--yoshi);
+        }
+
+        .sb-kenshu.k-tri {
+            background: var(--shiraberu);
+        }
+
+        .sb-picks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .sb-pick {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 2px 6px;
+            border: 1px solid #2f2b40;
+            border-radius: 5px;
+            background: #101218;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .sb-pick .n {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 18px;
+            height: 17px;
+            padding: 0 3px;
+            border-radius: 3px;
+            background: #2a2e38;
+            color: #fff;
+            font-size: 11.5px;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .sb-pick .sep {
+            color: #5c6070;
+            font-size: 10px;
+            font-style: normal;
+        }
+
+        .sb-pick .raw {
+            color: #e7e9ee;
+            font-size: 11.5px;
+            font-weight: 600;
+        }
+
+        .sb-bets-none {
+            color: #6b6f78;
+            font-size: 11.5px;
+            padding: 2px 0 1px;
         }
 
         .bar-rank {
@@ -2175,7 +2364,14 @@
             { key: 'tan_odds', label: '単オ', dir: 'asc' },
             { key: 'tan_ev', label: '単EV', dir: 'desc' },
             { key: 'fuku_ev', label: '複EV', dir: 'desc' },
+            { key: 'shohen', label: '勝偏', dir: 'desc' },
         ];
+
+        /* スクレイピング由来の文字列をそのまま innerHTML に載せるための最小エスケープ */
+        function esc(s) {
+            return String(s == null ? '' : s).replace(/[&<>"]/g,
+                c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        }
 
         function markHtml(sym) {
             const s = (sym || '').trim();
@@ -2184,8 +2380,17 @@
                 : (s.startsWith('◯') || s.startsWith('○')) ? '#ffa94d'
                     : s.startsWith('▲') ? '#4da8ff'
                         : s.startsWith('△') ? '#9aa1b0'
-                            : '#6b6f78';
-            return `<span class="mk" style="color:${c}">${s}</span>`;
+                            : (s.startsWith('×') || s.startsWith('✕') || s.startsWith('✖')) ? '#71757f'
+                                : '#6b6f78';
+            const sm = (s.startsWith('○') || s.startsWith('×')) ? ' mk-sm' : '';
+            return `<span class="mk${sm}" style="color:${c}">${esc(s)}</span>`;
+        }
+
+        /* 勝偏（勝率の偏差値）: 60↑ を最上位として4段階に着色 */
+        function shohenHtml(v) {
+            if (v == null) return '<span class="bar-na">—</span>';
+            const cls = v >= 60 ? 'h1' : v >= 55 ? 'h2' : v >= 50 ? 'h3' : '';
+            return `<span class="sb-hen ${cls}">${v.toFixed(1)}</span>`;
         }
 
         const predPct = v => (v == null) ? null : Math.round(v * 100);
@@ -2331,12 +2536,14 @@
             if (!r) { host.innerHTML = ''; return; }
             const irukaNa = (predState.data && predState.data.iruka_available === false)
                 ? '<span class="iruka-na">★イルカ未取得</span>' : '';
+            const sbNa = (predState.data && predState.data.shiraberu_available === false)
+                ? '<span class="sb-na">◆シラベタ未取得</span>' : '';
             const dist = r.distance ? (r.track + r.distance + 'm') : (r.track || '');
             host.innerHTML =
                 `<span class="rno">${v.venue} ${r.race_number}R</span>` +
                 `<span>${r.post_time || '--:--'} 発走</span>` +
                 `<span>${dist}</span>` +
-                `<span>${r.horses.length}頭</span>` + irukaNa;
+                `<span>${r.horses.length}頭</span>` + irukaNa + sbNa;
         }
 
         function sortHorses(horses) {
@@ -2375,6 +2582,7 @@
           <td class="col-name"><span class="hname">${h.horse_name || ''}</span></td>
           <td class="jockey">${h.jockey || ''}</td>
           <td>${h.iruka ? '<span class="iruka-star">★</span>' : '<span class="mk-none">·</span>'}</td>
+          <td>${h.chumoku ? '<span class="chumoku-mark">◆</span>' : '<span class="mk-none">·</span>'}</td>
           <td class="bar-cell">${barHtml(h.pharaoh_winrate, 'ph', phRank.get(h.umaban))}</td>
           <td class="bar-cell">${barHtml(h.yoshi_winrate, 'yo', yoRank.get(h.umaban))}</td>
           <td>${h.tan_odds == null ? '—' : h.tan_odds.toFixed(1)}</td>
@@ -2384,21 +2592,83 @@
           <td>${markHtml(h.mark_teki)}</td>
           <td>${markHtml(h.mark_kai)}</td>
           <td>${markHtml(h.mark_soku)}</td>
+          <td class="sb-sep">${shohenHtml(h.shohen)}</td>
+          <td class="sb-col">${markHtml(h.mark_tan_ev)}</td>
+          <td class="sb-col">${markHtml(h.mark_fuku_ev)}</td>
+          <td class="sb-col">${markHtml(h.mark_win_rate)}</td>
+          <td class="sb-col">${markHtml(h.mark_place_rate)}</td>
         </tr>`).join('');
             host.innerHTML = `
+      <div class="pred-scroll-inner">
       <table class="pred-table">
         <thead><tr>
           <th class="col-uma">馬番</th>
           <th class="col-name">馬名</th>
           <th>騎手</th>
-          <th>★</th>
+          <th title="イルカ推奨（不利馬）">★</th>
+          <th class="sb-head" title="シラベタ 注目馬">注</th>
           <th class="bar-cell" style="color:var(--pharaoh)">勝馬率</th>
           <th class="bar-cell" style="color:var(--yoshi)">単勝率</th>
           <th>単オ</th><th>単EV</th><th>複EV</th>
           <th>総</th><th>的</th><th>回</th><th>速</th>
+          <th class="sb-head sb-sep" title="シラベタ 勝偏（勝率の偏差値）">勝偏</th>
+          <th class="sb-head sb-col" title="シラベタ 単勝期待値印">単期</th>
+          <th class="sb-head sb-col" title="シラベタ 複勝期待値印">複期</th>
+          <th class="sb-head sb-col" title="シラベタ 予測勝率印">予勝</th>
+          <th class="sb-head sb-col" title="シラベタ 予測複勝率印">予複</th>
         </tr></thead>
         <tbody>${rows}</tbody>
-      </table>`;
+      </table>
+      ${betsHtml(r)}
+      </div>`;
+        }
+
+        /* ---------- シラベタ 推奨買い目（表の直下） ---------- */
+        const KENSHU_CLASS = {
+            '単勝': 'k-tan', '複勝': 'k-fuku', '枠連': 'k-umaren', '馬連': 'k-umaren',
+            'ワイド': 'k-wide', '馬単': 'k-umaren',
+            '3連複': 'k-tri', '三連複': 'k-tri', '3連単': 'k-tri', '三連単': 'k-tri',
+        };
+
+        function pickHtml(p) {
+            if (p.legs && p.legs.length) {
+                const inner = p.legs
+                    .map(n => `<i class="n">${n}</i>`)
+                    .join('<i class="sep">–</i>');
+                return `<span class="sb-pick">${inner}</span>`;
+            }
+            return `<span class="sb-pick"><span class="raw">${esc(p.text || '')}</span></span>`;
+        }
+
+        function betsHtml(race) {
+            // シラベタ自体が未取得の日はセクションごと出さない（メタ行に◆未取得を表示）
+            if (predState.data && predState.data.shiraberu_available === false) return '';
+            const v = currentVenue();
+            const groups = race.shiraberu_bets || [];
+            const body = groups.length
+                ? groups.map(g => {
+                    const cls = KENSHU_CLASS[g.type] || '';
+                    const picks = (g.picks || []).map(pickHtml).join('');
+                    return `<div class="sb-bet-row">
+              <span class="sb-kenshu ${cls}">${esc(g.type)}</span>
+              <div class="sb-picks">${picks}</div>
+            </div>`;
+                }).join('')
+                : '<div class="sb-bets-none">このレースの推奨買い目はありません</div>';
+            return `<div class="sb-bets-anchor"><div class="sb-bets">
+        <div class="sb-bets-hd">◆ シラベタ 推奨買い目
+          <span class="sub">${v ? v.venue : ''} ${race.race_number}R / 前日買い目</span>
+        </div>${body}
+      </div></div>`;
+        }
+
+        /* 買い目パネルの幅 = 表の横スクロール量に依らない「可視幅」 */
+        function syncBetsWidth() {
+            const body = $('#predBody');
+            if (!body) return;
+            body.querySelectorAll('.sb-bets-anchor').forEach(el => {
+                el.style.width = body.clientWidth + 'px';
+            });
         }
 
         function renderPredictions() {
@@ -2428,6 +2698,7 @@
             renderSortRow();
             renderPredMeta();
             renderPredTable();
+            syncBetsWidth();
         }
 
         /* ---------- 上位タブ切替 ---------- */
@@ -2448,6 +2719,8 @@
             $('#predFsExit').addEventListener('click', () => document.body.classList.remove('pred-fs'));
             $('#prevRaceBtn').addEventListener('click', () => gotoRaceDelta(-1));
             $('#nextRaceBtn').addEventListener('click', () => gotoRaceDelta(+1));
+            window.addEventListener('resize', syncBetsWidth);
+            window.addEventListener('orientationchange', () => setTimeout(syncBetsWidth, 120));
         }
 
         /* ---------- init ---------- */
