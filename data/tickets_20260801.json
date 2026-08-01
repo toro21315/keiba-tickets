@@ -1,6 +1,6 @@
 {
   "date": "2026-08-01",
-  "generated_at": "2026-08-01T09:05:09.331951+09:00",
+  "generated_at": "2026-08-01T09:21:43.912243+09:00",
   "races": [
     {
       "venue": "中京",
@@ -47,9 +47,10 @@
         {
           "umaban": 2,
           "horse_name": "マイネルリコルディ",
-          "amount": 700,
+          "amount": 2800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
@@ -79,7 +80,7 @@
         "amount_per_combo": 2300,
         "subtotal": 2300
       },
-      "total_amount": 3800
+      "total_amount": 5900
     },
     {
       "venue": "札幌",
@@ -91,16 +92,17 @@
         {
           "umaban": 1,
           "horse_name": "アイドクレース",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "札幌",
@@ -390,5 +392,5 @@
       "total_amount": 3400
     }
   ],
-  "grand_total": 39000
+  "grand_total": 43200
 }
