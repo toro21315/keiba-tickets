@@ -969,6 +969,9 @@
             --yoshi: #E7B264;
             --shiraberu: #B79BFF;
             --shiraberu-line: #3a3060;
+            --yoshi-line: #4a3a1c;
+            --bet-match: #4ade80;
+            /* シラベタとKEIBAビューアで一致した買い目 */
             --uw: 40px;
             /* 馬番列の幅（馬名列の left もこの値に合わせる） */
         }
@@ -1427,11 +1430,16 @@
         }
 
         .sb-bets {
-            margin: 10px 10px calc(env(safe-area-inset-bottom) + 14px);
+            /* パネルは2枚（シラベタ／KEIBAビューア）縦に並ぶ。下端の余白は最後の1枚だけが持つ */
+            margin: 10px 10px 0;
             border: 1px solid var(--shiraberu-line);
             border-radius: 9px;
             background: linear-gradient(180deg, #1a1726, #15171c 60%);
             padding: 9px 10px 10px;
+        }
+
+        .sb-bets-anchor:last-child .sb-bets {
+            margin-bottom: calc(env(safe-area-inset-bottom) + 14px);
         }
 
         .sb-bets-hd {
@@ -1548,6 +1556,86 @@
             color: #6b6f78;
             font-size: 11.5px;
             padding: 2px 0 1px;
+        }
+
+        /* ===== KEIBA Viewer 推奨買い目パネル（シラベタパネルの下に分けて掲載） =====
+           出所の色分けは表と揃える: シラベタ=紫(--shiraberu) / KEIBA Viewer=金(--yoshi) */
+        .vb-bets {
+            border-color: var(--yoshi-line);
+            background: linear-gradient(180deg, #221c11, #16171c 60%);
+        }
+
+        .vb-bets .sb-bets-hd {
+            color: var(--yoshi);
+        }
+
+        /* 流し(複数点)は「金額=グループ合計」なので、点をまとめて金額を1回だけ出す */
+        .vb-group {
+            display: inline-flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .vb-group.multi {
+            padding: 2px 6px 2px 4px;
+            border: 1px dashed #4a3a1c;
+            border-radius: 7px;
+        }
+
+        .vb-amt {
+            display: inline-flex;
+            align-items: baseline;
+            gap: 3px;
+            color: var(--yoshi);
+            font-size: 11.5px;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .vb-amt i {
+            color: var(--pred-dim);
+            font-size: 9.5px;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        /* ===== 2ソースで一致した買い目の強調（両パネルに出る） ===== */
+        .sb-pick.is-match {
+            border-color: var(--bet-match);
+            background: #10241a;
+            box-shadow: 0 0 0 1px rgba(74, 222, 128, .28), 0 0 10px rgba(74, 222, 128, .18);
+        }
+
+        .sb-pick.is-match .n {
+            background: var(--bet-match);
+            color: #08130d;
+        }
+
+        .sb-pick.is-match .sep {
+            color: #38a169;
+        }
+
+        .sb-pick .mt {
+            color: var(--bet-match);
+            font-size: 10px;
+            font-weight: 800;
+            font-style: normal;
+            line-height: 1;
+            margin-right: 1px;
+        }
+
+        .sb-bets-hd .match-badge {
+            margin-left: auto;
+            padding: 1px 7px;
+            border: 1px solid rgba(74, 222, 128, .45);
+            border-radius: 99px;
+            background: rgba(74, 222, 128, .10);
+            color: var(--bet-match);
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0;
+            white-space: nowrap;
         }
 
         .bar-rank {
@@ -2620,6 +2708,7 @@
         <tbody>${rows}</tbody>
       </table>
       ${betsHtml(r)}
+      ${viewerBetsHtml(r)}
       </div>`;
         }
 
@@ -2630,14 +2719,22 @@
             '3連複': 'k-tri', '三連複': 'k-tri', '3連単': 'k-tri', '三連単': 'k-tri',
         };
 
+        /* 2ソースで一致した買い目は ✓ + 緑で強調（両パネル共通） */
         function pickHtml(p) {
+            const cls = p.match ? ' is-match' : '';
+            const chk = p.match ? '<i class="mt">✓</i>' : '';
             if (p.legs && p.legs.length) {
                 const inner = p.legs
                     .map(n => `<i class="n">${n}</i>`)
                     .join('<i class="sep">–</i>');
-                return `<span class="sb-pick">${inner}</span>`;
+                return `<span class="sb-pick${cls}">${chk}${inner}</span>`;
             }
-            return `<span class="sb-pick"><span class="raw">${esc(p.text || '')}</span></span>`;
+            return `<span class="sb-pick${cls}">${chk}<span class="raw">${esc(p.text || '')}</span></span>`;
+        }
+
+        function matchBadge(race, otherName) {
+            const n = race.bets_match_count || 0;
+            return n ? `<span class="match-badge">✓ ${otherName}と一致 ${n}点</span>` : '';
         }
 
         function betsHtml(race) {
@@ -2658,6 +2755,42 @@
             return `<div class="sb-bets-anchor"><div class="sb-bets">
         <div class="sb-bets-hd">◆ シラベタ 推奨買い目
           <span class="sub">${v ? v.venue : ''} ${race.race_number}R / 前日買い目</span>
+          ${matchBadge(race, 'ビューア')}
+        </div>${body}
+      </div></div>`;
+        }
+
+        /* ---------- KEIBA Viewer 推奨買い目（シラベタパネルの下） ---------- */
+        function fmtYen(n) {
+            return (n === null || n === undefined) ? '' : '¥' + Number(n).toLocaleString('ja-JP');
+        }
+
+        function viewerBetsHtml(race) {
+            // ビューア買い目が未取得の日はセクションごと出さない
+            if (!predState.data || predState.data.viewer_bets_available !== true) return '';
+            const v = currentVenue();
+            const groups = race.viewer_bets || [];
+            const body = groups.length
+                ? groups.map(g => {
+                    const cls = KENSHU_CLASS[g.type] || '';
+                    // 流し(点数>1)は金額がグループ合計なので、点をまとめて金額を1回だけ出す
+                    const inner = (g.groups || []).map(grp => {
+                        const picks = (grp.picks || []).map(pickHtml).join('');
+                        const multi = (grp.points || 1) > 1;
+                        const amt = (grp.amount === null || grp.amount === undefined) ? ''
+                            : `<span class="vb-amt">${fmtYen(grp.amount)}${multi ? `<i>${grp.points}点合計</i>` : ''}</span>`;
+                        return `<span class="vb-group${multi ? ' multi' : ''}">${picks}${amt}</span>`;
+                    }).join('');
+                    return `<div class="sb-bet-row">
+              <span class="sb-kenshu ${cls}">${esc(g.type)}</span>
+              <div class="sb-picks">${inner}</div>
+            </div>`;
+                }).join('')
+                : '<div class="sb-bets-none">このレースの推奨買い目はありません（★BET対象外）</div>';
+            return `<div class="sb-bets-anchor"><div class="sb-bets vb-bets">
+        <div class="sb-bets-hd">◆ KEIBAビューア 推奨買い目
+          <span class="sub">${v ? v.venue : ''} ${race.race_number}R / ★BET</span>
+          ${matchBadge(race, 'シラベタ')}
         </div>${body}
       </div></div>`;
         }
