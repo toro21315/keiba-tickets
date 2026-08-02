@@ -971,6 +971,8 @@
             --shiraberu-line: #3a3060;
             --yoshi-line: #4a3a1c;
             --bet-match: #4ade80;
+            --live-odds: #7CE7C4;
+            /* JRAリアルタイム単勝オッズ */
             /* シラベタとKEIBAビューアで一致した買い目 */
             --uw: 40px;
             /* 馬番列の幅（馬名列の left もこの値に合わせる） */
@@ -1556,6 +1558,83 @@
             color: #6b6f78;
             font-size: 11.5px;
             padding: 2px 0 1px;
+        }
+
+        /* ===== JRA リアルタイム単勝オッズ（「現オ」列） =====
+           供給元は Cloudflare Worker(D1)。前日値の「単オ」との差を ↑↓ で示す。 */
+        .live-od {
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+
+        .live-od .v {
+            font-weight: 700;
+            color: var(--live-odds);
+        }
+
+        .live-od .d {
+            margin-left: 2px;
+            font-size: 9.5px;
+            font-weight: 700;
+        }
+
+        /* オッズ下降＝支持が集まっている / 上昇＝人気を落としている */
+        .live-od.down .d {
+            color: #ff6b6b;
+        }
+
+        .live-od.up .d {
+            color: #6aa9ff;
+        }
+
+        .live-od .none {
+            color: #4a4e57;
+        }
+
+        .live-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 1px 7px;
+            border: 1px solid #2f3a2f;
+            border-radius: 99px;
+            background: #12181a;
+            color: var(--pred-dim);
+            font-size: 10px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .live-tag.on {
+            border-color: rgba(74, 222, 128, .45);
+            background: rgba(74, 222, 128, .10);
+            color: var(--bet-match);
+        }
+
+        .live-tag.on .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--bet-match);
+            animation: livepulse 1.8s ease-in-out infinite;
+        }
+
+        @keyframes livepulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: .25;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .live-tag.on .dot {
+                animation: none;
+            }
         }
 
         /* ===== KEIBA Viewer 推奨買い目パネル（シラベタパネルの下に分けて掲載） =====
@@ -2443,13 +2522,21 @@
             raceIdx: 0,
             sortKey: 'umaban',
             sortDir: 'asc',
+            live: null,        // {byRace: {"新潟|1": {...}}, servedAt}
+            liveTimer: null,
         };
+
+        /* JRAリアルタイム単勝オッズの供給元（Cloudflare Worker + D1）。
+           GitHub Pages/raw.githubusercontent はCDNキャッシュで1分更新に追随できないため別配信。 */
+        const LIVE_ODDS_URL = 'https://keiba-odds.toro-2-1315.workers.dev/odds';
+        const LIVE_ODDS_INTERVAL_MS = 60000;
 
         const PRED_SORTS = [
             { key: 'umaban', label: '馬番', dir: 'asc' },
             { key: 'pharaoh_winrate', label: '勝馬率', dir: 'desc' },
             { key: 'yoshi_winrate', label: '単勝率', dir: 'desc' },
             { key: 'tan_odds', label: '単オ', dir: 'asc' },
+            { key: 'live_odds', label: '現オ', dir: 'asc' },
             { key: 'tan_ev', label: '単EV', dir: 'desc' },
             { key: 'fuku_ev', label: '複EV', dir: 'desc' },
             { key: 'shohen', label: '勝偏', dir: 'desc' },
@@ -2566,7 +2653,107 @@
             predState.venueIdx = 0;
             const v = currentVenue();
             predState.raceIdx = v ? predPickRaceIdx(v.races) : 0;
+            mergeLiveIntoHorses();
             renderPredictions();
+        }
+
+        /* ---------- JRA リアルタイム単勝オッズ ---------- */
+        function liveKey(venue, raceNo) { return venue + '|' + raceNo; }
+
+        function currentLive() {
+            const v = currentVenue(), r = currentRace();
+            if (!v || !r || !predState.live) return null;
+            return predState.live.byRace[liveKey(v.venue, r.race_number)] || null;
+        }
+
+        /* 取得値を各馬の live_odds に載せる（並べ替えを効かせるため） */
+        function mergeLiveIntoHorses() {
+            const vs = (predState.data && predState.data.venues) || [];
+            const byRace = (predState.live && predState.live.byRace) || {};
+            vs.forEach(v => v.races.forEach(r => {
+                const o = byRace[liveKey(v.venue, r.race_number)];
+                r.horses.forEach(h => {
+                    const val = o && o.odds ? o.odds[String(h.umaban)] : undefined;
+                    h.live_odds = (typeof val === 'number') ? val : null;
+                });
+            }));
+        }
+
+        async function loadLiveOdds() {
+            const today = jstDateStr().replace(/-/g, '');
+            try {
+                const r = await fetch(LIVE_ODDS_URL + '?date=' + today + '&t=' + Date.now(),
+                    { cache: 'no-store' });
+                if (!r.ok) return;
+                const d = await r.json();
+                const byRace = {};
+                (d.races || []).forEach(x => { byRace[liveKey(x.venue, x.race)] = x; });
+                predState.live = { byRace, servedAt: d.served_at || '' };
+            } catch (e) {
+                return;   // 取得できない日/時間帯は静かに無視（列は「—」のまま）
+            }
+            if (!predState.data) return;
+            mergeLiveIntoHorses();
+            // 現オ で並べ替え中のときだけ組み直す。それ以外はセルだけ差し替えてスクロール位置を保つ
+            if (predState.sortKey === 'live_odds') {
+                const body = $('#predBody'), top = body ? body.scrollTop : 0;
+                renderPredTable();
+                if (body) body.scrollTop = top;
+            } else {
+                applyLiveOdds();
+            }
+            renderPredMeta();
+        }
+
+        function liveCellHtml(h) {
+            if (h.live_odds == null) return '<span class="none">—</span>';
+            const cur = h.live_odds;
+            let cls = '', arrow = '';
+            if (typeof h.tan_odds === 'number' && h.tan_odds > 0) {
+                const diff = cur - h.tan_odds;
+                // 前日値との差が1%未満はフラット扱い
+                if (Math.abs(diff) >= h.tan_odds * 0.01) {
+                    cls = diff < 0 ? 'down' : 'up';
+                    arrow = `<i class="d">${diff < 0 ? '↓' : '↑'}</i>`;
+                }
+            }
+            return `<span class="live-od ${cls}"><i class="v">${cur.toFixed(1)}</i>${arrow}</span>`;
+        }
+
+        /* 表を組み直さずに「現オ」セルだけ更新する（スクロール位置と操作感を保つ） */
+        function applyLiveOdds() {
+            const r = currentRace();
+            if (!r) return;
+            const byUma = new Map(r.horses.map(h => [String(h.umaban), h]));
+            document.querySelectorAll('#predBody td[data-live-uma]').forEach(td => {
+                const h = byUma.get(td.dataset.liveUma);
+                if (h) td.innerHTML = liveCellHtml(h);
+            });
+        }
+
+        function liveTagHtml() {
+            const o = currentLive();
+            if (!o) return '';
+            const t = (o.updated_at || '').slice(11, 16);   // ISO(UTC)
+            const jst = t ? new Date(o.updated_at).toLocaleTimeString('ja-JP',
+                { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Tokyo' }) : '';
+            return o.is_final
+                ? `<span class="live-tag">現オッズ 確定</span>`
+                : `<span class="live-tag on"><i class="dot"></i>現オッズ ${jst} 更新</span>`;
+        }
+
+        function startLivePolling() {
+            stopLivePolling();
+            loadLiveOdds();
+            predState.liveTimer = setInterval(() => {
+                if (document.hidden) return;    // 非表示タブでは叩かない
+                loadLiveOdds();
+            }, LIVE_ODDS_INTERVAL_MS);
+        }
+
+        function stopLivePolling() {
+            if (predState.liveTimer) clearInterval(predState.liveTimer);
+            predState.liveTimer = null;
         }
 
         function renderVenueChips() {
@@ -2631,7 +2818,7 @@
                 `<span class="rno">${v.venue} ${r.race_number}R</span>` +
                 `<span>${r.post_time || '--:--'} 発走</span>` +
                 `<span>${dist}</span>` +
-                `<span>${r.horses.length}頭</span>` + irukaNa + sbNa;
+                `<span>${r.horses.length}頭</span>` + liveTagHtml() + irukaNa + sbNa;
         }
 
         function sortHorses(horses) {
@@ -2674,6 +2861,7 @@
           <td class="bar-cell">${barHtml(h.pharaoh_winrate, 'ph', phRank.get(h.umaban))}</td>
           <td class="bar-cell">${barHtml(h.yoshi_winrate, 'yo', yoRank.get(h.umaban))}</td>
           <td>${h.tan_odds == null ? '—' : h.tan_odds.toFixed(1)}</td>
+          <td data-live-uma="${h.umaban}">${liveCellHtml(h)}</td>
           <td>${evCell(h.tan_ev)}</td>
           <td>${evCell(h.fuku_ev)}</td>
           <td>${markHtml(h.mark_sou)}</td>
@@ -2697,7 +2885,9 @@
           <th class="sb-head" title="シラベタ 注目馬">注</th>
           <th class="bar-cell" style="color:var(--pharaoh)">勝馬率</th>
           <th class="bar-cell" style="color:var(--yoshi)">単勝率</th>
-          <th>単オ</th><th>単EV</th><th>複EV</th>
+          <th title="馬柱の単勝オッズ（前日夕方時点）">単オ</th>
+          <th style="color:var(--live-odds)" title="JRA公式のリアルタイム単勝オッズ（1分ごと更新／↓=支持集中 ↑=人気下降）">現オ</th>
+          <th>単EV</th><th>複EV</th>
           <th>総</th><th>的</th><th>回</th><th>速</th>
           <th class="sb-head sb-sep" title="シラベタ 勝偏（勝率の偏差値）">勝偏</th>
           <th class="sb-head sb-col" title="シラベタ 単勝期待値印">単期</th>
@@ -2844,6 +3034,8 @@
             $('#tabTickets').classList.toggle('on', !isPred);
             $('#tabPredictions').classList.toggle('on', isPred);
             if (isPred && predState.data === undefined && !predState.loading) loadPredictions();
+            // リアルタイムオッズは予測タブを見ている間だけポーリングする
+            if (isPred) startLivePolling(); else stopLivePolling();
         }
         function bindTabs() {
             $('#tabTickets').addEventListener('click', () => switchTab('tickets'));
@@ -2854,6 +3046,10 @@
             $('#nextRaceBtn').addEventListener('click', () => gotoRaceDelta(+1));
             window.addEventListener('resize', syncBetsWidth);
             window.addEventListener('orientationchange', () => setTimeout(syncBetsWidth, 120));
+            // タブ復帰時は待たずに即更新（1分待つと古い値が見える）
+            document.addEventListener('visibilitychange', () => {
+                if (!document.hidden && predState.liveTimer) loadLiveOdds();
+            });
         }
 
         /* ---------- init ---------- */
