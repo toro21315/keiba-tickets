@@ -1,6 +1,6 @@
 {
   "date": "2026-08-02",
-  "generated_at": "2026-08-02T09:05:04.002069+09:00",
+  "generated_at": "2026-08-02T09:21:18.082205+09:00",
   "races": [
     {
       "venue": "中京",
@@ -183,16 +183,17 @@
         {
           "umaban": 6,
           "horse_name": "ヘリオトロープ",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "新潟",
@@ -410,5 +411,5 @@
       "total_amount": 3100
     }
   ],
-  "grand_total": 26700
+  "grand_total": 28800
 }
