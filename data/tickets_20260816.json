@@ -1,0 +1,202 @@
+{
+  "date": "2026-08-16",
+  "generated_at": "2026-08-16T00:40:06.507279+09:00",
+  "races": [
+    {
+      "venue": "札幌",
+      "race_number": 1,
+      "post_time": "10:00",
+      "track": "ダ",
+      "distance": 1700,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          5,
+          10
+        ],
+        "horse_names": [
+          "ルージュリヴィエラ",
+          "プルーフリーディン"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          5,
+          10
+        ],
+        "horse_names": [
+          "ルージュリヴィエラ",
+          "プルーフリーディン"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "新潟",
+      "race_number": 4,
+      "post_time": "11:10",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          9,
+          11
+        ],
+        "horse_names": [
+          "トップレイアー",
+          "マルスレジーナ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          9,
+          11
+        ],
+        "horse_names": [
+          "トップレイアー",
+          "マルスレジーナ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "札幌",
+      "race_number": 10,
+      "post_time": "15:10",
+      "track": "ダ",
+      "distance": 1000,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          6,
+          10
+        ],
+        "horse_names": [
+          "マメタンク",
+          "パールフロント"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          6,
+          10
+        ],
+        "horse_names": [
+          "マメタンク",
+          "パールフロント"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "札幌",
+      "race_number": 11,
+      "post_time": "15:45",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          7,
+          10
+        ],
+        "horse_names": [
+          "ショウヘイ",
+          "アドマイヤテラ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          7,
+          10
+        ],
+        "horse_names": [
+          "ショウヘイ",
+          "アドマイヤテラ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "新潟",
+      "race_number": 10,
+      "post_time": "17:15",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          10,
+          13
+        ],
+        "horse_names": [
+          "ラショナルポイント",
+          "デルマザオウ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          10,
+          13
+        ],
+        "horse_names": [
+          "ラショナルポイント",
+          "デルマザオウ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "中京",
+      "race_number": 12,
+      "post_time": "18:30",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 14,
+          "horse_name": "カラバッシュ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    }
+  ],
+  "grand_total": 15800
+}
