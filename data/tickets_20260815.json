@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T09:05:01.708660+09:00",
+  "races": [
+    {
+      "venue": "中京",
+      "race_number": 2,
+      "post_time": "10:20",
+      "track": "芝",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "ノーブルラホーヤ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "中京",
+      "race_number": 8,
+      "post_time": "16:25",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          1,
+          8
+        ],
+        "horse_names": [
+          "アクセス",
+          "チェルヴァーラ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          1,
+          8
+        ],
+        "horse_names": [
+          "アクセス",
+          "チェルヴァーラ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "新潟",
+      "race_number": 12,
+      "post_time": "18:20",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "カドドゥディエ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    }
+  ],
+  "grand_total": 4400
+}
