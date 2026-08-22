@@ -1,6 +1,6 @@
 {
   "date": "2026-08-22",
-  "generated_at": "2026-08-22T09:05:02.034747+09:00",
+  "generated_at": "2026-08-22T09:21:39.209821+09:00",
   "races": [
     {
       "venue": "札幌",
@@ -241,15 +241,16 @@
         {
           "umaban": 4,
           "horse_name": "サイモンゼスト",
-          "amount": 700,
+          "amount": 2800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 2800
     },
     {
       "venue": "札幌",
@@ -261,16 +262,17 @@
         {
           "umaban": 11,
           "horse_name": "ロングミックス",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "中京",
@@ -308,5 +310,5 @@
       "total_amount": 3100
     }
   ],
-  "grand_total": 25300
+  "grand_total": 29500
 }
