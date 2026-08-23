@@ -974,6 +974,10 @@
             --live-odds: #7CE7C4;
             /* JRAリアルタイム単勝オッズ */
             /* シラベタとKEIBAビューアで一致した買い目 */
+            --mymark: #FF6FA5;
+            /* 手入力印（Tatsuo / 複勝専門店） */
+            --mymark-line: #5a2a44;
+            /* 手入力列の区切り線 */
             --uw: 40px;
             /* 馬番列の幅（馬名列の left もこの値に合わせる） */
         }
@@ -1418,6 +1422,90 @@
             min-width: 34px;
         }
 
+        /* ===== 手入力列: T(Tatsuo) / 複(複勝専門店) =====
+           取得データではなくユーザーがタップで入れる印。表示専用の列と混同されないよう、
+           既存パレットに無いローズを使い、薄い帯と区切り線でブロックとして括る。 */
+        .pred-table .my-col {
+            width: 38px;
+            min-width: 38px;
+            padding: 0;
+            /* セル全面をタップ対象にする（38×38px） */
+        }
+
+        .pred-table td.my-col {
+            cursor: pointer;
+            touch-action: manipulation;
+        }
+
+        .pred-table thead th.my-head {
+            color: var(--mymark);
+            background: #1a141a;
+        }
+
+        .pred-table tbody td.my-col {
+            background: #161016;
+        }
+
+        .pred-table tbody tr:nth-child(even) td.my-col {
+            background: #1a1319;
+        }
+
+        /* ブロックの左端は「見えている方の先頭列」に、右端は勝馬率の左に引く。
+           :not() を2本並べているのは「T か 複のどちらかが見えているとき」の意味。
+           両方非表示なら勝馬率の左線も消え、追加前と同じ見た目に戻る。 */
+        .pred-table .my-c-t {
+            border-left: 2px solid var(--mymark-line);
+        }
+
+        body.hide-my-t .pred-table .my-c-f {
+            border-left: 2px solid var(--mymark-line);
+        }
+
+        body:not(.hide-my-t) .pred-table .col-ph,
+        body:not(.hide-my-f) .pred-table .col-ph {
+            border-left: 2px solid var(--mymark-line);
+        }
+
+        /* 表示/非表示は body のクラスだけで切り替える（表を組み直さない＝印もスクロール位置も保つ） */
+        body.hide-my-t .my-c-t {
+            display: none;
+        }
+
+        body.hide-my-f .my-c-f {
+            display: none;
+        }
+
+        .my-mk {
+            display: block;
+            line-height: 38px;
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--mymark);
+            text-shadow: 0 0 7px rgba(255, 111, 165, 0.5);
+        }
+
+        .my-mk.off {
+            color: #4d3f47;
+            font-size: 12px;
+            font-weight: 600;
+            text-shadow: none;
+        }
+
+        /* 全体に -webkit-tap-highlight-color:transparent が効いているので押下感は自前で出す */
+        td.my-col.flash {
+            animation: myflash 0.22s ease-out;
+        }
+
+        @keyframes myflash {
+            0% {
+                box-shadow: inset 0 0 0 99px rgba(255, 111, 165, 0.25);
+            }
+
+            100% {
+                box-shadow: inset 0 0 0 99px rgba(255, 111, 165, 0);
+            }
+        }
+
         /* ===== シラベタ: 推奨買い目パネル（表の直下・横スクロールしても左端に固定） ===== */
         .pred-scroll-inner {
             width: max-content;
@@ -1751,6 +1839,41 @@
             flex: 1 1 auto;
         }
 
+        /* 手入力列の表示/非表示スイッチ（メタ行・全画面ボタンの左） */
+        .my-toggles {
+            flex: 0 0 auto;
+            display: flex;
+            gap: 5px;
+        }
+
+        .mybtn {
+            appearance: none;
+            -webkit-appearance: none;
+            font-family: inherit;
+            white-space: nowrap;
+            background: var(--pred-panel2);
+            color: #6b6f78;
+            border: 1px solid var(--pred-line);
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-size: 11.5px;
+            font-weight: 700;
+        }
+
+        /* on をアクア(=ソート中の意味)にしないのは、同じ画面で色の意味が衝突するため */
+        .mybtn.on {
+            color: var(--mymark);
+            border-color: var(--mymark-line);
+            background: #241520;
+        }
+
+        .mybtn .cnt {
+            font-size: 9px;
+            margin-left: 3px;
+            vertical-align: top;
+            opacity: 0.85;
+        }
+
         .fs-btn {
             flex: 0 0 auto;
             display: inline-flex;
@@ -1862,6 +1985,7 @@
             <div class="chip-row pred-races" id="predRaces"></div>
             <div class="pred-meta-row">
                 <div class="pred-meta" id="predMeta"></div>
+                <div class="my-toggles" id="myToggles"></div>
                 <button class="fs-btn" id="predFsBtn" aria-label="表を全画面表示">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                         <path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" />
@@ -2584,6 +2708,99 @@
             return `<div class="bar-wrap"><div class="bar-fill ${cls}" style="width:${w.toFixed(1)}%"></div>${rk}<span class="bar-val">${predPct(v)}%</span></div>`;
         }
 
+
+        /* ---------- 手入力印（T=Tatsuo / 複=複勝専門店） ----------
+           取得データではなく、ユーザーがタップで入れる印。localStorage に日付ごとに持ち、
+           古い日付は読み込み時に捨てる。端末をまたいだ同期はしない。 */
+        const MY_COLS = [
+            { key: 't', label: 'T', title: 'Tatsuo予想' },
+            { key: 'f', label: '複', title: '複勝専門店予想' },
+        ];
+        const MY_MARK_KEY = 'keiba_mymark_v1';   // {"2026-08-23":{"札幌|1":{"t":[3,7],"f":[5]}}}
+        const MY_COLS_KEY = 'keiba_mycols_v1';   // {"t":true,"f":true}
+        const MY_KEEP_DAYS = 3;                  // これより古い日付は読み込み時に捨てる
+
+        let myMarks = {};                        // 当日ぶんだけメモリに載せる
+        let myColsOn = { t: true, f: true };
+
+        /* プライベートモード/容量超過でも落ちないように必ず try で包む */
+        function lsGet(key, fb) {
+            try { const s = localStorage.getItem(key); return s ? JSON.parse(s) : fb; }
+            catch (e) { return fb; }
+        }
+        function lsSet(key, v) {
+            try { localStorage.setItem(key, JSON.stringify(v)); }
+            catch (e) { /* 保存できなくてもその場の操作は続行する */ }
+        }
+
+        /* 日付キーは JSON 側の date を優先（日跨ぎでも表示中の表と一致させる） */
+        function myDate() {
+            return (predState.data && predState.data.date) || jstDateStr();
+        }
+        function myRaceKey() {
+            const v = currentVenue(), r = currentRace();
+            return (v && r) ? v.venue + '|' + r.race_number : '';
+        }
+
+        function applyMyColVisibility() {
+            document.body.classList.toggle('hide-my-t', !myColsOn.t);
+            document.body.classList.toggle('hide-my-f', !myColsOn.f);
+        }
+        function loadMyCols() {
+            myColsOn = Object.assign({ t: true, f: true }, lsGet(MY_COLS_KEY, {}));
+            applyMyColVisibility();
+        }
+
+        function loadMyMarks() {
+            const all = lsGet(MY_MARK_KEY, {}), keep = {};
+            const cutoff = new Date(Date.now() - MY_KEEP_DAYS * 86400000)
+                .toLocaleDateString('en-CA', { timeZone: 'Asia/Tokyo' });
+            Object.keys(all).forEach(d => { if (d >= cutoff) keep[d] = all[d]; });
+            if (Object.keys(keep).length !== Object.keys(all).length) lsSet(MY_MARK_KEY, keep);
+            myMarks = keep[myDate()] || {};
+        }
+        function saveMyMarks() {
+            const all = lsGet(MY_MARK_KEY, {});
+            all[myDate()] = myMarks;
+            lsSet(MY_MARK_KEY, all);
+        }
+
+        function isMyMarked(col, uma) {
+            const e = myMarks[myRaceKey()];
+            return !!(e && e[col] && e[col].indexOf(uma) >= 0);
+        }
+        function toggleMyMark(col, uma) {
+            const rk = myRaceKey();
+            if (!rk) return;
+            const e = myMarks[rk] || (myMarks[rk] = {});
+            const arr = e[col] || (e[col] = []);
+            const i = arr.indexOf(uma);
+            if (i >= 0) arr.splice(i, 1); else arr.push(uma);
+            if (!arr.length) delete e[col];
+            if (!Object.keys(e).length) delete myMarks[rk];
+            saveMyMarks();
+        }
+        function myDayCount(col) {
+            return Object.keys(myMarks).reduce((n, k) => n + ((myMarks[k][col] || []).length), 0);
+        }
+        function myCellHtml(col, uma) {
+            return isMyMarked(col, uma)
+                ? '<span class="my-mk">！</span>'
+                : '<span class="my-mk off">·</span>';
+        }
+
+        /* 本日の入力頭数をバッジに出す = 列を隠していても入力済みだと気付ける */
+        function renderMyToggles() {
+            const host = $('#myToggles');
+            if (!host) return;
+            host.innerHTML = MY_COLS.map(c => {
+                const n = myDayCount(c.key), on = !!myColsOn[c.key];
+                return `<button class="mybtn${on ? ' on' : ''}" data-mycol="${c.key}" aria-pressed="${on}"`
+                    + ` title="${c.title}の列を表示/非表示（本日の入力 ${n}頭）">${c.label}`
+                    + `${n ? `<i class="cnt">${n}</i>` : ''}</button>`;
+            }).join('');
+        }
+
         function currentVenue() {
             const vs = predState.data && predState.data.venues;
             if (!vs || !vs.length) return null;
@@ -2649,6 +2866,7 @@
                 if (r.ok) data = await r.json();
             } catch (e) { /* ignore */ }
             predState.data = data;
+            loadMyMarks();          // 日付キー(data.date)が確定してから読む
             predState.loading = false;
             predState.venueIdx = 0;
             const v = currentVenue();
@@ -2858,7 +3076,9 @@
           <td class="jockey">${h.jockey || ''}</td>
           <td>${h.iruka ? '<span class="iruka-star">★</span>' : '<span class="mk-none">·</span>'}</td>
           <td>${h.chumoku ? '<span class="chumoku-mark">◆</span>' : '<span class="mk-none">·</span>'}</td>
-          <td class="bar-cell">${barHtml(h.pharaoh_winrate, 'ph', phRank.get(h.umaban))}</td>
+          <td class="my-col my-c-t" data-mycol="t" data-uma="${h.umaban}">${myCellHtml('t', h.umaban)}</td>
+          <td class="my-col my-c-f" data-mycol="f" data-uma="${h.umaban}">${myCellHtml('f', h.umaban)}</td>
+          <td class="bar-cell col-ph">${barHtml(h.pharaoh_winrate, 'ph', phRank.get(h.umaban))}</td>
           <td class="bar-cell">${barHtml(h.yoshi_winrate, 'yo', yoRank.get(h.umaban))}</td>
           <td>${h.tan_odds == null ? '—' : h.tan_odds.toFixed(1)}</td>
           <td data-live-uma="${h.umaban}">${liveCellHtml(h)}</td>
@@ -2883,7 +3103,9 @@
           <th>騎手</th>
           <th title="イルカ推奨（不利馬）">★</th>
           <th class="sb-head" title="シラベタ 注目馬">注</th>
-          <th class="bar-cell" style="color:var(--pharaoh)">勝馬率</th>
+          <th class="my-head my-col my-c-t" title="Tatsuo予想（手入力・タップで！）">T</th>
+          <th class="my-head my-col my-c-f" title="複勝専門店予想（手入力・タップで！）">複</th>
+          <th class="bar-cell col-ph" style="color:var(--pharaoh)">勝馬率</th>
           <th class="bar-cell" style="color:var(--yoshi)">単勝率</th>
           <th title="馬柱の単勝オッズ（前日夕方時点）">単オ</th>
           <th style="color:var(--live-odds)" title="JRA公式のリアルタイム単勝オッズ（1分ごと更新／↓=支持集中 ↑=人気下降）">現オ</th>
@@ -2999,7 +3221,7 @@
             const clear = () => {
                 $('#predVenues').innerHTML = ''; $('#predRaces').innerHTML = '';
                 $('#predMeta').innerHTML = ''; $('#predSorts').innerHTML = '';
-                $('#predBody').innerHTML = '';
+                $('#myToggles').innerHTML = ''; $('#predBody').innerHTML = '';
             };
             if (predState.loading && predState.data === undefined) {
                 clear();
@@ -3020,6 +3242,7 @@
             renderRaceChips();
             renderSortRow();
             renderPredMeta();
+            renderMyToggles();
             renderPredTable();
             syncBetsWidth();
         }
@@ -3044,6 +3267,28 @@
             $('#predFsExit').addEventListener('click', () => document.body.classList.remove('pred-fs'));
             $('#prevRaceBtn').addEventListener('click', () => gotoRaceDelta(-1));
             $('#nextRaceBtn').addEventListener('click', () => gotoRaceDelta(+1));
+            /* 表は毎回 innerHTML で組み直されるので、セルではなく #predBody 側で受ける */
+            $('#predBody').addEventListener('click', e => {
+                const td = e.target.closest('td[data-mycol]');
+                if (!td) return;
+                const col = td.dataset.mycol, uma = +td.dataset.uma;
+                toggleMyMark(col, uma);
+                td.innerHTML = myCellHtml(col, uma);   // 表全体は組み直さない＝スクロール位置が飛ばない
+                td.classList.remove('flash');
+                void td.offsetWidth;                   // アニメを確実に頭から流し直す
+                td.classList.add('flash');
+                renderMyToggles();
+            });
+            /* トグルも中身を作り直すので、器(#myToggles)側で受ける */
+            $('#myToggles').addEventListener('click', e => {
+                const b = e.target.closest('button[data-mycol]');
+                if (!b) return;
+                const k = b.dataset.mycol;
+                myColsOn[k] = !myColsOn[k];
+                lsSet(MY_COLS_KEY, myColsOn);
+                applyMyColVisibility();                // body のクラスだけ。表は再描画しない
+                renderMyToggles();
+            });
             window.addEventListener('resize', syncBetsWidth);
             window.addEventListener('orientationchange', () => setTimeout(syncBetsWidth, 120));
             // タブ復帰時は待たずに即更新（1分待つと古い値が見える）
@@ -3056,6 +3301,8 @@
         window.addEventListener('load', async () => {
             bindTweaks();
             bindTabs();
+            loadMyCols();
+            loadMyMarks();
             await load();
             updateClock();
             setInterval(() => { updateClock(); autoSkipCheck(); renderNav(); }, 30000);
