@@ -1,6 +1,6 @@
 {
   "date": "2026-08-23",
-  "generated_at": "2026-08-23T09:05:01.503682+09:00",
+  "generated_at": "2026-08-23T09:22:04.168570+09:00",
   "races": [
     {
       "venue": "札幌",
@@ -12,16 +12,17 @@
         {
           "umaban": 3,
           "horse_name": "アイビーミャーオ",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "新潟",
@@ -229,16 +230,17 @@
         {
           "umaban": 3,
           "horse_name": "パンジャタワー",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "中京",
@@ -280,16 +282,17 @@
         {
           "umaban": 15,
           "horse_name": "ベルゼビュート",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "中京",
@@ -332,5 +335,5 @@
       "total_amount": 700
     }
   ],
-  "grand_total": 32000
+  "grand_total": 38300
 }
