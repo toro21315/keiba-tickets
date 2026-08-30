@@ -1,0 +1,291 @@
+{
+  "date": "2026-08-30",
+  "generated_at": "2026-08-30T10:36:44.833069+09:00",
+  "races": [
+    {
+      "venue": "中京",
+      "race_number": 2,
+      "post_time": "10:25",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "コスモクラウン",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "札幌",
+      "race_number": 2,
+      "post_time": "10:30",
+      "track": "芝",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 12,
+          "horse_name": "ソニックアイル",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "札幌",
+      "race_number": 3,
+      "post_time": "11:00",
+      "track": "ダ",
+      "distance": 1700,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "ラスターヴァース",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "中京",
+      "race_number": 4,
+      "post_time": "11:25",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 7,
+          "horse_name": "セッシュウ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "札幌",
+      "race_number": 4,
+      "post_time": "11:30",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [
+        {
+          "umaban": 5,
+          "horse_name": "イデアジュアンイハ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "新潟",
+      "race_number": 5,
+      "post_time": "11:45",
+      "track": "芝",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 5,
+          "horse_name": "エナノムスメ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "札幌",
+      "race_number": 5,
+      "post_time": "12:20",
+      "track": "芝",
+      "distance": 1800,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          3,
+          5
+        ],
+        "horse_names": [
+          "ヴァンクライ",
+          "トーセンイルン"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          3,
+          5
+        ],
+        "horse_names": [
+          "ヴァンクライ",
+          "トーセンイルン"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "札幌",
+      "race_number": 8,
+      "post_time": "13:50",
+      "track": "芝",
+      "distance": 1500,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          5,
+          12
+        ],
+        "horse_names": [
+          "ユーティジャーニー",
+          "ネッタイヤライ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          5,
+          12
+        ],
+        "horse_names": [
+          "ユーティジャーニー",
+          "ネッタイヤライ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "札幌",
+      "race_number": 10,
+      "post_time": "14:50",
+      "track": "芝",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "ルージュベルベット",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 9,
+          "horse_name": "プレセピオ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2000
+    },
+    {
+      "venue": "中京",
+      "race_number": 7,
+      "post_time": "15:35",
+      "track": "芝",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 9,
+          "horse_name": "ジーティーマイカ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "新潟",
+      "race_number": 8,
+      "post_time": "15:45",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "ダノンシーマ",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "中京",
+      "race_number": 9,
+      "post_time": "16:45",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 13,
+          "horse_name": "バトルセレーネ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    }
+  ],
+  "grand_total": 14100
+}
