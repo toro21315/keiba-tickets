@@ -1,6 +1,6 @@
 {
   "date": "2026-09-06",
-  "generated_at": "2026-09-06T09:05:02.819146+09:00",
+  "generated_at": "2026-09-06T09:22:29.873351+09:00",
   "races": [
     {
       "venue": "札幌",
@@ -112,10 +112,11 @@
         {
           "umaban": 9,
           "horse_name": "シュネルアンジュ",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         },
         {
@@ -129,7 +130,7 @@
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1300
+      "total_amount": 3400
     },
     {
       "venue": "阪神",
@@ -161,16 +162,17 @@
         {
           "umaban": 10,
           "horse_name": "エスシービクトリア",
-          "amount": 1000,
+          "amount": 3100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 3100
     },
     {
       "venue": "札幌",
@@ -190,15 +192,16 @@
         {
           "umaban": 9,
           "horse_name": "ハヤブササキチャン",
-          "amount": 700,
+          "amount": 2800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1400
+      "total_amount": 3500
     },
     {
       "venue": "阪神",
@@ -210,9 +213,10 @@
         {
           "umaban": 5,
           "horse_name": "テーオーグレーザー",
-          "amount": 700,
+          "amount": 2800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         },
         {
@@ -227,7 +231,7 @@
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1700
+      "total_amount": 3800
     },
     {
       "venue": "中山",
@@ -250,5 +254,5 @@
       "total_amount": 700
     }
   ],
-  "grand_total": 14300
+  "grand_total": 22700
 }
