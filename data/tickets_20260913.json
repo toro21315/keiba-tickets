@@ -1,6 +1,6 @@
 {
   "date": "2026-09-13",
-  "generated_at": "2026-09-13T09:05:02.401678+09:00",
+  "generated_at": "2026-09-13T09:19:27.460626+09:00",
   "races": [
     {
       "venue": "阪神",
@@ -56,9 +56,10 @@
         {
           "umaban": 8,
           "horse_name": "ワインダークシー",
-          "amount": 700,
+          "amount": 6700,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         },
         {
@@ -72,7 +73,7 @@
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 7000
     },
     {
       "venue": "中山",
@@ -84,9 +85,10 @@
         {
           "umaban": 11,
           "horse_name": "スローブギ",
-          "amount": 700,
+          "amount": 6700,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
@@ -116,7 +118,7 @@
         "amount_per_combo": 2300,
         "subtotal": 2300
       },
-      "total_amount": 3800
+      "total_amount": 9800
     },
     {
       "venue": "阪神",
@@ -336,5 +338,5 @@
       "total_amount": 1000
     }
   ],
-  "grand_total": 21700
+  "grand_total": 33700
 }
