@@ -1,0 +1,220 @@
+{
+  "date": "2026-09-19",
+  "generated_at": "2026-09-19T09:05:02.409393+09:00",
+  "races": [
+    {
+      "venue": "阪神",
+      "race_number": 2,
+      "post_time": "10:15",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "サイモンレガシー",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "阪神",
+      "race_number": 7,
+      "post_time": "13:10",
+      "track": "芝",
+      "distance": 2400,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "ベルシュヴァル",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "中山",
+      "race_number": 7,
+      "post_time": "13:25",
+      "track": "ダ",
+      "distance": 2400,
+      "tansho": [
+        {
+          "umaban": 5,
+          "horse_name": "サトノリアン",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "中山",
+      "race_number": 8,
+      "post_time": "13:55",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "マタミカンサン",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "中山",
+      "race_number": 9,
+      "post_time": "14:25",
+      "track": "芝",
+      "distance": 1200,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          2,
+          6
+        ],
+        "horse_names": [
+          "ジャスパートレノ",
+          "ジオパークカツキ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          2,
+          6
+        ],
+        "horse_names": [
+          "ジャスパートレノ",
+          "ジオパークカツキ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "阪神",
+      "race_number": 10,
+      "post_time": "14:50",
+      "track": "芝",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "リヴァイ",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "中山",
+      "race_number": 10,
+      "post_time": "15:05",
+      "track": "芝",
+      "distance": 2500,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          9,
+          11
+        ],
+        "horse_names": [
+          "アロンズロッド",
+          "キンググローリー"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          9,
+          11
+        ],
+        "horse_names": [
+          "アロンズロッド",
+          "キンググローリー"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "阪神",
+      "race_number": 11,
+      "post_time": "15:30",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "マッシャーブルム",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "中山",
+      "race_number": 12,
+      "post_time": "16:30",
+      "track": "ダ",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 13,
+          "horse_name": "トウタツ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    }
+  ],
+  "grand_total": 11200
+}
