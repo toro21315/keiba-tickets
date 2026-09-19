@@ -1,6 +1,6 @@
 {
   "date": "2026-09-19",
-  "generated_at": "2026-09-19T09:05:02.409393+09:00",
+  "generated_at": "2026-09-19T09:19:35.472443+09:00",
   "races": [
     {
       "venue": "阪神",
@@ -12,16 +12,17 @@
         {
           "umaban": 8,
           "horse_name": "サイモンレガシー",
-          "amount": 1000,
+          "amount": 7000,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 7000
     },
     {
       "venue": "阪神",
@@ -75,15 +76,16 @@
         {
           "umaban": 6,
           "horse_name": "マタミカンサン",
-          "amount": 700,
+          "amount": 6700,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 6700
     },
     {
       "venue": "中山",
@@ -216,5 +218,5 @@
       "total_amount": 300
     }
   ],
-  "grand_total": 11200
+  "grand_total": 23200
 }
