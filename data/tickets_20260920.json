@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "generated_at": "2026-09-20T09:05:02.086049+09:00",
+  "generated_at": "2026-09-20T09:19:28.831202+09:00",
   "races": [
     {
       "venue": "阪神",
@@ -32,16 +32,17 @@
         {
           "umaban": 13,
           "horse_name": "サウンズオーサム",
-          "amount": 1000,
+          "amount": 7000,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 7000
     },
     {
       "venue": "阪神",
@@ -129,15 +130,16 @@
         {
           "umaban": 14,
           "horse_name": "ジュベルシャムス",
-          "amount": 700,
+          "amount": 6700,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 6700
     },
     {
       "venue": "中山",
@@ -224,16 +226,17 @@
         {
           "umaban": 8,
           "horse_name": "タカスタカスタカス",
-          "amount": 1000,
+          "amount": 7000,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 7000
     },
     {
       "venue": "中山",
@@ -293,5 +296,5 @@
       "total_amount": 300
     }
   ],
-  "grand_total": 13000
+  "grand_total": 31000
 }
