@@ -1,6 +1,67 @@
 {
   "date": "2026-09-21",
-  "generated_at": "2026-09-21T09:05:01.719706+09:00",
-  "races": [],
-  "grand_total": 0
+  "generated_at": "2026-09-21T09:22:56.246611+09:00",
+  "races": [
+    {
+      "venue": "阪神",
+      "race_number": 2,
+      "post_time": "10:35",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 5,
+          "horse_name": "リアンフィニ",
+          "amount": 6000,
+          "sources": [
+            "L3"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 6000
+    },
+    {
+      "venue": "阪神",
+      "race_number": 5,
+      "post_time": "12:25",
+      "track": "芝",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "シホノノービレ",
+          "amount": 6000,
+          "sources": [
+            "L3"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 6000
+    },
+    {
+      "venue": "阪神",
+      "race_number": 11,
+      "post_time": "15:45",
+      "track": "芝",
+      "distance": 2400,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "ロブチェン",
+          "amount": 6000,
+          "sources": [
+            "L3"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 6000
+    }
+  ],
+  "grand_total": 18000
 }
