@@ -1158,6 +1158,16 @@
             color: var(--shiraberu);
         }
 
+        /* 発走時刻メタの出所バッジ（screener 欠落時の劣化を見えるようにする） */
+        .pred-meta .meta-na {
+            color: #E0685F;
+            font-weight: 700;
+        }
+
+        .pred-meta .meta-alt {
+            color: #8FA6BB;
+        }
+
         .pred-sorts {
             display: flex;
             gap: 6px;
@@ -2949,6 +2959,17 @@
             });
         }
 
+        function metaBadgeHtml() {
+            const d = predState.data;
+            if (!d) return '';
+            if (d.meta_post_time_missing > 0) return '<span class="meta-na">⏱発走時刻未取得</span>';
+            const srcs = d.meta_sources || {};
+            const label = { jra_schedule: 'JRA', shiraberu: 'シラベタ', viewer: 'ビューア' };
+            const alt = Object.keys(srcs).filter(k => k !== 'screener' && srcs[k] > 0);
+            if (!alt.length) return '';
+            return `<span class="meta-alt">⏱${alt.map(k => label[k] || k).join('/')}由来</span>`;
+        }
+
         function liveTagHtml() {
             const o = currentLive();
             if (!o) return '';
@@ -3036,7 +3057,7 @@
                 `<span class="rno">${v.venue} ${r.race_number}R</span>` +
                 `<span>${r.post_time || '--:--'} 発走</span>` +
                 `<span>${dist}</span>` +
-                `<span>${r.horses.length}頭</span>` + liveTagHtml() + irukaNa + sbNa;
+                `<span>${r.horses.length}頭</span>` + liveTagHtml() + metaBadgeHtml() + irukaNa + sbNa;
         }
 
         function sortHorses(horses) {
