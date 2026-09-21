@@ -1,0 +1,4632 @@
+{
+  "date": "2026-09-21",
+  "generated_at": "2026-09-21T09:22:23.227652+09:00",
+  "iruka_available": true,
+  "shiraberu_available": true,
+  "viewer_bets_available": true,
+  "venues": [
+    {
+      "venue": "阪神",
+      "races": [
+        {
+          "race_number": 1,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "ハイネスプラウド",
+              "jockey": "河原田",
+              "pharaoh_winrate": 0.0225,
+              "yoshi_winrate": 0.0417,
+              "tan_odds": 34.5,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": true,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "△",
+              "mark_kai": "△",
+              "mark_soku": "✕",
+              "shohen": 42.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 2,
+              "horse_name": "マコトブリッツ",
+              "jockey": "富田暁",
+              "pharaoh_winrate": 0.0517,
+              "yoshi_winrate": 0.0625,
+              "tan_odds": 19.9,
+              "tan_ev": 1.06,
+              "fuku_ev": 0.6,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "◎",
+              "mark_soku": "",
+              "shohen": 44.5,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 3,
+              "horse_name": "ポカポカヨウキ",
+              "jockey": "松若風",
+              "pharaoh_winrate": 0.2752,
+              "yoshi_winrate": 0.2547,
+              "tan_odds": 2.3,
+              "tan_ev": 0.67,
+              "fuku_ev": 0.71,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "◯",
+              "mark_teki": "◯",
+              "mark_kai": "",
+              "mark_soku": "◯",
+              "shohen": 61.3,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "○",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 4,
+              "horse_name": "ワンダーラヴグッド",
+              "jockey": "酒井学",
+              "pharaoh_winrate": 0.0087,
+              "yoshi_winrate": 0.0113,
+              "tan_odds": 53.9,
+              "tan_ev": 0.54,
+              "fuku_ev": 0.54,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 41.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 5,
+              "horse_name": "ガヤーズサムライ",
+              "jockey": "幸英明",
+              "pharaoh_winrate": 0.0688,
+              "yoshi_winrate": 0.0925,
+              "tan_odds": 9.2,
+              "tan_ev": 0.81,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "✕",
+              "mark_kai": "✕",
+              "mark_soku": "△",
+              "shohen": 45.8,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 6,
+              "horse_name": "ランズエンド",
+              "jockey": "今村聖",
+              "pharaoh_winrate": 0.2302,
+              "yoshi_winrate": 0.1546,
+              "tan_odds": 6.8,
+              "tan_ev": 1.03,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "▲",
+              "mark_kai": "◯",
+              "mark_soku": "▲",
+              "shohen": 57.9,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 7,
+              "horse_name": "ゴルディアス",
+              "jockey": "田山旺",
+              "pharaoh_winrate": 0.0081,
+              "yoshi_winrate": 0.019,
+              "tan_odds": 46.4,
+              "tan_ev": 0.71,
+              "fuku_ev": 0.83,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 41.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 8,
+              "horse_name": "エコロラーダ",
+              "jockey": "坂井瑠",
+              "pharaoh_winrate": 0.3348,
+              "yoshi_winrate": 0.3638,
+              "tan_odds": 2.3,
+              "tan_ev": 0.92,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◎",
+              "mark_teki": "◎",
+              "mark_kai": "▲",
+              "mark_soku": "◎",
+              "shohen": 65.8,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "○"
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "6 – 8",
+                  "legs": [
+                    6,
+                    8
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "6 – 8",
+                  "legs": [
+                    6,
+                    8
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [
+            {
+              "type": "単勝",
+              "groups": [
+                {
+                  "raw": "②",
+                  "amount": 1000,
+                  "points": 1,
+                  "picks": [
+                    {
+                      "text": "2",
+                      "legs": [
+                        2
+                      ],
+                      "match": false
+                    }
+                  ]
+                },
+                {
+                  "raw": "⑥",
+                  "amount": 1000,
+                  "points": 1,
+                  "picks": [
+                    {
+                      "text": "6",
+                      "legs": [
+                        6
+                      ],
+                      "match": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 2,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "マリアンデール",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.1628,
+              "yoshi_winrate": 0.1073,
+              "tan_odds": 6.8,
+              "tan_ev": 0.75,
+              "fuku_ev": 0.64,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "△",
+              "mark_kai": "",
+              "mark_soku": "▲",
+              "shohen": 56.1,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 2,
+              "horse_name": "ジーティーハルカゼ",
+              "jockey": "西村淳",
+              "pharaoh_winrate": 0.0173,
+              "yoshi_winrate": 0.0309,
+              "tan_odds": 29.5,
+              "tan_ev": 0.77,
+              "fuku_ev": 0.84,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "✕",
+              "mark_soku": "",
+              "shohen": 41.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 3,
+              "horse_name": "ハマナスノサクコロ",
+              "jockey": "Ｃ．ル",
+              "pharaoh_winrate": 0.3001,
+              "yoshi_winrate": 0.1488,
+              "tan_odds": 6.7,
+              "tan_ev": 0.92,
+              "fuku_ev": 0.56,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "▲",
+              "mark_teki": "▲",
+              "mark_kai": "▲",
+              "mark_soku": "✕",
+              "shohen": 69.5,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 4,
+              "horse_name": "ドリームリボン",
+              "jockey": "和田陽",
+              "pharaoh_winrate": 0.0025,
+              "yoshi_winrate": 0.0041,
+              "tan_odds": 282.0,
+              "tan_ev": 0.68,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 40.5,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 5,
+              "horse_name": "リアンフィニ",
+              "jockey": "川田将",
+              "pharaoh_winrate": 0.186,
+              "yoshi_winrate": 0.361,
+              "tan_odds": 2.5,
+              "tan_ev": 1.03,
+              "fuku_ev": 0.92,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◎*",
+              "mark_teki": "◎",
+              "mark_kai": "◎",
+              "mark_soku": "◎",
+              "shohen": 58.4,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 6,
+              "horse_name": "ルージュムーサ",
+              "jockey": "今村聖",
+              "pharaoh_winrate": 0.0065,
+              "yoshi_winrate": 0.0044,
+              "tan_odds": 153.7,
+              "tan_ev": 0.52,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 40.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 7,
+              "horse_name": "イテルム",
+              "jockey": "松山弘",
+              "pharaoh_winrate": 0.0504,
+              "yoshi_winrate": 0.0559,
+              "tan_odds": 9.1,
+              "tan_ev": 0.56,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "△",
+              "shohen": 45.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 8,
+              "horse_name": "パルフェクシオン",
+              "jockey": "田山旺",
+              "pharaoh_winrate": 0.0545,
+              "yoshi_winrate": 0.0906,
+              "tan_odds": 8.3,
+              "tan_ev": 0.78,
+              "fuku_ev": 0.57,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "△",
+              "mark_soku": "",
+              "shohen": 45.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 9,
+              "horse_name": "ラガッタレアーレ",
+              "jockey": "北村友",
+              "pharaoh_winrate": 0.1912,
+              "yoshi_winrate": 0.175,
+              "tan_odds": 3.8,
+              "tan_ev": 0.74,
+              "fuku_ev": 0.56,
+              "iruka": true,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "◯",
+              "mark_kai": "",
+              "mark_soku": "◯",
+              "shohen": 58.9,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "○",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 10,
+              "horse_name": "スターリーデー",
+              "jockey": "吉村誠",
+              "pharaoh_winrate": 0.0286,
+              "yoshi_winrate": 0.0221,
+              "tan_odds": 54.4,
+              "tan_ev": 0.93,
+              "fuku_ev": 1.04,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "",
+              "mark_teki": "✕",
+              "mark_kai": "◯",
+              "mark_soku": "",
+              "shohen": 43.0,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "10",
+                  "legs": [
+                    10
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "1 – 3",
+                  "legs": [
+                    1,
+                    3
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 10",
+                  "legs": [
+                    3,
+                    10
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "1 – 3",
+                  "legs": [
+                    1,
+                    3
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 10",
+                  "legs": [
+                    3,
+                    10
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [
+            {
+              "type": "単勝",
+              "groups": [
+                {
+                  "raw": "⑤",
+                  "amount": 1000,
+                  "points": 1,
+                  "picks": [
+                    {
+                      "text": "5",
+                      "legs": [
+                        5
+                      ],
+                      "match": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "groups": [
+                {
+                  "raw": "⑤-⑩",
+                  "amount": 500,
+                  "points": 1,
+                  "picks": [
+                    {
+                      "text": "5 – 10",
+                      "legs": [
+                        5,
+                        10
+                      ],
+                      "match": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "groups": [
+                {
+                  "raw": "⑤-⑩",
+                  "amount": 1000,
+                  "points": 1,
+                  "picks": [
+                    {
+                      "text": "5 – 10",
+                      "legs": [
+                        5,
+                        10
+                      ],
+                      "match": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 3,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "アトランタ",
+              "jockey": "松山弘",
+              "pharaoh_winrate": 0.0103,
+              "yoshi_winrate": 0.0282,
+              "tan_odds": 23.3,
+              "tan_ev": 0.67,
+              "fuku_ev": 0.76,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 2,
+              "horse_name": "メイショウレイナ",
+              "jockey": "永島ま",
+              "pharaoh_winrate": 0.0019,
+              "yoshi_winrate": 0.003,
+              "tan_odds": 167.5,
+              "tan_ev": 0.45,
+              "fuku_ev": 0.88,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.4,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 3,
+              "horse_name": "コジアン",
+              "jockey": "吉村誠",
+              "pharaoh_winrate": 0.0745,
+              "yoshi_winrate": 0.1446,
+              "tan_odds": 6.2,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.6,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "▲",
+              "mark_kai": "▲",
+              "mark_soku": "◯",
+              "shohen": 49.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "△",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 4,
+              "horse_name": "エルダークローネ",
+              "jockey": "田山旺",
+              "pharaoh_winrate": 0.0887,
+              "yoshi_winrate": 0.1288,
+              "tan_odds": 6.0,
+              "tan_ev": 0.8,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "✕",
+              "mark_kai": "",
+              "mark_soku": "✕",
+              "shohen": 50.7,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "○",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 5,
+              "horse_name": "ケンシロウワールド",
+              "jockey": "和田陽",
+              "pharaoh_winrate": 0.0188,
+              "yoshi_winrate": 0.0282,
+              "tan_odds": 48.3,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "△",
+              "mark_kai": "△",
+              "mark_soku": "",
+              "shohen": 46.4,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 6,
+              "horse_name": "ノヴァーリス",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.0876,
+              "yoshi_winrate": 0.1592,
+              "tan_odds": 4.9,
+              "tan_ev": 0.87,
+              "fuku_ev": 0.65,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "◯",
+              "mark_kai": "✕",
+              "mark_soku": "▲",
+              "shohen": 50.7,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 7,
+              "horse_name": "カフジポポー",
+              "jockey": "松若風",
+              "pharaoh_winrate": 0.0048,
+              "yoshi_winrate": 0.0098,
+              "tan_odds": 90.8,
+              "tan_ev": 0.67,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 8,
+              "horse_name": "キャンドル",
+              "jockey": "横山琉",
+              "pharaoh_winrate": 0.0167,
+              "yoshi_winrate": 0.0261,
+              "tan_odds": 27.8,
+              "tan_ev": 0.69,
+              "fuku_ev": 0.72,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 46.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 9,
+              "horse_name": "カツダルマ",
+              "jockey": "幸英明",
+              "pharaoh_winrate": 0.6074,
+              "yoshi_winrate": 0.3487,
+              "tan_odds": 2.3,
+              "tan_ev": 0.9,
+              "fuku_ev": 0.75,
+              "iruka": true,
+              "chumoku": false,
+              "mark_sou": "◎",
+              "mark_teki": "◎",
+              "mark_kai": "◯",
+              "mark_soku": "◎",
+              "shohen": 82.6,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 10,
+              "horse_name": "メイショウスパーク",
+              "jockey": "太宰啓",
+              "pharaoh_winrate": 0.004,
+              "yoshi_winrate": 0.0074,
+              "tan_odds": 72.3,
+              "tan_ev": 0.51,
+              "fuku_ev": 1.04,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.5,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 11,
+              "horse_name": "コメットサン",
+              "jockey": "鮫島克",
+              "pharaoh_winrate": 0.0093,
+              "yoshi_winrate": 0.0178,
+              "tan_odds": 43.2,
+              "tan_ev": 0.63,
+              "fuku_ev": 0.83,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.8,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 12,
+              "horse_name": "ミライノシャチョウ",
+              "jockey": "松本大",
+              "pharaoh_winrate": 0.0442,
+              "yoshi_winrate": 0.044,
+              "tan_odds": 24.5,
+              "tan_ev": 0.9,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "◎",
+              "mark_soku": "",
+              "shohen": 48.0,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 13,
+              "horse_name": "ココモフィーバー",
+              "jockey": "池添謙",
+              "pharaoh_winrate": 0.0318,
+              "yoshi_winrate": 0.0543,
+              "tan_odds": 11.8,
+              "tan_ev": 0.71,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "△",
+              "shohen": 47.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "12",
+                  "legs": [
+                    12
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "9 – 12",
+                  "legs": [
+                    9,
+                    12
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "9 – 12",
+                  "legs": [
+                    9,
+                    12
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 4,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "エイントノーウェイ",
+              "jockey": "川田将",
+              "pharaoh_winrate": 0.1721,
+              "yoshi_winrate": 0.1667,
+              "tan_odds": 4.2,
+              "tan_ev": 0.79,
+              "fuku_ev": 0.59,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "▲",
+              "mark_kai": "",
+              "mark_soku": "◎",
+              "shohen": 64.5,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "△",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 2,
+              "horse_name": "ワインオクロック",
+              "jockey": "北村友",
+              "pharaoh_winrate": 0.0147,
+              "yoshi_winrate": 0.0156,
+              "tan_odds": 60.8,
+              "tan_ev": 0.82,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 42.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 3,
+              "horse_name": "スウィートライト",
+              "jockey": "松山弘",
+              "pharaoh_winrate": 0.1775,
+              "yoshi_winrate": 0.1884,
+              "tan_odds": 3.5,
+              "tan_ev": 0.73,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "◯",
+              "mark_kai": "",
+              "mark_soku": "△",
+              "shohen": 65.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 4,
+              "horse_name": "ジェルメーヌ",
+              "jockey": "田口貫",
+              "pharaoh_winrate": 0.0191,
+              "yoshi_winrate": 0.0169,
+              "tan_odds": 88.2,
+              "tan_ev": 0.89,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "△",
+              "mark_soku": "",
+              "shohen": 43.5,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 5,
+              "horse_name": "レジェンディーヴァ",
+              "jockey": "長岡禎",
+              "pharaoh_winrate": 0.0188,
+              "yoshi_winrate": 0.0217,
+              "tan_odds": 68.4,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "✕",
+              "mark_soku": "",
+              "shohen": 43.4,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 6,
+              "horse_name": "キミチャン",
+              "jockey": "鮫島克",
+              "pharaoh_winrate": 0.0207,
+              "yoshi_winrate": 0.022,
+              "tan_odds": 37.3,
+              "tan_ev": 0.82,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.7,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 7,
+              "horse_name": "テーオーローズ",
+              "jockey": "菱田裕",
+              "pharaoh_winrate": 0.0343,
+              "yoshi_winrate": 0.0449,
+              "tan_odds": 33.6,
+              "tan_ev": 1.21,
+              "fuku_ev": 1.04,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "◎",
+              "mark_soku": "",
+              "shohen": 45.6,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 8,
+              "horse_name": "マヒナピハ",
+              "jockey": "小沢大",
+              "pharaoh_winrate": 0.003,
+              "yoshi_winrate": 0.0044,
+              "tan_odds": 151.8,
+              "tan_ev": 0.54,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 41.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 9,
+              "horse_name": "ナイスウーマン",
+              "jockey": "和田陽",
+              "pharaoh_winrate": 0.0325,
+              "yoshi_winrate": 0.0246,
+              "tan_odds": 45.5,
+              "tan_ev": 0.98,
+              "fuku_ev": 1.04,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "◯",
+              "mark_soku": "",
+              "shohen": 45.3,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 10,
+              "horse_name": "リケアワルツ",
+              "jockey": "吉村誠",
+              "pharaoh_winrate": 0.0237,
+              "yoshi_winrate": 0.0291,
+              "tan_odds": 43.6,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "✕",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 44.1,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 11,
+              "horse_name": "ジョイザモーメント",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.1724,
+              "yoshi_winrate": 0.1474,
+              "tan_odds": 6.1,
+              "tan_ev": 0.92,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "△",
+              "mark_kai": "▲",
+              "mark_soku": "◯",
+              "shohen": 64.5,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 12,
+              "horse_name": "サノノマリーナ",
+              "jockey": "坂井瑠",
+              "pharaoh_winrate": 0.0608,
+              "yoshi_winrate": 0.0717,
+              "tan_odds": 9.6,
+              "tan_ev": 0.7,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "✕",
+              "shohen": 49.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 13,
+              "horse_name": "パクスフェリーチェ",
+              "jockey": "西村淳",
+              "pharaoh_winrate": 0.0438,
+              "yoshi_winrate": 0.0465,
+              "tan_odds": 18.2,
+              "tan_ev": 0.82,
+              "fuku_ev": 0.57,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 46.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 14,
+              "horse_name": "アプリコットスカイ",
+              "jockey": "幸英明",
+              "pharaoh_winrate": 0.0055,
+              "yoshi_winrate": 0.0086,
+              "tan_odds": 100.7,
+              "tan_ev": 0.66,
+              "fuku_ev": 0.88,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 41.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 15,
+              "horse_name": "ワンスフォーユー",
+              "jockey": "田山旺",
+              "pharaoh_winrate": 0.201,
+              "yoshi_winrate": 0.1914,
+              "tan_odds": 4.2,
+              "tan_ev": 0.86,
+              "fuku_ev": 0.55,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◎",
+              "mark_teki": "◎",
+              "mark_kai": "",
+              "mark_soku": "▲",
+              "shohen": 68.4,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "5",
+                  "legs": [
+                    5
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9",
+                  "legs": [
+                    9
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "1 – 5",
+                  "legs": [
+                    1,
+                    5
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "1 – 9",
+                  "legs": [
+                    1,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 11",
+                  "legs": [
+                    5,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 15",
+                  "legs": [
+                    5,
+                    15
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 11",
+                  "legs": [
+                    9,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 15",
+                  "legs": [
+                    9,
+                    15
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "1 – 5",
+                  "legs": [
+                    1,
+                    5
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "1 – 9",
+                  "legs": [
+                    1,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 11",
+                  "legs": [
+                    5,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 15",
+                  "legs": [
+                    5,
+                    15
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 11",
+                  "legs": [
+                    9,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 15",
+                  "legs": [
+                    9,
+                    15
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [
+            {
+              "type": "単勝",
+              "groups": [
+                {
+                  "raw": "⑦",
+                  "amount": 1000,
+                  "points": 1,
+                  "picks": [
+                    {
+                      "text": "7",
+                      "legs": [
+                        7
+                      ],
+                      "match": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "複勝",
+              "groups": [
+                {
+                  "raw": "⑦",
+                  "amount": 2000,
+                  "points": 1,
+                  "picks": [
+                    {
+                      "text": "7",
+                      "legs": [
+                        7
+                      ],
+                      "match": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 5,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "ルジェドリール",
+              "jockey": "田口貫",
+              "pharaoh_winrate": 0.0089,
+              "yoshi_winrate": 0.0045,
+              "tan_odds": 141.6,
+              "tan_ev": 0.51,
+              "fuku_ev": 0.89,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 41.4,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 2,
+              "horse_name": "シンゼンジュウベエ",
+              "jockey": "富田暁",
+              "pharaoh_winrate": 0.0116,
+              "yoshi_winrate": 0.0096,
+              "tan_odds": 136.5,
+              "tan_ev": 0.85,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "△",
+              "mark_soku": "",
+              "shohen": 41.7,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 3,
+              "horse_name": "ニューイントリーグ",
+              "jockey": "Ｃ．ル",
+              "pharaoh_winrate": 0.1107,
+              "yoshi_winrate": 0.1057,
+              "tan_odds": 6.7,
+              "tan_ev": 0.7,
+              "fuku_ev": 0.6,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "▲",
+              "mark_kai": "✕",
+              "mark_soku": "▲",
+              "shohen": 51.0,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 4,
+              "horse_name": "アヴァロン",
+              "jockey": "吉村誠",
+              "pharaoh_winrate": 0.0448,
+              "yoshi_winrate": 0.0404,
+              "tan_odds": 26.8,
+              "tan_ev": 0.94,
+              "fuku_ev": 0.91,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "✕",
+              "mark_kai": "◯",
+              "mark_soku": "✕",
+              "shohen": 44.8,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 5,
+              "horse_name": "セブンサークル",
+              "jockey": "藤懸貴",
+              "pharaoh_winrate": 0.0143,
+              "yoshi_winrate": 0.0062,
+              "tan_odds": 107.5,
+              "tan_ev": 0.55,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 41.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 6,
+              "horse_name": "シホノノービレ",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.3105,
+              "yoshi_winrate": 0.4348,
+              "tan_odds": 2.2,
+              "tan_ev": 1.1,
+              "fuku_ev": 0.92,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "◎*",
+              "mark_teki": "◎",
+              "mark_kai": "◎",
+              "mark_soku": "◎",
+              "shohen": 69.8,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 7,
+              "horse_name": "キングリア",
+              "jockey": "川田将",
+              "pharaoh_winrate": 0.2537,
+              "yoshi_winrate": 0.2253,
+              "tan_odds": 3.8,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.64,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "◯",
+              "mark_kai": "▲",
+              "mark_soku": "◯",
+              "shohen": 64.5,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 8,
+              "horse_name": "フリーレイン",
+              "jockey": "西村淳",
+              "pharaoh_winrate": 0.0281,
+              "yoshi_winrate": 0.0201,
+              "tan_odds": 42.8,
+              "tan_ev": 0.67,
+              "fuku_ev": 0.76,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 9,
+              "horse_name": "キミアドーネ",
+              "jockey": "武豊",
+              "pharaoh_winrate": 0.0816,
+              "yoshi_winrate": 0.0409,
+              "tan_odds": 18.5,
+              "tan_ev": 0.65,
+              "fuku_ev": 0.5,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 48.3,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 10,
+              "horse_name": "ハナナ",
+              "jockey": "坂井瑠",
+              "pharaoh_winrate": 0.1358,
+              "yoshi_winrate": 0.1125,
+              "tan_odds": 4.2,
+              "tan_ev": 0.58,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "△",
+              "mark_kai": "",
+              "mark_soku": "△",
+              "shohen": 53.4,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "4 – 6",
+                  "legs": [
+                    4,
+                    6
+                  ],
+                  "match": true
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "4 – 6",
+                  "legs": [
+                    4,
+                    6
+                  ],
+                  "match": true
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [
+            {
+              "type": "単勝",
+              "groups": [
+                {
+                  "raw": "⑥",
+                  "amount": 1000,
+                  "points": 1,
+                  "picks": [
+                    {
+                      "text": "6",
+                      "legs": [
+                        6
+                      ],
+                      "match": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "groups": [
+                {
+                  "raw": "⑥-②④",
+                  "amount": 1000,
+                  "points": 2,
+                  "picks": [
+                    {
+                      "text": "2 – 6",
+                      "legs": [
+                        2,
+                        6
+                      ],
+                      "match": false
+                    },
+                    {
+                      "text": "4 – 6",
+                      "legs": [
+                        4,
+                        6
+                      ],
+                      "match": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "groups": [
+                {
+                  "raw": "⑥-②④",
+                  "amount": 2000,
+                  "points": 2,
+                  "picks": [
+                    {
+                      "text": "2 – 6",
+                      "legs": [
+                        2,
+                        6
+                      ],
+                      "match": false
+                    },
+                    {
+                      "text": "4 – 6",
+                      "legs": [
+                        4,
+                        6
+                      ],
+                      "match": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bets_match_count": 2
+        },
+        {
+          "race_number": 6,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "ビゾー",
+              "jockey": "亀田温",
+              "pharaoh_winrate": 0.0061,
+              "yoshi_winrate": 0.0079,
+              "tan_odds": 126.7,
+              "tan_ev": 0.78,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 40.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 2,
+              "horse_name": "スコーピオンイメル",
+              "jockey": "高倉稜",
+              "pharaoh_winrate": 0.0069,
+              "yoshi_winrate": 0.0089,
+              "tan_odds": 112.8,
+              "tan_ev": 0.7,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 40.7,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 3,
+              "horse_name": "ドメイン",
+              "jockey": "田口貫",
+              "pharaoh_winrate": 0.0274,
+              "yoshi_winrate": 0.0155,
+              "tan_odds": 73.4,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.9,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 4,
+              "horse_name": "ゴールドコット",
+              "jockey": "角田大",
+              "pharaoh_winrate": 0.1192,
+              "yoshi_winrate": 0.1133,
+              "tan_odds": 6.5,
+              "tan_ev": 0.78,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "△",
+              "shohen": 58.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 5,
+              "horse_name": "ジーティーアメリカ",
+              "jockey": "北村友",
+              "pharaoh_winrate": 0.0841,
+              "yoshi_winrate": 0.0541,
+              "tan_odds": 16.2,
+              "tan_ev": 0.86,
+              "fuku_ev": 0.72,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 52.7,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 6,
+              "horse_name": "エイユーファイヤー",
+              "jockey": "松山弘",
+              "pharaoh_winrate": 0.152,
+              "yoshi_winrate": 0.0777,
+              "tan_odds": 13.5,
+              "tan_ev": 0.99,
+              "fuku_ev": 0.85,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "▲",
+              "mark_kai": "◎",
+              "mark_soku": "▲",
+              "shohen": 63.3,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 7,
+              "horse_name": "クイノールト",
+              "jockey": "鮫島克",
+              "pharaoh_winrate": 0.022,
+              "yoshi_winrate": 0.0519,
+              "tan_odds": 23.7,
+              "tan_ev": 0.94,
+              "fuku_ev": 0.76,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "△",
+              "mark_soku": "",
+              "shohen": 43.1,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 8,
+              "horse_name": "ルシタニア",
+              "jockey": "今村聖",
+              "pharaoh_winrate": 0.0853,
+              "yoshi_winrate": 0.133,
+              "tan_odds": 6.6,
+              "tan_ev": 0.95,
+              "fuku_ev": 0.51,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "◯",
+              "mark_kai": "◯",
+              "mark_soku": "◯",
+              "shohen": 52.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 9,
+              "horse_name": "マジックブルー",
+              "jockey": "森田誠",
+              "pharaoh_winrate": 0.0174,
+              "yoshi_winrate": 0.0094,
+              "tan_odds": 137.5,
+              "tan_ev": 0.95,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "▲",
+              "mark_soku": "",
+              "shohen": 42.3,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 10,
+              "horse_name": "ロットブラータ",
+              "jockey": "幸英明",
+              "pharaoh_winrate": 0.0881,
+              "yoshi_winrate": 0.1137,
+              "tan_odds": 6.7,
+              "tan_ev": 0.86,
+              "fuku_ev": 0.52,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "✕",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 53.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "△",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 11,
+              "horse_name": "メイショウジンライ",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.233,
+              "yoshi_winrate": 0.1826,
+              "tan_odds": 3.0,
+              "tan_ev": 0.7,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◎",
+              "mark_teki": "◎",
+              "mark_kai": "",
+              "mark_soku": "◎",
+              "shohen": 75.8,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 12,
+              "horse_name": "ディープサミット",
+              "jockey": "太宰啓",
+              "pharaoh_winrate": 0.03,
+              "yoshi_winrate": 0.0373,
+              "tan_odds": 24.2,
+              "tan_ev": 0.79,
+              "fuku_ev": 0.7,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 44.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 13,
+              "horse_name": "カイラーサ",
+              "jockey": "鮫島良",
+              "pharaoh_winrate": 0.0823,
+              "yoshi_winrate": 0.1336,
+              "tan_odds": 7.3,
+              "tan_ev": 0.91,
+              "fuku_ev": 0.48,
+              "iruka": true,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "△",
+              "mark_kai": "✕",
+              "mark_soku": "✕",
+              "shohen": 52.4,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 14,
+              "horse_name": "フィサブロス",
+              "jockey": "田山旺",
+              "pharaoh_winrate": 0.0416,
+              "yoshi_winrate": 0.0465,
+              "tan_odds": 18.4,
+              "tan_ev": 0.83,
+              "fuku_ev": 0.81,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 46.1,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 15,
+              "horse_name": "クラッチスラッガー",
+              "jockey": "松若風",
+              "pharaoh_winrate": 0.0047,
+              "yoshi_winrate": 0.0146,
+              "tan_odds": 61.9,
+              "tan_ev": 0.73,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 40.4,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "単勝",
+              "picks": [
+                {
+                  "text": "5",
+                  "legs": [
+                    5
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "3",
+                  "legs": [
+                    3
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9",
+                  "legs": [
+                    9
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "3 – 4",
+                  "legs": [
+                    3,
+                    4
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 11",
+                  "legs": [
+                    3,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 9",
+                  "legs": [
+                    6,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 11",
+                  "legs": [
+                    9,
+                    11
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "3 – 4",
+                  "legs": [
+                    3,
+                    4
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 11",
+                  "legs": [
+                    3,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 9",
+                  "legs": [
+                    6,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 11",
+                  "legs": [
+                    9,
+                    11
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 7,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "ルクスノア",
+              "jockey": "荻野琢",
+              "pharaoh_winrate": 0.0138,
+              "yoshi_winrate": 0.0203,
+              "tan_odds": 42.2,
+              "tan_ev": 0.77,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 44.4,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 2,
+              "horse_name": "ダンデノン",
+              "jockey": "北村友",
+              "pharaoh_winrate": 0.277,
+              "yoshi_winrate": 0.1861,
+              "tan_odds": 4.5,
+              "tan_ev": 0.89,
+              "fuku_ev": 0.56,
+              "iruka": true,
+              "chumoku": false,
+              "mark_sou": "◎",
+              "mark_teki": "◎",
+              "mark_kai": "",
+              "mark_soku": "◎",
+              "shohen": 79.4,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 3,
+              "horse_name": "ベルセクレト",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.0322,
+              "yoshi_winrate": 0.0601,
+              "tan_odds": 15.1,
+              "tan_ev": 0.94,
+              "fuku_ev": 0.72,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "▲",
+              "mark_soku": "",
+              "shohen": 46.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 4,
+              "horse_name": "リピ",
+              "jockey": "鮫島克",
+              "pharaoh_winrate": 0.0059,
+              "yoshi_winrate": 0.0315,
+              "tan_odds": 25.7,
+              "tan_ev": 0.92,
+              "fuku_ev": 1.04,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "✕",
+              "mark_kai": "✕",
+              "mark_soku": "",
+              "shohen": 43.4,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 5,
+              "horse_name": "ベルサンローラン",
+              "jockey": "田山旺",
+              "pharaoh_winrate": 0.1293,
+              "yoshi_winrate": 0.0478,
+              "tan_odds": 23.3,
+              "tan_ev": 1.0,
+              "fuku_ev": 0.83,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "◯",
+              "mark_soku": "",
+              "shohen": 59.8,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "△",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 6,
+              "horse_name": "ヴァージル",
+              "jockey": "Ｍ．デ",
+              "pharaoh_winrate": 0.0571,
+              "yoshi_winrate": 0.0596,
+              "tan_odds": 9.7,
+              "tan_ev": 0.63,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 50.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 7,
+              "horse_name": "ブルーカミング",
+              "jockey": "河原田",
+              "pharaoh_winrate": 0.0022,
+              "yoshi_winrate": 0.005,
+              "tan_odds": 243.7,
+              "tan_ev": 0.82,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 42.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 8,
+              "horse_name": "シャインベック",
+              "jockey": "亀田温",
+              "pharaoh_winrate": 0.002,
+              "yoshi_winrate": 0.0052,
+              "tan_odds": 248.6,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 42.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 9,
+              "horse_name": "マダムカマラード",
+              "jockey": "長岡禎",
+              "pharaoh_winrate": 0.0064,
+              "yoshi_winrate": 0.016,
+              "tan_odds": 103.4,
+              "tan_ev": 1.1,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "◎",
+              "mark_soku": "",
+              "shohen": 43.5,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 10,
+              "horse_name": "ペールノエル",
+              "jockey": "西村淳",
+              "pharaoh_winrate": 0.1569,
+              "yoshi_winrate": 0.0846,
+              "tan_odds": 7.6,
+              "tan_ev": 0.72,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "◯",
+              "shohen": 63.5,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 11,
+              "horse_name": "ベルサ",
+              "jockey": "今村聖",
+              "pharaoh_winrate": 0.0829,
+              "yoshi_winrate": 0.0972,
+              "tan_odds": 9.6,
+              "tan_ev": 0.89,
+              "fuku_ev": 0.62,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "△",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 53.6,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "×",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 12,
+              "horse_name": "ケールハイム",
+              "jockey": "Ｃ．ル",
+              "pharaoh_winrate": 0.1326,
+              "yoshi_winrate": 0.1847,
+              "tan_odds": 3.5,
+              "tan_ev": 0.73,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "◯",
+              "mark_kai": "",
+              "mark_soku": "▲",
+              "shohen": 60.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 13,
+              "horse_name": "ルディシャ",
+              "jockey": "森田誠",
+              "pharaoh_winrate": 0.0009,
+              "yoshi_winrate": 0.0063,
+              "tan_odds": 239.8,
+              "tan_ev": 0.84,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 42.7,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 14,
+              "horse_name": "アイスヴィレッジ",
+              "jockey": "永島ま",
+              "pharaoh_winrate": 0.0022,
+              "yoshi_winrate": 0.0062,
+              "tan_odds": 159.7,
+              "tan_ev": 0.7,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 42.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 15,
+              "horse_name": "オーケーダイナ",
+              "jockey": "小沢大",
+              "pharaoh_winrate": 0.0014,
+              "yoshi_winrate": 0.0056,
+              "tan_odds": 161.6,
+              "tan_ev": 0.66,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 42.8,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 16,
+              "horse_name": "ムーンライトダイヤ",
+              "jockey": "秋山稔",
+              "pharaoh_winrate": 0.0312,
+              "yoshi_winrate": 0.0554,
+              "tan_odds": 16.3,
+              "tan_ev": 0.93,
+              "fuku_ev": 0.85,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "△",
+              "mark_soku": "△",
+              "shohen": 46.8,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 17,
+              "horse_name": "メイクワンズデイ",
+              "jockey": "松若風",
+              "pharaoh_winrate": 0.0618,
+              "yoshi_winrate": 0.117,
+              "tan_odds": 7.7,
+              "tan_ev": 0.91,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "▲",
+              "mark_kai": "",
+              "mark_soku": "✕",
+              "shohen": 50.8,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 18,
+              "horse_name": "バーケンティン",
+              "jockey": "幸英明",
+              "pharaoh_winrate": 0.0043,
+              "yoshi_winrate": 0.0116,
+              "tan_odds": 104.9,
+              "tan_ev": 0.79,
+              "fuku_ev": 1.04,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "単勝",
+              "picks": [
+                {
+                  "text": "2",
+                  "legs": [
+                    2
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10",
+                  "legs": [
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "11",
+                  "legs": [
+                    11
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "5",
+                  "legs": [
+                    5
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "2 – 5",
+                  "legs": [
+                    2,
+                    5
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 10",
+                  "legs": [
+                    2,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 11",
+                  "legs": [
+                    2,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 10",
+                  "legs": [
+                    5,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 12",
+                  "legs": [
+                    5,
+                    12
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "2 – 5",
+                  "legs": [
+                    2,
+                    5
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 10",
+                  "legs": [
+                    2,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 11",
+                  "legs": [
+                    2,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 10",
+                  "legs": [
+                    5,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 12",
+                  "legs": [
+                    5,
+                    12
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 8,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "キタノサワヤカ",
+              "jockey": "田山旺",
+              "pharaoh_winrate": 0.0042,
+              "yoshi_winrate": 0.0109,
+              "tan_odds": 80.3,
+              "tan_ev": 0.68,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 2,
+              "horse_name": "レーンアジリティ",
+              "jockey": "高倉稜",
+              "pharaoh_winrate": 0.0371,
+              "yoshi_winrate": 0.0546,
+              "tan_odds": 27.3,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "△",
+              "mark_kai": "◯",
+              "mark_soku": "△",
+              "shohen": 46.3,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 3,
+              "horse_name": "ロードアルディート",
+              "jockey": "Ｃ．ル",
+              "pharaoh_winrate": 0.4207,
+              "yoshi_winrate": 0.2885,
+              "tan_odds": 2.8,
+              "tan_ev": 0.85,
+              "fuku_ev": 0.88,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◎",
+              "mark_teki": "◯",
+              "mark_kai": "△",
+              "mark_soku": "◎",
+              "shohen": 77.3,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 4,
+              "horse_name": "アメリカンバー",
+              "jockey": "富田暁",
+              "pharaoh_winrate": 0.0452,
+              "yoshi_winrate": 0.1184,
+              "tan_odds": 8.6,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "▲",
+              "mark_kai": "▲",
+              "mark_soku": "",
+              "shohen": 46.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "△",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 5,
+              "horse_name": "メイショウカスガイ",
+              "jockey": "角田大",
+              "pharaoh_winrate": 0.0121,
+              "yoshi_winrate": 0.0345,
+              "tan_odds": 36.3,
+              "tan_ev": 0.91,
+              "fuku_ev": 0.73,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "◎",
+              "mark_soku": "",
+              "shohen": 44.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 6,
+              "horse_name": "ディニテ",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.1386,
+              "yoshi_winrate": 0.0673,
+              "tan_odds": 8.9,
+              "tan_ev": 0.65,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "▲",
+              "shohen": 54.5,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 7,
+              "horse_name": "レッドフレーザー",
+              "jockey": "坂井瑠",
+              "pharaoh_winrate": 0.2189,
+              "yoshi_winrate": 0.2842,
+              "tan_odds": 2.4,
+              "tan_ev": 0.81,
+              "fuku_ev": 0.88,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "◎",
+              "mark_kai": "",
+              "mark_soku": "◯",
+              "shohen": 61.0,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 8,
+              "horse_name": "オーレアミスト",
+              "jockey": "幸英明",
+              "pharaoh_winrate": 0.0322,
+              "yoshi_winrate": 0.0251,
+              "tan_odds": 36.9,
+              "tan_ev": 0.82,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "✕",
+              "mark_kai": "✕",
+              "mark_soku": "",
+              "shohen": 45.9,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 9,
+              "horse_name": "クレスコドルフィン",
+              "jockey": "中井裕",
+              "pharaoh_winrate": 0.0029,
+              "yoshi_winrate": 0.009,
+              "tan_odds": 153.5,
+              "tan_ev": 0.81,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.5,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 10,
+              "horse_name": "エアフォースワン",
+              "jockey": "菱田裕",
+              "pharaoh_winrate": 0.0408,
+              "yoshi_winrate": 0.0342,
+              "tan_odds": 23.1,
+              "tan_ev": 0.69,
+              "fuku_ev": 0.54,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 46.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "×",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 11,
+              "horse_name": "ラテライト",
+              "jockey": "田口貫",
+              "pharaoh_winrate": 0.0361,
+              "yoshi_winrate": 0.0568,
+              "tan_odds": 13.3,
+              "tan_ev": 0.78,
+              "fuku_ev": 0.51,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "✕",
+              "shohen": 46.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 12,
+              "horse_name": "リリーサンダー",
+              "jockey": "小沢大",
+              "pharaoh_winrate": 0.0111,
+              "yoshi_winrate": 0.0165,
+              "tan_odds": 61.0,
+              "tan_ev": 0.73,
+              "fuku_ev": 0.8,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 44.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 9,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "ロードオルデン",
+              "jockey": "吉村誠",
+              "pharaoh_winrate": 0.0015,
+              "yoshi_winrate": 0.0073,
+              "tan_odds": 129.8,
+              "tan_ev": 0.73,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.5,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 2,
+              "horse_name": "モズタチアガレ",
+              "jockey": "Ｍ．デ",
+              "pharaoh_winrate": 0.0766,
+              "yoshi_winrate": 0.0528,
+              "tan_odds": 12.1,
+              "tan_ev": 0.69,
+              "fuku_ev": 0.52,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "✕",
+              "shohen": 51.5,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 3,
+              "horse_name": "ポートデラメール",
+              "jockey": "Ｃ．ル",
+              "pharaoh_winrate": 0.3557,
+              "yoshi_winrate": 0.1779,
+              "tan_odds": 3.2,
+              "tan_ev": 0.69,
+              "fuku_ev": 0.48,
+              "iruka": true,
+              "chumoku": true,
+              "mark_sou": "◯",
+              "mark_teki": "◯",
+              "mark_kai": "",
+              "mark_soku": "▲",
+              "shohen": 81.4,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 4,
+              "horse_name": "ダイシンリンク",
+              "jockey": "中井裕",
+              "pharaoh_winrate": 0.0482,
+              "yoshi_winrate": 0.0728,
+              "tan_odds": 15.4,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.82,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "✕",
+              "mark_kai": "△",
+              "mark_soku": "◯",
+              "shohen": 48.5,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 5,
+              "horse_name": "サンコンクエスト",
+              "jockey": "太宰啓",
+              "pharaoh_winrate": 0.0015,
+              "yoshi_winrate": 0.0094,
+              "tan_odds": 109.9,
+              "tan_ev": 0.86,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.5,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 6,
+              "horse_name": "コロナドブリッジ",
+              "jockey": "西村淳",
+              "pharaoh_winrate": 0.1063,
+              "yoshi_winrate": 0.127,
+              "tan_odds": 7.2,
+              "tan_ev": 1.0,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "△",
+              "mark_kai": "◎",
+              "mark_soku": "",
+              "shohen": 54.7,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 7,
+              "horse_name": "プチプラージュ",
+              "jockey": "幸英明",
+              "pharaoh_winrate": 0.002,
+              "yoshi_winrate": 0.0066,
+              "tan_odds": 166.0,
+              "tan_ev": 0.72,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.5,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 8,
+              "horse_name": "ワーズワース",
+              "jockey": "浜中俊",
+              "pharaoh_winrate": 0.0162,
+              "yoshi_winrate": 0.0232,
+              "tan_odds": 27.1,
+              "tan_ev": 0.66,
+              "fuku_ev": 0.79,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "△",
+              "shohen": 45.1,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 9,
+              "horse_name": "スターオブロンドン",
+              "jockey": "古川奈",
+              "pharaoh_winrate": 0.0077,
+              "yoshi_winrate": 0.0118,
+              "tan_odds": 80.5,
+              "tan_ev": 0.81,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 44.1,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 10,
+              "horse_name": "ラピダリア",
+              "jockey": "池添謙",
+              "pharaoh_winrate": 0.0027,
+              "yoshi_winrate": 0.0095,
+              "tan_odds": 115.0,
+              "tan_ev": 0.75,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 11,
+              "horse_name": "オコタンペ",
+              "jockey": "富田暁",
+              "pharaoh_winrate": 0.0155,
+              "yoshi_winrate": 0.0167,
+              "tan_odds": 60.3,
+              "tan_ev": 0.87,
+              "fuku_ev": 1.04,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.0,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 12,
+              "horse_name": "ピカラ",
+              "jockey": "戸崎圭",
+              "pharaoh_winrate": 0.1983,
+              "yoshi_winrate": 0.2955,
+              "tan_odds": 2.8,
+              "tan_ev": 0.9,
+              "fuku_ev": 0.64,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◎",
+              "mark_teki": "◎",
+              "mark_kai": "▲",
+              "mark_soku": "◎",
+              "shohen": 64.5,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 13,
+              "horse_name": "アンビシャスヨシノ",
+              "jockey": "角田大",
+              "pharaoh_winrate": 0.0566,
+              "yoshi_winrate": 0.0463,
+              "tan_odds": 12.9,
+              "tan_ev": 0.62,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 49.4,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "×",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 14,
+              "horse_name": "ヤマニンバロネス",
+              "jockey": "武豊",
+              "pharaoh_winrate": 0.0456,
+              "yoshi_winrate": 0.0445,
+              "tan_odds": 26.4,
+              "tan_ev": 0.95,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "▲",
+              "mark_kai": "◯",
+              "mark_soku": "",
+              "shohen": 48.2,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 15,
+              "horse_name": "シーニックビュー",
+              "jockey": "吉田隼",
+              "pharaoh_winrate": 0.0238,
+              "yoshi_winrate": 0.026,
+              "tan_odds": 56.9,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "✕",
+              "mark_soku": "",
+              "shohen": 45.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 16,
+              "horse_name": "ライトオブヌカタ",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.0418,
+              "yoshi_winrate": 0.0727,
+              "tan_odds": 14.0,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 47.8,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "3 – 4",
+                  "legs": [
+                    3,
+                    4
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 14",
+                  "legs": [
+                    3,
+                    14
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 15",
+                  "legs": [
+                    3,
+                    15
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "3 – 4",
+                  "legs": [
+                    3,
+                    4
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 14",
+                  "legs": [
+                    3,
+                    14
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 15",
+                  "legs": [
+                    3,
+                    15
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 10,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "キタサンハナビラ",
+              "jockey": "藤懸貴",
+              "pharaoh_winrate": 0.0102,
+              "yoshi_winrate": 0.0165,
+              "tan_odds": 63.4,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "✕",
+              "mark_soku": "",
+              "shohen": 39.8,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 2,
+              "horse_name": "テーオーダグラス",
+              "jockey": "鮫島克",
+              "pharaoh_winrate": 0.0368,
+              "yoshi_winrate": 0.0233,
+              "tan_odds": 42.0,
+              "tan_ev": 0.86,
+              "fuku_ev": 1.04,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.0,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 3,
+              "horse_name": "レジェンドシップ",
+              "jockey": "浜中俊",
+              "pharaoh_winrate": 0.0354,
+              "yoshi_winrate": 0.0398,
+              "tan_odds": 20.0,
+              "tan_ev": 0.83,
+              "fuku_ev": 0.77,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 44.7,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 4,
+              "horse_name": "ミスタージーティー",
+              "jockey": "坂井瑠",
+              "pharaoh_winrate": 0.0682,
+              "yoshi_winrate": 0.0456,
+              "tan_odds": 24.8,
+              "tan_ev": 0.97,
+              "fuku_ev": 0.74,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "◯",
+              "mark_soku": "✕",
+              "shohen": 51.1,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 5,
+              "horse_name": "スパークリシャール",
+              "jockey": "Ｃ．ル",
+              "pharaoh_winrate": 0.0712,
+              "yoshi_winrate": 0.0193,
+              "tan_odds": 39.5,
+              "tan_ev": 0.76,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "✕",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 51.7,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "×",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 6,
+              "horse_name": "シンゼンカガ",
+              "jockey": "吉田隼",
+              "pharaoh_winrate": 0.0099,
+              "yoshi_winrate": 0.0146,
+              "tan_odds": 64.3,
+              "tan_ev": 0.76,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 39.7,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 7,
+              "horse_name": "チルカーノ",
+              "jockey": "北村友",
+              "pharaoh_winrate": 0.043,
+              "yoshi_winrate": 0.0161,
+              "tan_odds": 109.8,
+              "tan_ev": 0.89,
+              "fuku_ev": 0.9,
+              "iruka": true,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "▲",
+              "mark_soku": "",
+              "shohen": 46.2,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 8,
+              "horse_name": "アルマデオロ",
+              "jockey": "武豊",
+              "pharaoh_winrate": 0.0996,
+              "yoshi_winrate": 0.1286,
+              "tan_odds": 4.8,
+              "tan_ev": 0.68,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "◯",
+              "mark_kai": "",
+              "mark_soku": "◯",
+              "shohen": 57.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 9,
+              "horse_name": "ファームツエンティ",
+              "jockey": "酒井学",
+              "pharaoh_winrate": 0.0362,
+              "yoshi_winrate": 0.0258,
+              "tan_odds": 22.1,
+              "tan_ev": 0.67,
+              "fuku_ev": 0.81,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 44.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 10,
+              "horse_name": "ナリタエスペランサ",
+              "jockey": "川田将",
+              "pharaoh_winrate": 0.1985,
+              "yoshi_winrate": 0.2939,
+              "tan_odds": 3.0,
+              "tan_ev": 0.99,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◎",
+              "mark_teki": "◎",
+              "mark_kai": "◎",
+              "mark_soku": "△",
+              "shohen": 76.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 11,
+              "horse_name": "ジョイボーイ",
+              "jockey": "松山弘",
+              "pharaoh_winrate": 0.1409,
+              "yoshi_winrate": 0.1263,
+              "tan_odds": 5.7,
+              "tan_ev": 0.77,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "△",
+              "mark_kai": "",
+              "mark_soku": "◎",
+              "shohen": 65.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 12,
+              "horse_name": "サークルオブジョイ",
+              "jockey": "西村淳",
+              "pharaoh_winrate": 0.0666,
+              "yoshi_winrate": 0.0329,
+              "tan_odds": 25.1,
+              "tan_ev": 0.79,
+              "fuku_ev": 0.83,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 50.8,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 13,
+              "horse_name": "タイセイフェリーク",
+              "jockey": "松若風",
+              "pharaoh_winrate": 0.0047,
+              "yoshi_winrate": 0.0095,
+              "tan_odds": 123.5,
+              "tan_ev": 0.84,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 38.7,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 14,
+              "horse_name": "サトノクローク",
+              "jockey": "池添謙",
+              "pharaoh_winrate": 0.0582,
+              "yoshi_winrate": 0.0473,
+              "tan_odds": 30.2,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "△",
+              "mark_soku": "",
+              "shohen": 49.2,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 15,
+              "horse_name": "ベトルス",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.0895,
+              "yoshi_winrate": 0.1136,
+              "tan_odds": 5.7,
+              "tan_ev": 0.72,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "▲",
+              "mark_kai": "",
+              "mark_soku": "▲",
+              "shohen": 55.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 16,
+              "horse_name": "ロードガレリア",
+              "jockey": "吉村誠",
+              "pharaoh_winrate": 0.0311,
+              "yoshi_winrate": 0.0468,
+              "tan_odds": 18.3,
+              "tan_ev": 0.83,
+              "fuku_ev": 0.68,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "単勝",
+              "picks": [
+                {
+                  "text": "4",
+                  "legs": [
+                    4
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5",
+                  "legs": [
+                    5
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "12",
+                  "legs": [
+                    12
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "14",
+                  "legs": [
+                    14
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "2 – 11",
+                  "legs": [
+                    2,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 10",
+                  "legs": [
+                    5,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 11",
+                  "legs": [
+                    5,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 11",
+                  "legs": [
+                    7,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 12",
+                  "legs": [
+                    10,
+                    12
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 14",
+                  "legs": [
+                    10,
+                    14
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "11 – 12",
+                  "legs": [
+                    11,
+                    12
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "11 – 14",
+                  "legs": [
+                    11,
+                    14
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "2 – 11",
+                  "legs": [
+                    2,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 10",
+                  "legs": [
+                    5,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 11",
+                  "legs": [
+                    5,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 11",
+                  "legs": [
+                    7,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 12",
+                  "legs": [
+                    10,
+                    12
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 14",
+                  "legs": [
+                    10,
+                    14
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "11 – 12",
+                  "legs": [
+                    11,
+                    12
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "11 – 14",
+                  "legs": [
+                    11,
+                    14
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 11,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "ロブチェン",
+              "jockey": "松山弘",
+              "pharaoh_winrate": 0.6202,
+              "yoshi_winrate": 0.6172,
+              "tan_odds": 1.5,
+              "tan_ev": 1.08,
+              "fuku_ev": 0.92,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◎*",
+              "mark_teki": "◎",
+              "mark_kai": "◎",
+              "mark_soku": "◎",
+              "shohen": 79.6,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 2,
+              "horse_name": "エイシンインアウト",
+              "jockey": "横山琉",
+              "pharaoh_winrate": 0.0416,
+              "yoshi_winrate": 0.0263,
+              "tan_odds": 27.7,
+              "tan_ev": 0.62,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 47.2,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "×",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 3,
+              "horse_name": "ゴーラッキー",
+              "jockey": "Ｃ．ル",
+              "pharaoh_winrate": 0.0301,
+              "yoshi_winrate": 0.0763,
+              "tan_odds": 10.0,
+              "tan_ev": 0.77,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "▲",
+              "mark_kai": "▲",
+              "mark_soku": "△",
+              "shohen": 46.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 4,
+              "horse_name": "アルトラムス",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.0606,
+              "yoshi_winrate": 0.0563,
+              "tan_odds": 11.6,
+              "tan_ev": 0.67,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "✕",
+              "mark_kai": "△",
+              "mark_soku": "▲",
+              "shohen": 48.3,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 5,
+              "horse_name": "カムアップローゼス",
+              "jockey": "北村友",
+              "pharaoh_winrate": 0.0069,
+              "yoshi_winrate": 0.0165,
+              "tan_odds": 73.3,
+              "tan_ev": 0.87,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "△",
+              "mark_kai": "◯",
+              "mark_soku": "",
+              "shohen": 45.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 6,
+              "horse_name": "エムズビギン",
+              "jockey": "武豊",
+              "pharaoh_winrate": 0.0115,
+              "yoshi_winrate": 0.0196,
+              "tan_odds": 40.8,
+              "tan_ev": 0.64,
+              "fuku_ev": 0.91,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.6,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 7,
+              "horse_name": "コンジェスタス",
+              "jockey": "西村淳",
+              "pharaoh_winrate": 0.0845,
+              "yoshi_winrate": 0.0735,
+              "tan_odds": 7.2,
+              "tan_ev": 0.6,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "◯",
+              "mark_kai": "",
+              "mark_soku": "◯",
+              "shohen": 49.6,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 8,
+              "horse_name": "シートゥサミット",
+              "jockey": "酒井学",
+              "pharaoh_winrate": 0.0018,
+              "yoshi_winrate": 0.004,
+              "tan_odds": 145.9,
+              "tan_ev": 0.52,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.0,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 9,
+              "horse_name": "グリーンエナジー",
+              "jockey": "戸崎圭",
+              "pharaoh_winrate": 0.1111,
+              "yoshi_winrate": 0.0517,
+              "tan_odds": 12.8,
+              "tan_ev": 0.62,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "✕",
+              "shohen": 51.1,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 10,
+              "horse_name": "カフジエメンタール",
+              "jockey": "坂井瑠",
+              "pharaoh_winrate": 0.0142,
+              "yoshi_winrate": 0.032,
+              "tan_odds": 22.2,
+              "tan_ev": 0.65,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "✕",
+              "mark_soku": "",
+              "shohen": 45.7,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 11,
+              "horse_name": "ショウナンハヤナミ",
+              "jockey": "池添謙",
+              "pharaoh_winrate": 0.0175,
+              "yoshi_winrate": 0.0269,
+              "tan_odds": 23.9,
+              "tan_ev": 0.59,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 45.9,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            }
+          ],
+          "shiraberu_bets": [],
+          "viewer_bets": [
+            {
+              "type": "単勝",
+              "groups": [
+                {
+                  "raw": "①",
+                  "amount": 1000,
+                  "points": 1,
+                  "picks": [
+                    {
+                      "text": "1",
+                      "legs": [
+                        1
+                      ],
+                      "match": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "bets_match_count": 0
+        },
+        {
+          "race_number": 12,
+          "post_time": "",
+          "track": "",
+          "distance": 0,
+          "horses": [
+            {
+              "umaban": 1,
+              "horse_name": "シュネーグロッケン",
+              "jockey": "吉村誠",
+              "pharaoh_winrate": 0.0054,
+              "yoshi_winrate": 0.011,
+              "tan_odds": 115.2,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "△",
+              "mark_soku": "",
+              "shohen": 43.3,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 2,
+              "horse_name": "シャープインサイト",
+              "jockey": "菱田裕",
+              "pharaoh_winrate": 0.0043,
+              "yoshi_winrate": 0.0041,
+              "tan_odds": 132.6,
+              "tan_ev": 0.52,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 3,
+              "horse_name": "メイショウサトノヒ",
+              "jockey": "幸英明",
+              "pharaoh_winrate": 0.0178,
+              "yoshi_winrate": 0.0118,
+              "tan_odds": 48.3,
+              "tan_ev": 0.6,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 44.7,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 4,
+              "horse_name": "ゴーゴーパンチ",
+              "jockey": "永島ま",
+              "pharaoh_winrate": 0.0398,
+              "yoshi_winrate": 0.0444,
+              "tan_odds": 21.8,
+              "tan_ev": 0.93,
+              "fuku_ev": 0.6,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "✕",
+              "mark_teki": "",
+              "mark_kai": "◯",
+              "mark_soku": "",
+              "shohen": 47.1,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 5,
+              "horse_name": "ホットシート",
+              "jockey": "川田将",
+              "pharaoh_winrate": 0.1764,
+              "yoshi_winrate": 0.1426,
+              "tan_odds": 4.9,
+              "tan_ev": 0.77,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "▲",
+              "mark_teki": "▲",
+              "mark_kai": "",
+              "mark_soku": "▲",
+              "shohen": 61.9,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "○",
+              "mark_place_rate": "▲"
+            },
+            {
+              "umaban": 6,
+              "horse_name": "ジャカルタバオ",
+              "jockey": "浜中俊",
+              "pharaoh_winrate": 0.0683,
+              "yoshi_winrate": 0.0723,
+              "tan_odds": 7.6,
+              "tan_ev": 0.6,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "△",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "△",
+              "shohen": 50.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "×",
+              "mark_place_rate": "○"
+            },
+            {
+              "umaban": 7,
+              "horse_name": "ディーエストッキー",
+              "jockey": "小沢大",
+              "pharaoh_winrate": 0.0494,
+              "yoshi_winrate": 0.024,
+              "tan_odds": 23.2,
+              "tan_ev": 0.58,
+              "fuku_ev": 0.51,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 48.1,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "",
+              "mark_place_rate": "△"
+            },
+            {
+              "umaban": 8,
+              "horse_name": "フリッシュ",
+              "jockey": "藤懸貴",
+              "pharaoh_winrate": 0.1014,
+              "yoshi_winrate": 0.0191,
+              "tan_odds": 57.1,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": true,
+              "mark_sou": "",
+              "mark_teki": "△",
+              "mark_kai": "▲",
+              "mark_soku": "✕",
+              "shohen": 53.8,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "△",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 9,
+              "horse_name": "エイシンティザー",
+              "jockey": "岩田望",
+              "pharaoh_winrate": 0.3442,
+              "yoshi_winrate": 0.4194,
+              "tan_odds": 2.4,
+              "tan_ev": 1.0,
+              "fuku_ev": 0.85,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◎",
+              "mark_teki": "◎",
+              "mark_kai": "◎",
+              "mark_soku": "◎",
+              "shohen": 80.1,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
+            },
+            {
+              "umaban": 10,
+              "horse_name": "リン",
+              "jockey": "松山弘",
+              "pharaoh_winrate": 0.1222,
+              "yoshi_winrate": 0.1593,
+              "tan_odds": 4.3,
+              "tan_ev": 0.83,
+              "fuku_ev": 0.53,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "◯",
+              "mark_teki": "◯",
+              "mark_kai": "",
+              "mark_soku": "◯",
+              "shohen": 56.0,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "×"
+            },
+            {
+              "umaban": 11,
+              "horse_name": "ユキノサイエンス",
+              "jockey": "中井裕",
+              "pharaoh_winrate": 0.0029,
+              "yoshi_winrate": 0.006,
+              "tan_odds": 138.8,
+              "tan_ev": 0.71,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.1,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 12,
+              "horse_name": "クリノセーラーマン",
+              "jockey": "田口貫",
+              "pharaoh_winrate": 0.0134,
+              "yoshi_winrate": 0.0138,
+              "tan_odds": 73.6,
+              "tan_ev": 0.8,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "✕",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 44.2,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 13,
+              "horse_name": "テイクイットオール",
+              "jockey": "柴田裕",
+              "pharaoh_winrate": 0.0213,
+              "yoshi_winrate": 0.0189,
+              "tan_odds": 61.1,
+              "tan_ev": 0.88,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "✕",
+              "mark_soku": "",
+              "shohen": 45.1,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 14,
+              "horse_name": "ファイブタンゴ",
+              "jockey": "西村淳",
+              "pharaoh_winrate": 0.0304,
+              "yoshi_winrate": 0.0481,
+              "tan_odds": 14.1,
+              "tan_ev": 0.69,
+              "fuku_ev": 0.48,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 46.1,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            },
+            {
+              "umaban": 15,
+              "horse_name": "プラチナムディスク",
+              "jockey": "横山琉",
+              "pharaoh_winrate": 0.0029,
+              "yoshi_winrate": 0.0053,
+              "tan_odds": 143.5,
+              "tan_ev": 0.68,
+              "fuku_ev": 0.9,
+              "iruka": false,
+              "chumoku": false,
+              "mark_sou": "",
+              "mark_teki": "",
+              "mark_kai": "",
+              "mark_soku": "",
+              "shohen": 43.1,
+              "mark_tan_ev": "",
+              "mark_fuku_ev": "",
+              "mark_win_rate": "",
+              "mark_place_rate": ""
+            }
+          ],
+          "shiraberu_bets": [
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "8",
+                  "legs": [
+                    8
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "4 – 8",
+                  "legs": [
+                    4,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 8",
+                  "legs": [
+                    5,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 8",
+                  "legs": [
+                    6,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 8",
+                  "legs": [
+                    7,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 9",
+                  "legs": [
+                    8,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 10",
+                  "legs": [
+                    8,
+                    10
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "4 – 8",
+                  "legs": [
+                    4,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "5 – 8",
+                  "legs": [
+                    5,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 8",
+                  "legs": [
+                    6,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 8",
+                  "legs": [
+                    7,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 9",
+                  "legs": [
+                    8,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 10",
+                  "legs": [
+                    8,
+                    10
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
+          "viewer_bets": [],
+          "bets_match_count": 0
+        }
+      ]
+    }
+  ]
+}
