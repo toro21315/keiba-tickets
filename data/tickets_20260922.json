@@ -1,0 +1,104 @@
+{
+  "date": "2026-09-22",
+  "generated_at": "2026-09-22T09:05:01.879594+09:00",
+  "races": [
+    {
+      "venue": "中山",
+      "race_number": 3,
+      "post_time": "10:50",
+      "track": "ダ",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 5,
+          "horse_name": "ドナビッグベン",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "中山",
+      "race_number": 5,
+      "post_time": "12:10",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          1,
+          6
+        ],
+        "horse_names": [
+          "ビーハッピーデイ",
+          "ナイトオブマース"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          1,
+          6
+        ],
+        "horse_names": [
+          "ビーハッピーデイ",
+          "ナイトオブマース"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "中山",
+      "race_number": 10,
+      "post_time": "14:50",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 5,
+          "horse_name": "デイトナチャンプ",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "中山",
+      "race_number": 12,
+      "post_time": "16:10",
+      "track": "ダ",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 13,
+          "horse_name": "ジェイエルキャリア",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    }
+  ],
+  "grand_total": 5800
+}
