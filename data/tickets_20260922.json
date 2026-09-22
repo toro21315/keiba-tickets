@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "generated_at": "2026-09-22T09:05:01.879594+09:00",
+  "generated_at": "2026-09-22T09:17:38.958738+09:00",
   "races": [
     {
       "venue": "中山",
@@ -68,15 +68,16 @@
         {
           "umaban": 5,
           "horse_name": "デイトナチャンプ",
-          "amount": 700,
+          "amount": 6700,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 6700
     },
     {
       "venue": "中山",
@@ -100,5 +101,5 @@
       "total_amount": 1000
     }
   ],
-  "grand_total": 5800
+  "grand_total": 11800
 }
