@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "generated_at": "2026-09-26T09:05:04.359923+09:00",
+  "generated_at": "2026-09-26T09:19:45.879060+09:00",
   "races": [
     {
       "venue": "中山",
@@ -68,16 +68,17 @@
         {
           "umaban": 1,
           "horse_name": "プリンキピッサ",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "阪神",
@@ -124,10 +125,11 @@
         {
           "umaban": 8,
           "horse_name": "ユイノエスポワール",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
@@ -157,7 +159,7 @@
         "amount_per_combo": 2300,
         "subtotal": 2300
       },
-      "total_amount": 4100
+      "total_amount": 4200
     },
     {
       "venue": "中山",
@@ -207,15 +209,16 @@
         {
           "umaban": 13,
           "horse_name": "ラムジェット",
-          "amount": 700,
+          "amount": 800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 800
     },
     {
       "venue": "中山",
@@ -239,5 +242,5 @@
       "total_amount": 1000
     }
   ],
-  "grand_total": 16300
+  "grand_total": 16600
 }
