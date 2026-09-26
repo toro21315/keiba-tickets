@@ -1,0 +1,243 @@
+{
+  "date": "2026-09-26",
+  "generated_at": "2026-09-26T09:05:04.359923+09:00",
+  "races": [
+    {
+      "venue": "中山",
+      "race_number": 1,
+      "post_time": "09:45",
+      "track": "ダ",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "リコルディオーロ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "中山",
+      "race_number": 2,
+      "post_time": "10:15",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          8,
+          11
+        ],
+        "horse_names": [
+          "ウィルステート",
+          "ハンサム"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          8,
+          11
+        ],
+        "horse_names": [
+          "ウィルステート",
+          "ハンサム"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "阪神",
+      "race_number": 3,
+      "post_time": "11:00",
+      "track": "芝",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "プリンキピッサ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "阪神",
+      "race_number": 4,
+      "post_time": "11:35",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          7,
+          10
+        ],
+        "horse_names": [
+          "レクリドジョワ",
+          "フライウィズユー"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          7,
+          10
+        ],
+        "horse_names": [
+          "レクリドジョワ",
+          "フライウィズユー"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "阪神",
+      "race_number": 9,
+      "post_time": "14:25",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "ユイノエスポワール",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          2,
+          8
+        ],
+        "horse_names": [
+          "リーチツモドライチ",
+          "ユイノエスポワール"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          2,
+          8
+        ],
+        "horse_names": [
+          "リーチツモドライチ",
+          "ユイノエスポワール"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 4100
+    },
+    {
+      "venue": "中山",
+      "race_number": 10,
+      "post_time": "14:50",
+      "track": "芝",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 2,
+          "horse_name": "イゾラフェリーチェ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 10,
+          "horse_name": "セレッソデアモール",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        },
+        {
+          "umaban": 14,
+          "horse_name": "スミッコディスコ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2300
+    },
+    {
+      "venue": "阪神",
+      "race_number": 11,
+      "post_time": "15:45",
+      "track": "ダ",
+      "distance": 2000,
+      "tansho": [
+        {
+          "umaban": 13,
+          "horse_name": "ラムジェット",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "中山",
+      "race_number": 12,
+      "post_time": "16:10",
+      "track": "ダ",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "マサノピンクレディ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    }
+  ],
+  "grand_total": 16300
+}
