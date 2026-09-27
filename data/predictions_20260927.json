@@ -1,8 +1,8 @@
 {
   "date": "2026-09-27",
-  "generated_at": "2026-09-27T09:19:02.852195+09:00",
+  "generated_at": "2026-09-27T09:26:01.574120+09:00",
   "iruka_available": true,
-  "shiraberu_available": false,
+  "shiraberu_available": true,
   "viewer_bets_available": true,
   "meta_sources": {
     "screener": 24
@@ -33,7 +33,7 @@
               "mark_teki": "",
               "mark_kai": "◯",
               "mark_soku": "✕",
-              "shohen": null,
+              "shohen": 45.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -54,11 +54,11 @@
               "mark_teki": "◯",
               "mark_kai": "◎",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 69.7,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 3,
@@ -75,7 +75,7 @@
               "mark_teki": "",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -96,8 +96,8 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 45.8,
+              "mark_tan_ev": "×",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -117,7 +117,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -138,7 +138,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -159,11 +159,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 68.8,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "○",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 8,
@@ -180,7 +180,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -201,7 +201,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -222,7 +222,7 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -243,11 +243,11 @@
               "mark_teki": "△",
               "mark_kai": "",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 65.1,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 12,
@@ -264,7 +264,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -285,11 +285,11 @@
               "mark_teki": "◎",
               "mark_kai": "▲",
               "mark_soku": "▲",
-              "shohen": null,
+              "shohen": 62.4,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "△",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 14,
@@ -306,7 +306,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -327,7 +327,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -348,14 +348,41 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 46.4,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "2 – 7",
+                  "legs": [
+                    2,
+                    7
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "2 – 7",
+                  "legs": [
+                    2,
+                    7
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [],
           "bets_match_count": 0
         },
@@ -380,7 +407,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -401,11 +428,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 53.5,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 3,
@@ -422,7 +449,7 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -443,11 +470,11 @@
               "mark_teki": "✕",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 49.4,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "×",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 5,
@@ -464,7 +491,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -485,11 +512,11 @@
               "mark_teki": "◎",
               "mark_kai": "▲",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 79.5,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 7,
@@ -506,10 +533,10 @@
               "mark_teki": "△",
               "mark_kai": "△",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 50.5,
+              "mark_tan_ev": "×",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "mark_win_rate": "△",
               "mark_place_rate": ""
             },
             {
@@ -527,11 +554,11 @@
               "mark_teki": "",
               "mark_kai": "◎",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 49.1,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "▲",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "×"
             },
             {
               "umaban": 9,
@@ -548,7 +575,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -569,7 +596,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -590,7 +617,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -611,14 +638,41 @@
               "mark_teki": "◯",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
+              "shohen": 53.1,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "4 – 6",
+                  "legs": [
+                    4,
+                    6
+                  ],
+                  "match": true
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "4 – 6",
+                  "legs": [
+                    4,
+                    6
+                  ],
+                  "match": true
+                }
+              ]
+            }
+          ],
           "viewer_bets": [
             {
               "type": "単勝",
@@ -675,7 +729,7 @@
                         4,
                         6
                       ],
-                      "match": false
+                      "match": true
                     }
                   ]
                 }
@@ -703,14 +757,14 @@
                         4,
                         6
                       ],
-                      "match": false
+                      "match": true
                     }
                   ]
                 }
               ]
             }
           ],
-          "bets_match_count": 0
+          "bets_match_count": 2
         },
         {
           "race_number": 3,
@@ -728,16 +782,16 @@
               "tan_ev": 0.85,
               "fuku_ev": 0.88,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "◎",
               "mark_teki": "◎",
               "mark_kai": "▲",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 74.5,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 2,
@@ -754,11 +808,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
+              "shohen": 45.1,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "▲",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "×"
             },
             {
               "umaban": 3,
@@ -775,7 +829,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -796,11 +850,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 52.3,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 5,
@@ -817,7 +871,7 @@
               "mark_teki": "△",
               "mark_kai": "◎",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -838,8 +892,8 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 45.5,
+              "mark_tan_ev": "△",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -859,11 +913,11 @@
               "mark_teki": "✕",
               "mark_kai": "△",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 46.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "×",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 8,
@@ -880,10 +934,10 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "shohen": 46.9,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "△",
               "mark_place_rate": ""
             },
             {
@@ -901,14 +955,57 @@
               "mark_teki": "◯",
               "mark_kai": "◯",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 54.0,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "1 – 2",
+                  "legs": [
+                    1,
+                    2
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "1 – 8",
+                  "legs": [
+                    1,
+                    8
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "1 – 2",
+                  "legs": [
+                    1,
+                    2
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "1 – 8",
+                  "legs": [
+                    1,
+                    8
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [
             {
               "type": "単勝",
@@ -972,11 +1069,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 51.4,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 2,
@@ -993,7 +1090,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1014,7 +1111,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1035,11 +1132,11 @@
               "mark_teki": "◯",
               "mark_kai": "△",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 69.5,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 5,
@@ -1056,9 +1153,9 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 47.3,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "△",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -1077,7 +1174,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1098,11 +1195,11 @@
               "mark_teki": "△",
               "mark_kai": "✕",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 56.7,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 8,
@@ -1119,7 +1216,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1140,11 +1237,11 @@
               "mark_teki": "◎",
               "mark_kai": "◯",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 72.1,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 10,
@@ -1161,7 +1258,7 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1182,7 +1279,7 @@
               "mark_teki": "",
               "mark_kai": "◎",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1203,7 +1300,7 @@
               "mark_teki": "",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1224,8 +1321,8 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 45.8,
+              "mark_tan_ev": "○",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -1245,11 +1342,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
+              "shohen": 60.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 15,
@@ -1266,7 +1363,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1355,11 +1452,11 @@
               "mark_teki": "▲",
               "mark_kai": "✕",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 51.3,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 2,
@@ -1376,7 +1473,7 @@
               "mark_teki": "",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 41.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1392,16 +1489,16 @@
               "tan_ev": 0.94,
               "fuku_ev": 0.9,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "◎",
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 72.9,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 4,
@@ -1418,9 +1515,9 @@
               "mark_teki": "✕",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 44.3,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -1439,7 +1536,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1460,11 +1557,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 50.2,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 7,
@@ -1481,11 +1578,11 @@
               "mark_teki": "△",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 50.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 8,
@@ -1502,7 +1599,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1523,7 +1620,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1544,14 +1641,41 @@
               "mark_teki": "◯",
               "mark_kai": "▲",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 60.5,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [],
           "bets_match_count": 0
         },
@@ -1576,7 +1700,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1597,7 +1721,7 @@
               "mark_teki": "",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1618,9 +1742,9 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.7,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -1639,7 +1763,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1660,11 +1784,11 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 49.1,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "△",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 6,
@@ -1681,7 +1805,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 47.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1702,11 +1826,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 51.6,
+              "mark_tan_ev": "×",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 8,
@@ -1718,14 +1842,14 @@
               "tan_ev": 0.88,
               "fuku_ev": 0.9,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "",
               "mark_teki": "▲",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 48.4,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -1744,7 +1868,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1765,7 +1889,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1786,11 +1910,11 @@
               "mark_teki": "◯",
               "mark_kai": "◎",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 70.5,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 12,
@@ -1807,7 +1931,7 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1828,7 +1952,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1849,11 +1973,11 @@
               "mark_teki": "△",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
+              "shohen": 48.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 15,
@@ -1870,7 +1994,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 47.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1891,14 +2015,69 @@
               "mark_teki": "◎",
               "mark_kai": "▲",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 78.9,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "8",
+                  "legs": [
+                    8
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "8 – 11",
+                  "legs": [
+                    8,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 16",
+                  "legs": [
+                    8,
+                    16
+                  ],
+                  "match": true
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "8 – 11",
+                  "legs": [
+                    8,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 16",
+                  "legs": [
+                    8,
+                    16
+                  ],
+                  "match": true
+                }
+              ]
+            }
+          ],
           "viewer_bets": [
             {
               "type": "馬連",
@@ -1914,7 +2093,7 @@
                         8,
                         16
                       ],
-                      "match": false
+                      "match": true
                     }
                   ]
                 }
@@ -1934,14 +2113,14 @@
                         8,
                         16
                       ],
-                      "match": false
+                      "match": true
                     }
                   ]
                 }
               ]
             }
           ],
-          "bets_match_count": 0
+          "bets_match_count": 2
         },
         {
           "race_number": 7,
@@ -1964,7 +2143,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 41.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -1985,7 +2164,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2001,16 +2180,16 @@
               "tan_ev": 1.14,
               "fuku_ev": 0.83,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "✕",
               "mark_teki": "✕",
               "mark_kai": "◎",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 51.2,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "◎",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "△"
             },
             {
               "umaban": 4,
@@ -2027,7 +2206,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 41.2,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2048,7 +2227,7 @@
               "mark_teki": "",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 41.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2069,11 +2248,11 @@
               "mark_teki": "◎",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
+              "shohen": 69.4,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 7,
@@ -2090,10 +2269,10 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "shohen": 58.0,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "×",
               "mark_place_rate": ""
             },
             {
@@ -2111,9 +2290,9 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.5,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -2132,8 +2311,8 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 46.7,
+              "mark_tan_ev": "×",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -2148,13 +2327,13 @@
               "tan_ev": 0.98,
               "fuku_ev": 0.89,
               "iruka": true,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "",
               "mark_teki": "",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 49.7,
+              "mark_tan_ev": "○",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -2174,7 +2353,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2195,7 +2374,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 41.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2216,11 +2395,11 @@
               "mark_teki": "◯",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 68.0,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 14,
@@ -2237,7 +2416,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 41.2,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2258,11 +2437,11 @@
               "mark_teki": "▲",
               "mark_kai": "✕",
               "mark_soku": "▲",
-              "shohen": null,
+              "shohen": 62.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 16,
@@ -2279,14 +2458,129 @@
               "mark_teki": "△",
               "mark_kai": "▲",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 58.4,
+              "mark_tan_ev": "△",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "△",
+              "mark_place_rate": "×"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "単勝",
+              "picks": [
+                {
+                  "text": "3",
+                  "legs": [
+                    3
+                  ],
+                  "match": true
+                }
+              ]
+            },
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "10",
+                  "legs": [
+                    10
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "3 – 7",
+                  "legs": [
+                    3,
+                    7
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 13",
+                  "legs": [
+                    3,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 15",
+                  "legs": [
+                    3,
+                    15
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 10",
+                  "legs": [
+                    7,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 16",
+                  "legs": [
+                    10,
+                    16
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "3 – 7",
+                  "legs": [
+                    3,
+                    7
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 13",
+                  "legs": [
+                    3,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 15",
+                  "legs": [
+                    3,
+                    15
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 10",
+                  "legs": [
+                    7,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 16",
+                  "legs": [
+                    10,
+                    16
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [
             {
               "type": "単勝",
@@ -2301,14 +2595,14 @@
                       "legs": [
                         3
                       ],
-                      "match": false
+                      "match": true
                     }
                   ]
                 }
               ]
             }
           ],
-          "bets_match_count": 0
+          "bets_match_count": 1
         },
         {
           "race_number": 8,
@@ -2331,7 +2625,7 @@
               "mark_teki": "△",
               "mark_kai": "◎",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2352,7 +2646,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2373,11 +2667,11 @@
               "mark_teki": "▲",
               "mark_kai": "△",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 59.7,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 4,
@@ -2394,7 +2688,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2415,7 +2709,7 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2436,11 +2730,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 54.0,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "△",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 7,
@@ -2457,7 +2751,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2478,7 +2772,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 48.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2499,7 +2793,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2520,7 +2814,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2536,16 +2830,16 @@
               "tan_ev": 0.88,
               "fuku_ev": 0.66,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "◯",
               "mark_teki": "◯",
               "mark_kai": "✕",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 76.5,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 12,
@@ -2562,8 +2856,8 @@
               "mark_teki": "",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 45.4,
+              "mark_tan_ev": "△",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -2583,7 +2877,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2604,11 +2898,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 53.5,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "×",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 15,
@@ -2625,14 +2919,105 @@
               "mark_teki": "◎",
               "mark_kai": "▲",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 64.4,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 11",
+                  "legs": [
+                    3,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 11",
+                  "legs": [
+                    6,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 11",
+                  "legs": [
+                    8,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "11 – 14",
+                  "legs": [
+                    11,
+                    14
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 11",
+                  "legs": [
+                    3,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 11",
+                  "legs": [
+                    6,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 11",
+                  "legs": [
+                    8,
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "11 – 14",
+                  "legs": [
+                    11,
+                    14
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [
             {
               "type": "馬連",
@@ -2698,7 +3083,7 @@
               "mark_teki": "△",
               "mark_kai": "✕",
               "mark_soku": "▲",
-              "shohen": null,
+              "shohen": 45.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2719,11 +3104,11 @@
               "mark_teki": "◯",
               "mark_kai": "◯",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 47.5,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 3,
@@ -2740,11 +3125,11 @@
               "mark_teki": "▲",
               "mark_kai": "▲",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 46.3,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 4,
@@ -2761,8 +3146,8 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 45.8,
+              "mark_tan_ev": "×",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -2782,11 +3167,11 @@
               "mark_teki": "✕",
               "mark_kai": "△",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 46.1,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 6,
@@ -2803,11 +3188,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.9,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 7,
@@ -2819,16 +3204,16 @@
               "tan_ev": 1.09,
               "fuku_ev": 0.91,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "◎*",
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 72.6,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             }
           ],
           "shiraberu_bets": [],
@@ -2876,11 +3261,11 @@
               "mark_teki": "",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 48.1,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "○",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "△"
             },
             {
               "umaban": 2,
@@ -2897,7 +3282,7 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2918,7 +3303,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -2939,11 +3324,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 55.7,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 5,
@@ -2960,11 +3345,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 47.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "×"
             },
             {
               "umaban": 6,
@@ -2981,10 +3366,10 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "shohen": 48.4,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "×",
               "mark_place_rate": ""
             },
             {
@@ -3002,11 +3387,11 @@
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 86.9,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 8,
@@ -3023,7 +3408,7 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 46.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3044,10 +3429,10 @@
               "mark_teki": "",
               "mark_kai": "△",
               "mark_soku": "✕",
-              "shohen": null,
+              "shohen": 49.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "mark_win_rate": "△",
               "mark_place_rate": ""
             },
             {
@@ -3065,11 +3450,11 @@
               "mark_teki": "◯",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 59.8,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "○",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 11,
@@ -3086,7 +3471,7 @@
               "mark_teki": "△",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3107,7 +3492,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 47.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3128,7 +3513,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 46.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3149,7 +3534,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3170,7 +3555,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3191,7 +3576,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3212,7 +3597,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 46.2,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3233,7 +3618,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3285,7 +3670,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3306,9 +3691,9 @@
               "mark_teki": "",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 44.0,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "△",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -3327,7 +3712,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
+              "shohen": 46.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3348,7 +3733,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3369,7 +3754,7 @@
               "mark_teki": "△",
               "mark_kai": "◎",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3385,15 +3770,15 @@
               "tan_ev": 0.82,
               "fuku_ev": 0.89,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "",
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 48.5,
+              "mark_tan_ev": "○",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "mark_win_rate": "×",
               "mark_place_rate": ""
             },
             {
@@ -3411,7 +3796,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3432,7 +3817,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3453,11 +3838,11 @@
               "mark_teki": "◎",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 75.6,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 10,
@@ -3474,7 +3859,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3495,11 +3880,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 53.5,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 12,
@@ -3516,7 +3901,7 @@
               "mark_teki": "",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3537,11 +3922,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "◎",
-              "shohen": null,
+              "shohen": 63.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 14,
@@ -3558,7 +3943,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3579,11 +3964,11 @@
               "mark_teki": "◯",
               "mark_kai": "△",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 68.1,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 16,
@@ -3600,14 +3985,118 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 46.6,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "×"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "単勝",
+              "picks": [
+                {
+                  "text": "6",
+                  "legs": [
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9",
+                  "legs": [
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "11",
+                  "legs": [
+                    11
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "15",
+                  "legs": [
+                    15
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "6",
+                  "legs": [
+                    6
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "6 – 9",
+                  "legs": [
+                    6,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 15",
+                  "legs": [
+                    6,
+                    15
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 11",
+                  "legs": [
+                    9,
+                    11
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "6 – 9",
+                  "legs": [
+                    6,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 15",
+                  "legs": [
+                    6,
+                    15
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 11",
+                  "legs": [
+                    9,
+                    11
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [
             {
               "type": "単勝",
@@ -3652,7 +4141,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3673,11 +4162,11 @@
               "mark_teki": "▲",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 60.4,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 3,
@@ -3694,11 +4183,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 56.9,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "×",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 4,
@@ -3715,7 +4204,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
+              "shohen": 42.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3736,7 +4225,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3757,8 +4246,8 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 54.2,
+              "mark_tan_ev": "▲",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -3778,11 +4267,11 @@
               "mark_teki": "◯",
               "mark_kai": "△",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 57.7,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "△",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 8,
@@ -3794,14 +4283,14 @@
               "tan_ev": 0.99,
               "fuku_ev": 0.9,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "",
               "mark_teki": "",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 43.0,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "▲",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -3820,11 +4309,11 @@
               "mark_teki": "◎",
               "mark_kai": "",
               "mark_soku": "◎",
-              "shohen": null,
+              "shohen": 76.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 10,
@@ -3841,11 +4330,11 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 58.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 11,
@@ -3862,7 +4351,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 39.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3883,7 +4372,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 41.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3904,7 +4393,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 49.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3925,7 +4414,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3946,7 +4435,7 @@
               "mark_teki": "△",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 40.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -3962,19 +4451,164 @@
               "tan_ev": 1.05,
               "fuku_ev": 0.9,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "",
               "mark_teki": "",
               "mark_kai": "◎",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 45.2,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "◎",
               "mark_win_rate": "",
               "mark_place_rate": ""
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "単勝",
+              "picks": [
+                {
+                  "text": "6",
+                  "legs": [
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7",
+                  "legs": [
+                    7
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "8",
+                  "legs": [
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "16",
+                  "legs": [
+                    16
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "2 – 8",
+                  "legs": [
+                    2,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 16",
+                  "legs": [
+                    2,
+                    16
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 8",
+                  "legs": [
+                    7,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 16",
+                  "legs": [
+                    7,
+                    16
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 9",
+                  "legs": [
+                    8,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 16",
+                  "legs": [
+                    9,
+                    16
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "2 – 8",
+                  "legs": [
+                    2,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 16",
+                  "legs": [
+                    2,
+                    16
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 8",
+                  "legs": [
+                    7,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 16",
+                  "legs": [
+                    7,
+                    16
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 9",
+                  "legs": [
+                    8,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 16",
+                  "legs": [
+                    9,
+                    16
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [],
           "bets_match_count": 0
         }
@@ -4004,11 +4638,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "◎",
-              "shohen": null,
+              "shohen": 52.3,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 2,
@@ -4025,7 +4659,7 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 38.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4046,11 +4680,11 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 61.4,
+              "mark_tan_ev": "△",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "○",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 4,
@@ -4067,11 +4701,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 66.9,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 5,
@@ -4088,7 +4722,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 38.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4104,14 +4738,14 @@
               "tan_ev": 0.88,
               "fuku_ev": 0.9,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "△",
               "mark_teki": "◎",
               "mark_kai": "◯",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 43.1,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "○",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -4130,8 +4764,8 @@
               "mark_teki": "◯",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 50.7,
+              "mark_tan_ev": "○",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -4151,11 +4785,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
+              "shohen": 56.7,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "△",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 9,
@@ -4172,9 +4806,9 @@
               "mark_teki": "△",
               "mark_kai": "◎",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 51.0,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -4193,7 +4827,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 38.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4214,11 +4848,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 60.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 12,
@@ -4235,14 +4869,85 @@
               "mark_teki": "",
               "mark_kai": "▲",
               "mark_soku": "✕",
-              "shohen": null,
+              "shohen": 41.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "6",
+                  "legs": [
+                    6
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "4 – 6",
+                  "legs": [
+                    4,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 11",
+                  "legs": [
+                    6,
+                    11
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "4 – 6",
+                  "legs": [
+                    4,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 11",
+                  "legs": [
+                    6,
+                    11
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [],
           "bets_match_count": 0
         },
@@ -4267,11 +4972,11 @@
               "mark_teki": "▲",
               "mark_kai": "△",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 47.8,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 2,
@@ -4288,11 +4993,11 @@
               "mark_teki": "◯",
               "mark_kai": "◎",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 69.5,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 3,
@@ -4309,11 +5014,11 @@
               "mark_teki": "◎",
               "mark_kai": "◯",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 61.5,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 4,
@@ -4330,7 +5035,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4351,7 +5056,7 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4372,7 +5077,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4393,11 +5098,11 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 43.9,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 8,
@@ -4414,11 +5119,11 @@
               "mark_teki": "△",
               "mark_kai": "▲",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 47.5,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             }
           ],
           "shiraberu_bets": [],
@@ -4446,7 +5151,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4467,11 +5172,11 @@
               "mark_teki": "◎",
               "mark_kai": "△",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 74.7,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 3,
@@ -4488,7 +5193,7 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4509,7 +5214,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4530,11 +5235,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
+              "shohen": 47.1,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 6,
@@ -4551,11 +5256,11 @@
               "mark_teki": "◯",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 53.5,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "○",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 7,
@@ -4572,11 +5277,11 @@
               "mark_teki": "",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 52.0,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 8,
@@ -4593,10 +5298,10 @@
               "mark_teki": "△",
               "mark_kai": "◯",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 46.9,
+              "mark_tan_ev": "△",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "mark_win_rate": "×",
               "mark_place_rate": ""
             },
             {
@@ -4614,11 +5319,11 @@
               "mark_teki": "✕",
               "mark_kai": "◎",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 46.3,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "×"
             }
           ],
           "shiraberu_bets": [],
@@ -4641,16 +5346,16 @@
               "tan_ev": 0.89,
               "fuku_ev": 0.61,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "✕",
               "mark_teki": "✕",
               "mark_kai": "▲",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 68.5,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 2,
@@ -4667,11 +5372,11 @@
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 51.8,
+              "mark_tan_ev": "×",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 3,
@@ -4688,11 +5393,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
+              "shohen": 47.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 4,
@@ -4709,11 +5414,11 @@
               "mark_teki": "△",
               "mark_kai": "✕",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 45.8,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 5,
@@ -4730,9 +5435,9 @@
               "mark_teki": "",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 39.8,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "△",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -4751,9 +5456,9 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 40.5,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "○",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -4772,14 +5477,85 @@
               "mark_teki": "◯",
               "mark_kai": "◯",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 56.1,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "1",
+                  "legs": [
+                    1
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "1 – 2",
+                  "legs": [
+                    1,
+                    2
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "1 – 3",
+                  "legs": [
+                    1,
+                    3
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "1 – 7",
+                  "legs": [
+                    1,
+                    7
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "1 – 2",
+                  "legs": [
+                    1,
+                    2
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "1 – 3",
+                  "legs": [
+                    1,
+                    3
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "1 – 7",
+                  "legs": [
+                    1,
+                    7
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [],
           "bets_match_count": 0
         },
@@ -4804,7 +5580,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.2,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4825,11 +5601,11 @@
               "mark_teki": "✕",
               "mark_kai": "△",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 52.3,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 3,
@@ -4846,7 +5622,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.2,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4867,7 +5643,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.2,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4888,11 +5664,11 @@
               "mark_teki": "△",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 49.0,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 6,
@@ -4909,11 +5685,11 @@
               "mark_teki": "◯",
               "mark_kai": "◎",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 59.0,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 7,
@@ -4930,7 +5706,7 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -4951,11 +5727,11 @@
               "mark_teki": "◎",
               "mark_kai": "◯",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 73.0,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 9,
@@ -4972,11 +5748,11 @@
               "mark_teki": "▲",
               "mark_kai": "▲",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 53.1,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 10,
@@ -4993,7 +5769,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 41.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5025,7 +5801,7 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 47.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5046,11 +5822,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
+              "shohen": 48.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "×",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 3,
@@ -5067,7 +5843,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5083,14 +5859,14 @@
               "tan_ev": 0.67,
               "fuku_ev": 0.9,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "",
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 45.4,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -5109,7 +5885,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5125,14 +5901,14 @@
               "tan_ev": 0.9,
               "fuku_ev": 1.04,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "",
               "mark_teki": "△",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 47.2,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "▲",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -5146,16 +5922,16 @@
               "tan_ev": 1.02,
               "fuku_ev": 0.88,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "◎",
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 85.6,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 8,
@@ -5172,11 +5948,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 53.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 9,
@@ -5193,7 +5969,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 47.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5214,7 +5990,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5235,7 +6011,7 @@
               "mark_teki": "",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5256,11 +6032,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
+              "shohen": 52.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 13,
@@ -5277,11 +6053,11 @@
               "mark_teki": "◯",
               "mark_kai": "◯",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 54.9,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 14,
@@ -5298,7 +6074,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5319,7 +6095,7 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5340,14 +6116,143 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 46.7,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
               "mark_place_rate": ""
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "単勝",
+              "picks": [
+                {
+                  "text": "7",
+                  "legs": [
+                    7
+                  ],
+                  "match": true
+                },
+                {
+                  "text": "13",
+                  "legs": [
+                    13
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "4",
+                  "legs": [
+                    4
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6",
+                  "legs": [
+                    6
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "4 – 7",
+                  "legs": [
+                    4,
+                    7
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "4 – 13",
+                  "legs": [
+                    4,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 7",
+                  "legs": [
+                    6,
+                    7
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 13",
+                  "legs": [
+                    6,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 13",
+                  "legs": [
+                    7,
+                    13
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "4 – 7",
+                  "legs": [
+                    4,
+                    7
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "4 – 13",
+                  "legs": [
+                    4,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 7",
+                  "legs": [
+                    6,
+                    7
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 13",
+                  "legs": [
+                    6,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "7 – 13",
+                  "legs": [
+                    7,
+                    13
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [
             {
               "type": "単勝",
@@ -5362,14 +6267,14 @@
                       "legs": [
                         7
                       ],
-                      "match": false
+                      "match": true
                     }
                   ]
                 }
               ]
             }
           ],
-          "bets_match_count": 0
+          "bets_match_count": 1
         },
         {
           "race_number": 7,
@@ -5392,11 +6297,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 51.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 2,
@@ -5413,8 +6318,8 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 47.8,
+              "mark_tan_ev": "×",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -5434,9 +6339,9 @@
               "mark_teki": "◯",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 47.3,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -5455,7 +6360,7 @@
               "mark_teki": "",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 46.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5476,10 +6381,10 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 50.2,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "mark_win_rate": "×",
               "mark_place_rate": ""
             },
             {
@@ -5497,11 +6402,11 @@
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◎",
-              "shohen": null,
+              "shohen": 86.1,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 7,
@@ -5518,11 +6423,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
+              "shohen": 48.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "×"
             },
             {
               "umaban": 8,
@@ -5539,9 +6444,9 @@
               "mark_teki": "▲",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 46.3,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "○",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -5560,11 +6465,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
+              "shohen": 50.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "△",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 10,
@@ -5581,7 +6486,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5602,7 +6507,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5623,7 +6528,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 48.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5644,11 +6549,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 53.8,
+              "mark_tan_ev": "○",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 14,
@@ -5665,9 +6570,9 @@
               "mark_teki": "△",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 45.4,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "◎",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -5686,7 +6591,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5707,14 +6612,149 @@
               "mark_teki": "✕",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.1,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "△",
               "mark_win_rate": "",
               "mark_place_rate": ""
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "単勝",
+              "picks": [
+                {
+                  "text": "13",
+                  "legs": [
+                    13
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "2 – 6",
+                  "legs": [
+                    2,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 13",
+                  "legs": [
+                    2,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 13",
+                  "legs": [
+                    3,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 8",
+                  "legs": [
+                    6,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 14",
+                  "legs": [
+                    6,
+                    14
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 13",
+                  "legs": [
+                    8,
+                    13
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "2 – 6",
+                  "legs": [
+                    2,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 13",
+                  "legs": [
+                    2,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 6",
+                  "legs": [
+                    3,
+                    6
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "3 – 13",
+                  "legs": [
+                    3,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 8",
+                  "legs": [
+                    6,
+                    8
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 14",
+                  "legs": [
+                    6,
+                    14
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 13",
+                  "legs": [
+                    8,
+                    13
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [],
           "bets_match_count": 0
         },
@@ -5739,7 +6779,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5760,11 +6800,11 @@
               "mark_teki": "△",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 51.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 3,
@@ -5781,7 +6821,7 @@
               "mark_teki": "✕",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 46.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5802,9 +6842,9 @@
               "mark_teki": "",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 43.3,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -5823,10 +6863,10 @@
               "mark_teki": "",
               "mark_kai": "△",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "shohen": 49.1,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "×",
               "mark_place_rate": ""
             },
             {
@@ -5844,7 +6884,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 41.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5865,7 +6905,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5881,16 +6921,16 @@
               "tan_ev": 0.76,
               "fuku_ev": 0.9,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "",
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 56.2,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 9,
@@ -5907,11 +6947,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "◎",
-              "shohen": null,
+              "shohen": 48.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "×"
             },
             {
               "umaban": 10,
@@ -5928,11 +6968,11 @@
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 58.3,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 11,
@@ -5949,7 +6989,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -5970,14 +7010,69 @@
               "mark_teki": "◯",
               "mark_kai": "✕",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 76.6,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "8",
+                  "legs": [
+                    8
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "8 – 10",
+                  "legs": [
+                    8,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 12",
+                  "legs": [
+                    8,
+                    12
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "8 – 10",
+                  "legs": [
+                    8,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "8 – 12",
+                  "legs": [
+                    8,
+                    12
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [
             {
               "type": "単勝",
@@ -6062,11 +7157,11 @@
               "mark_teki": "▲",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
+              "shohen": 48.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "▲",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 2,
@@ -6083,11 +7178,11 @@
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 79.5,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 3,
@@ -6104,10 +7199,10 @@
               "mark_teki": "✕",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "shohen": 48.5,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "△",
               "mark_place_rate": ""
             },
             {
@@ -6125,11 +7220,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 46.4,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "◎",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "×"
             },
             {
               "umaban": 5,
@@ -6146,7 +7241,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6167,7 +7262,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 46.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6188,11 +7283,11 @@
               "mark_teki": "◯",
               "mark_kai": "◯",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 51.6,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 8,
@@ -6209,7 +7304,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6230,8 +7325,8 @@
               "mark_teki": "",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 46.5,
+              "mark_tan_ev": "×",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
@@ -6251,7 +7346,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6272,11 +7367,11 @@
               "mark_teki": "△",
               "mark_kai": "△",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 48.3,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "△",
+              "mark_win_rate": "×",
+              "mark_place_rate": "▲"
             }
           ],
           "shiraberu_bets": [],
@@ -6304,11 +7399,11 @@
               "mark_teki": "◯",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
+              "shohen": 51.0,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "×",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 2,
@@ -6325,11 +7420,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 56.5,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "○",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 3,
@@ -6346,11 +7441,11 @@
               "mark_teki": "▲",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 53.6,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "×",
+              "mark_win_rate": "△",
+              "mark_place_rate": "△"
             },
             {
               "umaban": 4,
@@ -6367,7 +7462,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6388,10 +7483,10 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 54.3,
+              "mark_tan_ev": "▲",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "mark_win_rate": "▲",
               "mark_place_rate": ""
             },
             {
@@ -6409,11 +7504,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 48.2,
+              "mark_tan_ev": "△",
+              "mark_fuku_ev": "△",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "×"
             },
             {
               "umaban": 7,
@@ -6430,7 +7525,7 @@
               "mark_teki": "",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.3,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6451,7 +7546,7 @@
               "mark_teki": "✕",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6472,7 +7567,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6488,16 +7583,16 @@
               "tan_ev": 0.95,
               "fuku_ev": 0.89,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "◎",
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 77.2,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 11,
@@ -6514,7 +7609,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 42.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6535,14 +7630,57 @@
               "mark_teki": "△",
               "mark_kai": "▲",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.8,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
               "mark_place_rate": ""
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "2 – 10",
+                  "legs": [
+                    2,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 10",
+                  "legs": [
+                    6,
+                    10
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "2 – 10",
+                  "legs": [
+                    2,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "6 – 10",
+                  "legs": [
+                    6,
+                    10
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [],
           "bets_match_count": 0
         },
@@ -6567,11 +7705,11 @@
               "mark_teki": "◯",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 64.4,
+              "mark_tan_ev": "△",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 2,
@@ -6588,11 +7726,11 @@
               "mark_teki": "△",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 53.6,
+              "mark_tan_ev": "◎",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "△",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 3,
@@ -6609,7 +7747,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.2,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6630,7 +7768,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
+              "shohen": 46.7,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6651,7 +7789,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 46.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6672,7 +7810,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6693,10 +7831,10 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "▲",
-              "shohen": null,
+              "shohen": 49.9,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "mark_win_rate": "×",
               "mark_place_rate": ""
             },
             {
@@ -6714,7 +7852,7 @@
               "mark_teki": "",
               "mark_kai": "◯",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6730,14 +7868,14 @@
               "tan_ev": 0.9,
               "fuku_ev": 0.9,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "",
               "mark_teki": "✕",
               "mark_kai": "▲",
               "mark_soku": "△",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "shohen": 47.6,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "▲",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -6751,16 +7889,16 @@
               "tan_ev": 1.0,
               "fuku_ev": 0.89,
               "iruka": false,
-              "chumoku": false,
+              "chumoku": true,
               "mark_sou": "◎",
               "mark_teki": "◎",
               "mark_kai": "◎",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 81.2,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 11,
@@ -6777,7 +7915,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.5,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6798,9 +7936,9 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.0,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -6819,11 +7957,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 53.6,
+              "mark_tan_ev": "×",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 14,
@@ -6840,7 +7978,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6861,11 +7999,11 @@
               "mark_teki": "▲",
               "mark_kai": "✕",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 49.0,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "△"
             },
             {
               "umaban": 16,
@@ -6882,14 +8020,133 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 45.9,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "△",
               "mark_win_rate": "",
               "mark_place_rate": ""
             }
           ],
-          "shiraberu_bets": [],
+          "shiraberu_bets": [
+            {
+              "type": "複勝",
+              "picks": [
+                {
+                  "text": "9",
+                  "legs": [
+                    9
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "馬連",
+              "picks": [
+                {
+                  "text": "1 – 9",
+                  "legs": [
+                    1,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 10",
+                  "legs": [
+                    2,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 10",
+                  "legs": [
+                    9,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 12",
+                  "legs": [
+                    10,
+                    12
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 13",
+                  "legs": [
+                    10,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 16",
+                  "legs": [
+                    10,
+                    16
+                  ],
+                  "match": false
+                }
+              ]
+            },
+            {
+              "type": "ワイド",
+              "picks": [
+                {
+                  "text": "1 – 9",
+                  "legs": [
+                    1,
+                    9
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "2 – 10",
+                  "legs": [
+                    2,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "9 – 10",
+                  "legs": [
+                    9,
+                    10
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 12",
+                  "legs": [
+                    10,
+                    12
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 13",
+                  "legs": [
+                    10,
+                    13
+                  ],
+                  "match": false
+                },
+                {
+                  "text": "10 – 16",
+                  "legs": [
+                    10,
+                    16
+                  ],
+                  "match": false
+                }
+              ]
+            }
+          ],
           "viewer_bets": [],
           "bets_match_count": 0
         },
@@ -6914,7 +8171,7 @@
               "mark_teki": "✕",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -6935,11 +8192,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "✕",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 47.4,
+              "mark_tan_ev": "△",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_win_rate": "△",
+              "mark_place_rate": "×"
             },
             {
               "umaban": 3,
@@ -6956,9 +8213,9 @@
               "mark_teki": "",
               "mark_kai": "△",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.2,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "△",
               "mark_win_rate": "",
               "mark_place_rate": ""
             },
@@ -6977,11 +8234,11 @@
               "mark_teki": "◯",
               "mark_kai": "✕",
               "mark_soku": "◯",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 75.5,
+              "mark_tan_ev": "○",
+              "mark_fuku_ev": "○",
+              "mark_win_rate": "◎",
+              "mark_place_rate": "◎"
             },
             {
               "umaban": 5,
@@ -6998,7 +8255,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.4,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -7019,11 +8276,11 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 46.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
-              "mark_place_rate": ""
+              "mark_place_rate": "△"
             },
             {
               "umaban": 7,
@@ -7040,7 +8297,7 @@
               "mark_teki": "△",
               "mark_kai": "▲",
               "mark_soku": "△",
-              "shohen": null,
+              "shohen": 44.6,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -7061,11 +8318,11 @@
               "mark_teki": "◎",
               "mark_kai": "◯",
               "mark_soku": "◎",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 64.8,
+              "mark_tan_ev": "▲",
+              "mark_fuku_ev": "◎",
+              "mark_win_rate": "○",
+              "mark_place_rate": "○"
             },
             {
               "umaban": 9,
@@ -7082,11 +8339,11 @@
               "mark_teki": "▲",
               "mark_kai": "◎",
               "mark_soku": "▲",
-              "shohen": null,
-              "mark_tan_ev": "",
-              "mark_fuku_ev": "",
-              "mark_win_rate": "",
-              "mark_place_rate": ""
+              "shohen": 52.9,
+              "mark_tan_ev": "◎",
+              "mark_fuku_ev": "▲",
+              "mark_win_rate": "▲",
+              "mark_place_rate": "▲"
             },
             {
               "umaban": 10,
@@ -7103,10 +8360,10 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
-              "mark_tan_ev": "",
+              "shohen": 47.2,
+              "mark_tan_ev": "×",
               "mark_fuku_ev": "",
-              "mark_win_rate": "",
+              "mark_win_rate": "×",
               "mark_place_rate": ""
             },
             {
@@ -7124,7 +8381,7 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 44.1,
               "mark_tan_ev": "",
               "mark_fuku_ev": "",
               "mark_win_rate": "",
@@ -7145,9 +8402,9 @@
               "mark_teki": "",
               "mark_kai": "",
               "mark_soku": "",
-              "shohen": null,
+              "shohen": 43.9,
               "mark_tan_ev": "",
-              "mark_fuku_ev": "",
+              "mark_fuku_ev": "×",
               "mark_win_rate": "",
               "mark_place_rate": ""
             }
