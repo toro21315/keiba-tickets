@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "generated_at": "2026-09-27T09:05:01.824827+09:00",
+  "generated_at": "2026-09-27T09:19:23.226166+09:00",
   "races": [
     {
       "venue": "中山",
@@ -211,15 +211,16 @@
         {
           "umaban": 10,
           "horse_name": "コニーアイランド",
-          "amount": 700,
+          "amount": 800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 800
     },
     {
       "venue": "中山",
@@ -231,16 +232,17 @@
         {
           "umaban": 7,
           "horse_name": "リサナウト",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "中山",
@@ -299,5 +301,5 @@
       "total_amount": 3100
     }
   ],
-  "grand_total": 21600
+  "grand_total": 21800
 }
