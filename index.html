@@ -1168,6 +1168,11 @@
             color: #8FA6BB;
         }
 
+        /* 「長距離は騎手、短距離は騎手の差が小さい」（予想家に共通する原則）の目安 */
+        .pred-meta .jr-wt {
+            color: #b8a77e;
+        }
+
         .pred-sorts {
             display: flex;
             gap: 6px;
@@ -1320,6 +1325,84 @@
         .jockey {
             color: var(--pred-dim);
             font-size: 11.5px;
+        }
+
+        /* ===== 騎手ランク列（騎手評価分析を、このレースの条件で集計し直した S〜E） =====
+           色は印（◎◯▲△✕）にそろえる＝「S≒◎」と読める。点線枠＝予想家1人だけの評価（低信頼）。
+           ▴▾＝条件を見ない基本ランクから上下、替＝JRAの出走表で乗り替わり。タップで根拠（#jrSheet） */
+        .pred-table .jr-col {
+            width: 32px;
+            min-width: 32px;
+            padding: 0 2px;
+            cursor: pointer;
+        }
+
+        .pred-table thead th.jr-col {
+            font-size: 9.5px;
+            line-height: 1.1;
+            cursor: default;
+        }
+
+        .jr {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .jr-S { background: #ff5a5f; color: #fff; }
+        .jr-A { background: #ffa94d; color: #2a1606; }
+        .jr-B { color: #4da8ff; border: 1px solid #4da8ff; }
+        .jr-C { color: #9aa1b0; }
+        .jr-D { color: #71757f; }
+        .jr-E { color: #71757f; text-decoration: line-through; }
+
+        .jr.low {
+            background: transparent;
+            border: 1px dashed currentColor;
+            opacity: 0.8;
+        }
+
+        .jr-S.low { color: #ff5a5f; }
+        .jr-A.low { color: #ffa94d; }
+
+        .jr .adj {
+            position: absolute;
+            top: -5px;
+            right: -6px;
+            font-size: 8px;
+            font-style: normal;
+            text-decoration: none;
+        }
+
+        .jr .adj.up { color: #66d39a; }
+        .jr .adj.down { color: #E0685F; }
+
+        .jr .swap {
+            position: absolute;
+            bottom: -6px;
+            left: -7px;
+            font-size: 7.5px;
+            font-style: normal;
+            font-weight: 700;
+            color: #FFCF4D;
+            text-decoration: none;
+        }
+
+        .jr-none {
+            color: #555;
+            font-size: 11px;
+        }
+
+        body.hide-jr .jr-col {
+            display: none;
         }
 
         .bar-cell {
@@ -1884,6 +1967,138 @@
             opacity: 0.85;
         }
 
+        /* 騎手ランク列の切替。手入力印（ローズ）とは色を分ける */
+        .mybtn.jrbtn.on {
+            color: #ffcf8a;
+            border-color: #5a4320;
+            background: #2a2013;
+        }
+
+        /* ===== 騎手ランクの根拠シート（#predBody の外に置く＝表のスクロール構造を増やさない） ===== */
+        .jr-sheet-back {
+            position: fixed;
+            inset: 0;
+            z-index: 90;
+            background: rgba(0, 0, 0, 0.45);
+            display: none;
+        }
+
+        .jr-sheet-back.on {
+            display: block;
+        }
+
+        .jr-sheet {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 91;
+            max-width: 560px;
+            margin: 0 auto;
+            max-height: 72vh;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            background: #15171c;
+            color: var(--pred-text);
+            border: 1px solid var(--pred-line);
+            border-bottom: 0;
+            border-radius: 14px 14px 0 0;
+            padding: 12px 16px calc(env(safe-area-inset-bottom) + 18px);
+            box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.5);
+            font-size: 12.5px;
+            line-height: 1.55;
+            transform: translateY(105%);
+            transition: transform 0.18s ease-out;
+        }
+
+        .jr-sheet.on {
+            transform: translateY(0);
+        }
+
+        .jr-sh-hd {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .jr-sh-hd b {
+            font-size: 15px;
+        }
+
+        .jr-sh-hd .ab {
+            color: var(--pred-dim);
+            font-size: 11.5px;
+        }
+
+        .jr-sh-hd .jr-x {
+            margin-left: auto;
+            appearance: none;
+            -webkit-appearance: none;
+            background: var(--pred-panel2);
+            color: var(--pred-text);
+            border: 1px solid var(--pred-line);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 12px;
+            padding: 3px 10px;
+        }
+
+        .jr-sh-rank {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 4px 0;
+        }
+
+        .jr-sh-rank .sc {
+            font-weight: 700;
+        }
+
+        .jr-sh-rank .base,
+        .jr-sh-race,
+        .jr-sh-foot {
+            color: var(--pred-dim);
+        }
+
+        .jr-sh-rank .mv.up { color: #66d39a; }
+        .jr-sh-rank .mv.down { color: #E0685F; }
+
+        .jr-sh-note {
+            margin: 6px 0;
+            padding: 6px 8px;
+            border-radius: 6px;
+            background: #1d2027;
+        }
+
+        .jr-sh-note.warn {
+            color: #FFCF4D;
+        }
+
+        .jr-sh-sec {
+            margin-top: 10px;
+            font-weight: 700;
+        }
+
+        .jr-sh-sec.minus { color: #E0685F; }
+        .jr-sh-sec.plus { color: #66d39a; }
+        .jr-sh-sec.pend { color: #9aa1b0; }
+
+        .jr-sheet ul {
+            margin: 3px 0 0;
+            padding-left: 18px;
+        }
+
+        .jr-sheet li .who {
+            color: var(--pred-dim);
+        }
+
+        .jr-sh-foot {
+            margin-top: 12px;
+            font-size: 11.5px;
+        }
+
         .fs-btn {
             flex: 0 0 auto;
             display: inline-flex;
@@ -2008,6 +2223,8 @@
         <div class="pred-empty" id="predEmpty" style="display:none;">本日の予測データはありません</div>
         <button class="fs-exit" id="predFsExit" aria-label="全画面解除">✕ 全画面解除</button>
     </section>
+    <div class="jr-sheet-back" id="jrSheetBack"></div>
+    <div class="jr-sheet" id="jrSheet" role="dialog" aria-modal="true" aria-label="騎手ランクの根拠"></div>
 
     <!-- Tweaks FAB -->
     <button class="tw-fab" id="twFab" aria-label="Tweaks">
@@ -2674,6 +2891,7 @@
             { key: 'tan_ev', label: '単EV', dir: 'desc' },
             { key: 'fuku_ev', label: '複EV', dir: 'desc' },
             { key: 'shohen', label: '勝偏', dir: 'desc' },
+            { key: 'jr_ord', label: '騎ランク', dir: 'desc', jr: true },   // 騎手ランクがある日だけ出す
         ];
 
         /* スクレイピング由来の文字列をそのまま innerHTML に載せるための最小エスケープ */
@@ -2732,6 +2950,123 @@
 
         let myMarks = {};                        // 当日ぶんだけメモリに載せる
         let myColsOn = { t: true, f: true };
+
+        /* ---------- 騎手ランク（S〜E） ----------
+           JSON の各馬 jr（generate_predictions_json.py → jockey_rank.py）を表示するだけ。計算は VPS 側。
+           jr が無い（古いJSON・計算失敗）日は「·」。列の表示/非表示は T/複 と同じく body のクラスだけで切り替える。 */
+        const JR_ORD = { S: 6, A: 5, B: 4, C: 3, D: 2, E: 1 };
+        const JR_COL_KEY = 'keiba_jrcol_v1';     // true/false
+        const JR_WHY = {
+            unrated: '予想家の評価がない騎手', no_match: 'このレースの条件に当てはまる評価がない',
+            ambiguous: '騎手を特定できない（略記が同じ騎手が複数）', unknown_name: '騎手を特定できない', jump: '障害レースは対象外',
+        };
+        let jrColOn = true;
+
+        function jrMeta() {
+            return (predState.data && predState.data.jockey_rank_meta) || null;
+        }
+        function jrAvailable() {
+            const m = jrMeta();
+            return !!(m && m.available === true);
+        }
+        function applyJrColVisibility() {
+            document.body.classList.toggle('hide-jr', !jrColOn);
+        }
+        function loadJrCol() {
+            jrColOn = lsGet(JR_COL_KEY, true) !== false;
+            applyJrColVisibility();
+        }
+        /* 並べ替え用の数値（S=6…E=1、無ければ null＝末尾） */
+        function prepJr() {
+            const vs = (predState.data && predState.data.venues) || [];
+            vs.forEach(v => v.races.forEach(r => r.horses.forEach(h => {
+                const rk = h.jr && h.jr.rank;
+                h.jr_ord = rk && JR_ORD[rk] ? JR_ORD[rk] : null;
+            })));
+        }
+        function jrScoreText(x) {
+            return (typeof x === 'number') ? ((x >= 0 ? '+' : '−') + Math.abs(x).toFixed(2)) : '';
+        }
+        function jrCellHtml(h) {
+            const j = h.jr;
+            if (!j) return '<span class="mk-none">·</span>';
+            if (!j.rank) return '<span class="jr-none">—</span>';
+            const low = (j.n || 0) < 2 ? ' low' : '';
+            let adj = '';
+            if (j.base && JR_ORD[j.base] && JR_ORD[j.base] !== JR_ORD[j.rank]) {
+                adj = JR_ORD[j.rank] > JR_ORD[j.base] ? '<i class="adj up">▴</i>' : '<i class="adj down">▾</i>';
+            }
+            const swap = j.swap ? '<i class="swap">替</i>' : '';
+            return `<span class="jr jr-${j.rank}${low}">${j.rank}${adj}${swap}</span>`;
+        }
+        /* PC のマウスオーバー用の1行要約 */
+        function jrTitle(h) {
+            const j = h.jr;
+            if (!j) return '';
+            if (!j.rank) return (j.name ? j.name + '：' : '') + (JR_WHY[j.why] || '');
+            const it = (arr, sg) => (arr || []).map(x => sg + x[0]).join(' ');
+            return `${j.name || ''} ${j.rank}（${jrScoreText(j.score)}） 基本${j.base || '—'}  ${it(j.plus, '＋')} ${it(j.minus, '−')}`.trim();
+        }
+        function jrHeadTitle() {
+            const m = jrMeta();
+            let t = '騎手ランク：予想家16人の評価を、このレースの条件で集計し直したもの（S〜E、—＝評価なし）。タップで根拠';
+            if (m && m.available === false) t += '\n本日は騎手ランクを作れていない';
+            if (m && m.stale) t += '\n評価期間の終わりから120日を過ぎている';
+            return t;
+        }
+        /* 「長距離は騎手、短距離は騎手の差が小さい」の目安（距離だけで決める） */
+        function jrWeightHtml(r) {
+            if (!r || !r.distance || String(r.track || '').startsWith('障')) return '';
+            const x = r.distance <= 1400 ? '小' : (r.distance >= 2400 ? '大' : '中');
+            return `<span class="jr-wt" title="予想家に共通する原則：長距離は騎手、短距離は騎手の差が小さい（黒の馬券師・虎視単単・こばとも・H氏・素ミレ）">騎手比重 ${x}</span>`;
+        }
+        function jrItems(arr) {
+            return (arr || []).map(x => `<li>${esc(x[0])} <span class="who">… ${esc(x[1])}</span></li>`).join('');
+        }
+        function openJrSheet(uma) {
+            const r = currentRace(), v = currentVenue();
+            if (!r) return;
+            const h = r.horses.find(x => String(x.umaban) === String(uma));
+            if (!h || !h.jr) return;
+            const j = h.jr, m = jrMeta() || {};
+            const dist = r.distance ? (r.track + r.distance + 'm') : (r.track || '');
+            let html = `<div class="jr-sh-hd"><b>${esc(j.name || h.jockey || '')}</b><span class="ab">（${esc(h.jockey || '')}）${esc(h.umaban)}番 ${esc(h.horse_name || '')}</span>`
+                + `<button class="jr-x" data-jrclose="1">✕ 閉じる</button></div>`;
+            if (j.rank) {
+                let mv = '';
+                if (j.base && JR_ORD[j.base] && JR_ORD[j.base] !== JR_ORD[j.rank]) {
+                    mv = JR_ORD[j.rank] > JR_ORD[j.base] ? '<span class="mv up">▴条件で上げ</span>' : '<span class="mv down">▾条件で下げ</span>';
+                }
+                html += `<div class="jr-sh-rank">${jrCellHtml(h)}<span class="sc">このレース ${j.rank}（${jrScoreText(j.score)}）</span>`
+                    + `<span class="base">基本 ${j.base || '—'}</span>${mv}</div>`;
+            } else {
+                html += `<div class="jr-sh-rank"><span class="jr-none">—</span><span>${esc(JR_WHY[j.why] || '')}</span></div>`;
+            }
+            html += `<div class="jr-sh-race">${esc(v ? v.venue : '')} ${esc(r.race_number)}R ${esc(dist)}</div>`;
+            if (j.swap) html += `<div class="jr-sh-note warn">乗り替わり：馬柱は「${esc(j.swap)}」、JRAの出走表は「${esc(j.name || '')}」。ランクは JRA の騎手で出している</div>`;
+            if ((j.n || 0) === 1) html += '<div class="jr-sh-note">予想家1人だけの評価（低信頼）</div>';
+            if (j.split) html += '<div class="jr-sh-note warn">⚠ このレースの条件では、予想家の評価が割れている</div>';
+            if (!j.rank && j.best && j.best.length) html += `<div class="jr-sh-note">得意条件：${esc(j.best.join('・'))}</div>`;
+            if (j.minus && j.minus.length) html += `<div class="jr-sh-sec minus">▼ 割り引く条件（このレースに当てはまる）</div><ul>${jrItems(j.minus)}</ul>`;
+            if (j.plus && j.plus.length) html += `<div class="jr-sh-sec plus">▲ 買い条件（このレースに当てはまる）</div><ul>${jrItems(j.plus)}</ul>`;
+            if (j.rank && !(j.minus && j.minus.length) && !(j.plus && j.plus.length)) html += '<div class="jr-sh-note">このレースの条件に当てはまる評価はない（一般的な評価だけで計算）</div>';
+            if (j.pending && j.pending.length) html += `<div class="jr-sh-sec pend">… 馬や当日の状況しだい（ランクには入れていない）</div><ul>${jrItems(j.pending)}</ul>`;
+            const foot = [];
+            if (j.n) foot.push(`予想家${j.n}人（このレースの条件に言及したのは${j.nc || 0}人）`);
+            if (m.period) foot.push(`評価期間 ${esc(m.period)}`);
+            html += `<div class="jr-sh-foot">${foot.join('・')}`
+                + (m.stale ? '<br>評価期間の終わりから120日を過ぎている（騎手評価分析の再実行が必要）' : '')
+                + '<br>予想家の見方を数値にしたもので、成績や回収率ではない。（2021〜22）は期間外の記事（重み0.5倍）</div>';
+            $('#jrSheet').innerHTML = html;
+            $('#jrSheet').classList.add('on');
+            $('#jrSheetBack').classList.add('on');
+        }
+        function closeJrSheet() {
+            const sh = $('#jrSheet');
+            if (!sh) return;
+            sh.classList.remove('on');
+            $('#jrSheetBack').classList.remove('on');
+        }
 
         /* プライベートモード/容量超過でも落ちないように必ず try で包む */
         function lsGet(key, fb) {
@@ -2808,7 +3143,9 @@
                 return `<button class="mybtn${on ? ' on' : ''}" data-mycol="${c.key}" aria-pressed="${on}"`
                     + ` title="${c.title}の列を表示/非表示（本日の入力 ${n}頭）">${c.label}`
                     + `${n ? `<i class="cnt">${n}</i>` : ''}</button>`;
-            }).join('');
+            }).join('')
+                + `<button class="mybtn jrbtn${jrColOn ? ' on' : ''}" data-jrcol="1" aria-pressed="${jrColOn}"`
+                + ` title="騎手ランクの列を表示/非表示">騎</button>`;
         }
 
         function currentVenue() {
@@ -2876,6 +3213,7 @@
                 if (r.ok) data = await r.json();
             } catch (e) { /* ignore */ }
             predState.data = data;
+            prepJr();               // 騎手ランクの並べ替え用の数値
             loadMyMarks();          // 日付キー(data.date)が確定してから読む
             predState.loading = false;
             predState.venueIdx = 0;
@@ -3026,7 +3364,7 @@
 
         function renderSortRow() {
             const host = $('#predSorts');
-            host.innerHTML = PRED_SORTS.map(s => {
+            host.innerHTML = PRED_SORTS.filter(s => !s.jr || jrAvailable()).map(s => {
                 const on = s.key === predState.sortKey;
                 const ar = on ? `<span class="ar">${predState.sortDir === 'asc' ? '▲' : '▼'}</span>` : '';
                 return `<button class="sortbtn${on ? ' on' : ''}" data-k="${s.key}" data-d="${s.dir}">${s.label}${ar}</button>`;
@@ -3056,7 +3394,7 @@
             host.innerHTML =
                 `<span class="rno">${v.venue} ${r.race_number}R</span>` +
                 `<span>${r.post_time || '--:--'} 発走</span>` +
-                `<span>${dist}</span>` +
+                `<span>${dist}</span>` + jrWeightHtml(r) +
                 `<span>${r.horses.length}頭</span>` + liveTagHtml() + metaBadgeHtml() + irukaNa + sbNa;
         }
 
@@ -3095,6 +3433,7 @@
           <td class="col-uma"><span class="uma-badge">${h.umaban}</span></td>
           <td class="col-name"><span class="hname">${h.horse_name || ''}</span></td>
           <td class="jockey">${h.jockey || ''}</td>
+          <td class="jr-col" data-jr-uma="${h.umaban}" title="${esc(jrTitle(h))}">${jrCellHtml(h)}</td>
           <td>${h.iruka ? '<span class="iruka-star">★</span>' : '<span class="mk-none">·</span>'}</td>
           <td>${h.chumoku ? '<span class="chumoku-mark">◆</span>' : '<span class="mk-none">·</span>'}</td>
           <td class="my-col my-c-t" data-mycol="t" data-uma="${h.umaban}">${myCellHtml('t', h.umaban)}</td>
@@ -3122,6 +3461,7 @@
           <th class="col-uma">馬番</th>
           <th class="col-name">馬名</th>
           <th>騎手</th>
+          <th class="jr-col" title="${esc(jrHeadTitle())}">騎手<br>ランク</th>
           <th title="イルカ推奨（不利馬）">★</th>
           <th class="sb-head" title="シラベタ 注目馬">注</th>
           <th class="my-head my-col my-c-t" title="Tatsuo予想（手入力・タップで！）">T</th>
@@ -3238,6 +3578,7 @@
         }
 
         function renderPredictions() {
+            closeJrSheet();
             const emptyEl = $('#predEmpty');
             const clear = () => {
                 $('#predVenues').innerHTML = ''; $('#predRaces').innerHTML = '';
@@ -3290,6 +3631,8 @@
             $('#nextRaceBtn').addEventListener('click', () => gotoRaceDelta(+1));
             /* 表は毎回 innerHTML で組み直されるので、セルではなく #predBody 側で受ける */
             $('#predBody').addEventListener('click', e => {
+                const jtd = e.target.closest('td[data-jr-uma]');
+                if (jtd) { openJrSheet(jtd.dataset.jrUma); return; }
                 const td = e.target.closest('td[data-mycol]');
                 if (!td) return;
                 const col = td.dataset.mycol, uma = +td.dataset.uma;
@@ -3302,6 +3645,13 @@
             });
             /* トグルも中身を作り直すので、器(#myToggles)側で受ける */
             $('#myToggles').addEventListener('click', e => {
+                if (e.target.closest('button[data-jrcol]')) {
+                    jrColOn = !jrColOn;
+                    lsSet(JR_COL_KEY, jrColOn);
+                    applyJrColVisibility();            // body のクラスだけ。表は再描画しない
+                    renderMyToggles();
+                    return;
+                }
                 const b = e.target.closest('button[data-mycol]');
                 if (!b) return;
                 const k = b.dataset.mycol;
@@ -3310,6 +3660,9 @@
                 applyMyColVisibility();                // body のクラスだけ。表は再描画しない
                 renderMyToggles();
             });
+            $('#jrSheetBack').addEventListener('click', closeJrSheet);
+            $('#jrSheet').addEventListener('click', e => { if (e.target.closest('[data-jrclose]')) closeJrSheet(); });
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') closeJrSheet(); });
             window.addEventListener('resize', syncBetsWidth);
             window.addEventListener('orientationchange', () => setTimeout(syncBetsWidth, 120));
             // タブ復帰時は待たずに即更新（1分待つと古い値が見える）
@@ -3323,6 +3676,7 @@
             bindTweaks();
             bindTabs();
             loadMyCols();
+            loadJrCol();
             loadMyMarks();
             await load();
             updateClock();
