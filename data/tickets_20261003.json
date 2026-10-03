@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "generated_at": "2026-10-03T09:05:01.939851+09:00",
+  "generated_at": "2026-10-03T09:19:35.936268+09:00",
   "races": [
     {
       "venue": "京都",
@@ -12,10 +12,11 @@
         {
           "umaban": 13,
           "horse_name": "ジョルティーニ",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
@@ -45,7 +46,7 @@
         "amount_per_combo": 2300,
         "subtotal": 2300
       },
-      "total_amount": 4100
+      "total_amount": 4200
     },
     {
       "venue": "京都",
@@ -57,10 +58,11 @@
         {
           "umaban": 3,
           "horse_name": "メイショウジェード",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         },
         {
@@ -83,7 +85,7 @@
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 2300
+      "total_amount": 2400
     },
     {
       "venue": "東京",
@@ -95,15 +97,16 @@
         {
           "umaban": 2,
           "horse_name": "ソードオブステート",
-          "amount": 700,
+          "amount": 800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 800
     },
     {
       "venue": "京都",
@@ -346,5 +349,5 @@
       "total_amount": 700
     }
   ],
-  "grand_total": 18600
+  "grand_total": 18900
 }
