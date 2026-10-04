@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "generated_at": "2026-10-04T09:05:03.364405+09:00",
+  "generated_at": "2026-10-04T09:20:01.717196+09:00",
   "races": [
     {
       "venue": "京都",
@@ -33,16 +33,17 @@
         {
           "umaban": 3,
           "horse_name": "ダノンダックス",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "東京",
@@ -323,16 +324,17 @@
         {
           "umaban": 6,
           "horse_name": "ジューンアゲイン",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "京都",
@@ -450,15 +452,16 @@
         {
           "umaban": 18,
           "horse_name": "ダノンシーマ",
-          "amount": 700,
+          "amount": 800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 800
     },
     {
       "venue": "京都",
@@ -470,16 +473,17 @@
         {
           "umaban": 11,
           "horse_name": "アイニードユー",
-          "amount": 700,
+          "amount": 800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 800
     }
   ],
-  "grand_total": 33100
+  "grand_total": 33500
 }
