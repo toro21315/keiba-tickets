@@ -1,0 +1,341 @@
+{
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T09:05:02.510966+09:00",
+  "races": [
+    {
+      "venue": "京都",
+      "race_number": 1,
+      "post_time": "09:50",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 2,
+          "horse_name": "リヴァイアサン",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "東京",
+      "race_number": 1,
+      "post_time": "10:05",
+      "track": "ダ",
+      "distance": 1300,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "リングスター",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "東京",
+      "race_number": 2,
+      "post_time": "10:35",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 11,
+          "horse_name": "ホワイトホール",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          7,
+          12
+        ],
+        "horse_names": [
+          "ローズファミリー",
+          "ゴールデンハニビー"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          7,
+          12
+        ],
+        "horse_names": [
+          "ローズファミリー",
+          "ゴールデンハニビー"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3400
+    },
+    {
+      "venue": "京都",
+      "race_number": 3,
+      "post_time": "10:50",
+      "track": "芝",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "プレシャスタイム",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "東京",
+      "race_number": 4,
+      "post_time": "11:35",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 1,
+          "horse_name": "プルメリアビーチ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "京都",
+      "race_number": 7,
+      "post_time": "13:10",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "エイコーンドリーム",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "東京",
+      "race_number": 7,
+      "post_time": "13:25",
+      "track": "ダ",
+      "distance": 1600,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          2,
+          13
+        ],
+        "horse_names": [
+          "ショコラプリン",
+          "ミライヘノティアラ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          2,
+          13
+        ],
+        "horse_names": [
+          "ショコラプリン",
+          "ミライヘノティアラ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "京都",
+      "race_number": 9,
+      "post_time": "14:15",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "テーオーパーセル",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          4,
+          6
+        ],
+        "horse_names": [
+          "マテンロウミラクル",
+          "テーオーパーセル"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          4,
+          6
+        ],
+        "horse_names": [
+          "マテンロウミラクル",
+          "テーオーパーセル"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 4100
+    },
+    {
+      "venue": "東京",
+      "race_number": 10,
+      "post_time": "15:10",
+      "track": "ダ",
+      "distance": 2100,
+      "tansho": [
+        {
+          "umaban": 16,
+          "horse_name": "シャローファースト",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          3,
+          16
+        ],
+        "horse_names": [
+          "インナーパッション",
+          "シャローファースト"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          3,
+          16
+        ],
+        "horse_names": [
+          "インナーパッション",
+          "シャローファースト"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 4100
+    },
+    {
+      "venue": "京都",
+      "race_number": 12,
+      "post_time": "16:10",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 4,
+          "horse_name": "キアヌ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        },
+        {
+          "umaban": 9,
+          "horse_name": "ララバッカナール",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "東京",
+      "race_number": 12,
+      "post_time": "16:30",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          3,
+          10
+        ],
+        "horse_names": [
+          "シュヴァルツシルト",
+          "ゴーゴーパンチ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          3,
+          10
+        ],
+        "horse_names": [
+          "シュヴァルツシルト",
+          "ゴーゴーパンチ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    }
+  ],
+  "grand_total": 22100
+}
