@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T09:05:02.766211+09:00",
+  "races": [
+    {
+      "venue": "京都",
+      "race_number": 1,
+      "post_time": "09:50",
+      "track": "ダ",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 6,
+          "horse_name": "グランモンターナ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "東京",
+      "race_number": 1,
+      "post_time": "10:05",
+      "track": "ダ",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 9,
+          "horse_name": "サンクサンス",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": {
+        "members": [
+          2,
+          9
+        ],
+        "horse_names": [
+          "ベルグラース",
+          "サンクサンス"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          2,
+          9
+        ],
+        "horse_names": [
+          "ベルグラース",
+          "サンクサンス"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3800
+    },
+    {
+      "venue": "京都",
+      "race_number": 2,
+      "post_time": "10:20",
+      "track": "芝",
+      "distance": 2000,
+      "tansho": [
+        {
+          "umaban": 2,
+          "horse_name": "ロードフローリス",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "京都",
+      "race_number": 3,
+      "post_time": "10:50",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "アルフェラッツ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "東京",
+      "race_number": 10,
+      "post_time": "15:10",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 16,
+          "horse_name": "アジアミッション",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "京都",
+      "race_number": 11,
+      "post_time": "15:30",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "バスタードサフラン",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        },
+        {
+          "umaban": 13,
+          "horse_name": "メルカントゥール",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1300
+    }
+  ],
+  "grand_total": 7700
+}
