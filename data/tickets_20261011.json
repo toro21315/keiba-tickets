@@ -1,6 +1,6 @@
 {
   "date": "2026-10-11",
-  "generated_at": "2026-10-11T09:05:02.766211+09:00",
+  "generated_at": "2026-10-11T09:19:29.081220+09:00",
   "races": [
     {
       "venue": "京都",
@@ -12,16 +12,17 @@
         {
           "umaban": 6,
           "horse_name": "グランモンターナ",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "東京",
@@ -77,16 +78,17 @@
         {
           "umaban": 2,
           "horse_name": "ロードフローリス",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "京都",
@@ -146,17 +148,18 @@
         {
           "umaban": 13,
           "horse_name": "メルカントゥール",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1300
+      "total_amount": 1400
     }
   ],
-  "grand_total": 7700
+  "grand_total": 8000
 }
