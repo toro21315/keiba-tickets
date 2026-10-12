@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "generated_at": "2026-10-12T09:05:01.987828+09:00",
+  "generated_at": "2026-10-12T09:19:15.732699+09:00",
   "races": [
     {
       "venue": "東京",
@@ -12,15 +12,16 @@
         {
           "umaban": 15,
           "horse_name": "イトウカカリチョウ",
-          "amount": 700,
+          "amount": 800,
           "sources": [
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 700
+      "total_amount": 800
     },
     {
       "venue": "京都",
@@ -60,16 +61,17 @@
         {
           "umaban": 8,
           "horse_name": "マルスレジーナ",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "京都",
@@ -277,5 +279,5 @@
       "total_amount": 3100
     }
   ],
-  "grand_total": 19900
+  "grand_total": 20100
 }
