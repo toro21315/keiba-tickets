@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "generated_at": "2026-10-17T09:05:02.274935+09:00",
+  "generated_at": "2026-10-17T09:21:45.058217+09:00",
   "races": [
     {
       "venue": "京都",
@@ -129,10 +129,11 @@
         {
           "umaban": 3,
           "horse_name": "クリスタルシャイン",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         },
         {
@@ -147,7 +148,7 @@
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 2000
+      "total_amount": 2100
     },
     {
       "venue": "新潟",
@@ -159,16 +160,17 @@
         {
           "umaban": 14,
           "horse_name": "サトノクラシカル",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "新潟",
@@ -208,16 +210,17 @@
         {
           "umaban": 11,
           "horse_name": "ルビドゥソレイユ",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1300
+      "total_amount": 1400
     },
     {
       "venue": "新潟",
@@ -255,5 +258,5 @@
       "total_amount": 3100
     }
   ],
-  "grand_total": 14200
+  "grand_total": 14500
 }
