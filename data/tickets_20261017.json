@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-17",
+  "generated_at": "2026-10-17T09:05:02.274935+09:00",
+  "races": [
+    {
+      "venue": "京都",
+      "race_number": 1,
+      "post_time": "09:55",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          2,
+          9
+        ],
+        "horse_names": [
+          "ヴェルヴィエ",
+          "ユイリノベーション"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          2,
+          9
+        ],
+        "horse_names": [
+          "ヴェルヴィエ",
+          "ユイリノベーション"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    },
+    {
+      "venue": "新潟",
+      "race_number": 2,
+      "post_time": "10:15",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 11,
+          "horse_name": "ツイストマインド",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "新潟",
+      "race_number": 3,
+      "post_time": "10:45",
+      "track": "ダ",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 9,
+          "horse_name": "ヒッグスボソン",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "東京",
+      "race_number": 3,
+      "post_time": "11:05",
+      "track": "ダ",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 8,
+          "horse_name": "レッドマウロア",
+          "amount": 700,
+          "sources": [
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 700
+    },
+    {
+      "venue": "新潟",
+      "race_number": 4,
+      "post_time": "11:15",
+      "track": "芝",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 14,
+          "horse_name": "カドドゥディエ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "新潟",
+      "race_number": 5,
+      "post_time": "12:05",
+      "track": "ダ",
+      "distance": 1200,
+      "tansho": [
+        {
+          "umaban": 3,
+          "horse_name": "クリスタルシャイン",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        },
+        {
+          "umaban": 8,
+          "horse_name": "ハイグッドカンフー",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 2000
+    },
+    {
+      "venue": "新潟",
+      "race_number": 7,
+      "post_time": "13:05",
+      "track": "ダ",
+      "distance": 1800,
+      "tansho": [
+        {
+          "umaban": 14,
+          "horse_name": "サトノクラシカル",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1000
+    },
+    {
+      "venue": "新潟",
+      "race_number": 8,
+      "post_time": "13:35",
+      "track": "芝",
+      "distance": 1600,
+      "tansho": [
+        {
+          "umaban": 10,
+          "horse_name": "ミトノリン",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 300
+    },
+    {
+      "venue": "京都",
+      "race_number": 9,
+      "post_time": "14:15",
+      "track": "ダ",
+      "distance": 1400,
+      "tansho": [
+        {
+          "umaban": 10,
+          "horse_name": "メイショウザンゲツ",
+          "amount": 300,
+          "sources": [
+            "L1"
+          ]
+        },
+        {
+          "umaban": 11,
+          "horse_name": "ルビドゥソレイユ",
+          "amount": 1000,
+          "sources": [
+            "L1",
+            "L2"
+          ]
+        }
+      ],
+      "umaren_box": null,
+      "wide_box": null,
+      "total_amount": 1300
+    },
+    {
+      "venue": "新潟",
+      "race_number": 12,
+      "post_time": "16:00",
+      "track": "芝",
+      "distance": 1000,
+      "tansho": [],
+      "umaren_box": {
+        "members": [
+          2,
+          10
+        ],
+        "horse_names": [
+          "ベルタソ",
+          "ヨドノティアラ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 800,
+        "subtotal": 800
+      },
+      "wide_box": {
+        "members": [
+          2,
+          10
+        ],
+        "horse_names": [
+          "ベルタソ",
+          "ヨドノティアラ"
+        ],
+        "combos": 1,
+        "amount_per_combo": 2300,
+        "subtotal": 2300
+      },
+      "total_amount": 3100
+    }
+  ],
+  "grand_total": 14200
+}
