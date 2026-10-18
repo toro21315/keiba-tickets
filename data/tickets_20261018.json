@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "generated_at": "2026-10-18T09:05:01.820118+09:00",
+  "generated_at": "2026-10-18T09:21:03.120716+09:00",
   "races": [
     {
       "venue": "新潟",
@@ -237,16 +237,17 @@
         {
           "umaban": 12,
           "horse_name": "ファクスカエリ",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 2000
+      "total_amount": 2100
     },
     {
       "venue": "京都",
@@ -568,5 +569,5 @@
       "total_amount": 3100
     }
   ],
-  "grand_total": 50700
+  "grand_total": 50800
 }
