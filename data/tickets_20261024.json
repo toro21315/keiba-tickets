@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "generated_at": "2026-10-24T09:05:03.114073+09:00",
+  "generated_at": "2026-10-24T09:21:42.021483+09:00",
   "races": [
     {
       "venue": "新潟",
@@ -60,16 +60,17 @@
         {
           "umaban": 8,
           "horse_name": "ドナズエクリプス",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "京都",
@@ -244,10 +245,11 @@
         {
           "umaban": 15,
           "horse_name": "ルーナディサングエ",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
@@ -277,7 +279,7 @@
         "amount_per_combo": 2300,
         "subtotal": 2300
       },
-      "total_amount": 4100
+      "total_amount": 4200
     },
     {
       "venue": "京都",
@@ -430,16 +432,17 @@
         {
           "umaban": 6,
           "horse_name": "エアアルチーナ",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "東京",
@@ -462,5 +465,5 @@
       "total_amount": 700
     }
   ],
-  "grand_total": 40700
+  "grand_total": 41000
 }
