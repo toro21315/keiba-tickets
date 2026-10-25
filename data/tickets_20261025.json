@@ -1,6 +1,6 @@
 {
   "date": "2026-10-25",
-  "generated_at": "2026-10-25T09:05:02.326698+09:00",
+  "generated_at": "2026-10-25T09:21:03.101463+09:00",
   "races": [
     {
       "venue": "新潟",
@@ -92,16 +92,17 @@
         {
           "umaban": 4,
           "horse_name": "サルトヴェローチェ",
-          "amount": 1000,
+          "amount": 1100,
           "sources": [
             "L1",
-            "L2"
+            "L2",
+            "L3"
           ]
         }
       ],
       "umaren_box": null,
       "wide_box": null,
-      "total_amount": 1000
+      "total_amount": 1100
     },
     {
       "venue": "京都",
@@ -392,5 +393,5 @@
       "total_amount": 3100
     }
   ],
-  "grand_total": 25900
+  "grand_total": 26000
 }
